@@ -1,5 +1,5 @@
 import { z } from 'zod';
-import { Provenance } from './primitives.js';
+import { Provenance } from './primitives';
 
 /** §22 / §32 — the graph edge vocabulary. */
 export const RelationshipType = z.enum([

@@ -1,5 +1,5 @@
 import { z } from 'zod';
-import { CitationRef, IdSlug } from './primitives.js';
+import { CitationRef, IdSlug } from './primitives';
 
 /**
  * §8 — the six conceptual layers, flattened into the eight concrete kinds the

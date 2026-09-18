@@ -1,5 +1,5 @@
 import { z } from 'zod';
-import { CitationRef, IdSlug, Provenance, Tri } from './primitives.js';
+import { CitationRef, IdSlug, Provenance, Tri } from './primitives';
 
 /**
  * §49 — the product must not use "reverse aging" as a single measurable claim.

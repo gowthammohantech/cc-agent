@@ -1,5 +1,5 @@
 import { z } from 'zod';
-import { CitationRef, IdSlug } from './primitives.js';
+import { CitationRef, IdSlug } from './primitives';
 
 /**
  * §9 — the timeline is banded rather than smooth, because most curated data is

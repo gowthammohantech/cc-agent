@@ -1,5 +1,5 @@
 import { z } from 'zod';
-import { CitationRef, Direction, IdSlug, Provenance } from './primitives.js';
+import { CitationRef, Direction, IdSlug, Provenance } from './primitives';
 
 /**
  * §31 — "Do not store invented universal percentages."

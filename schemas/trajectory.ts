@@ -1,5 +1,5 @@
 import { z } from 'zod';
-import { CitationRef, IdSlug, Provenance } from './primitives.js';
+import { CitationRef, IdSlug, Provenance } from './primitives';
 
 /**
  * FR-01 — "never interpolate unsupported scientific claims silently" and

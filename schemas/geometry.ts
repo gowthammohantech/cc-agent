@@ -1,5 +1,5 @@
 import { z } from 'zod';
-import { IdSlug } from './primitives.js';
+import { IdSlug } from './primitives';
 
 /**
  * The body figure is built from procedural primitives — there are no licensed

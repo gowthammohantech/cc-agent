@@ -1,5 +1,5 @@
 import { z } from 'zod';
-import { RejuvenationScope } from './rejuvenation.js';
+import { RejuvenationScope } from './rejuvenation';
 
 /** Product copy that carries scientific meaning, kept in content for review. */
 export const DisclaimersSchema = z.object({

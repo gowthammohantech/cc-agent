@@ -1,5 +1,5 @@
 import { z } from 'zod';
-import { IdSlug } from './primitives.js';
+import { IdSlug } from './primitives';
 
 /**
  * §15 — every comparison must carry population context. A value without a

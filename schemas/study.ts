@@ -1,5 +1,5 @@
 import { z } from 'zod';
-import { IsoDate, SourceId } from './primitives.js';
+import { IsoDate, SourceId } from './primitives';
 
 /**
  * FR-09 / §36 — the minimum source record, with a few additions the spec

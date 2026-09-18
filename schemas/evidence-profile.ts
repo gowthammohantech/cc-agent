@@ -1,5 +1,5 @@
 import { z } from 'zod';
-import { CitationRef, EvidenceLevel, IsoDate } from './primitives.js';
+import { CitationRef, EvidenceLevel, IsoDate } from './primitives';
 
 /**
  * FR-10 / §37 — "Do not reduce all evidence to one misleading number."

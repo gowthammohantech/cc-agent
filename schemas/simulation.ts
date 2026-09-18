@@ -1,6 +1,6 @@
 import { z } from 'zod';
-import { CausalStatus, Confidence, ReviewStatus } from './primitives.js';
-import { RelationshipType } from './relationship.js';
+import { CausalStatus, Confidence, ReviewStatus } from './primitives';
+import { RelationshipType } from './relationship';
 
 /**
  * FR-08 model parameters, held as reviewable content rather than code so that

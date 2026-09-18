@@ -1,5 +1,5 @@
 import { z } from 'zod';
-import { Direction, IdSlug, Provenance } from './primitives.js';
+import { Direction, IdSlug, Provenance } from './primitives';
 
 /**
  * FR-03 / §30. Field names follow the FRD's example schema
