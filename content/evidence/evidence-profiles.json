@@ -1,0 +1,592 @@
+{
+  "evidence_profiles": [
+    {
+      "profile_id": "prof_genomic_instability",
+      "dimensions": {
+        "species_relevance": {
+          "rating": "strong",
+          "note": "Directly measured in human tissue or human cohorts.",
+          "citations": []
+        },
+        "study_design": {
+          "rating": "moderate",
+          "note": "Mostly cross-sectional or observational designs with known confounding.",
+          "citations": []
+        },
+        "replication": {
+          "rating": "strong",
+          "note": "Reproduced independently across laboratories and cohorts.",
+          "citations": []
+        },
+        "sample_adequacy": {
+          "rating": "moderate",
+          "note": "Adequate for the central claim but thin for subgroup statements.",
+          "citations": []
+        },
+        "mechanistic_support": {
+          "rating": "strong",
+          "note": "A plausible mechanism is characterised and experimentally supported.",
+          "citations": []
+        },
+        "clinical_relevance": {
+          "rating": "moderate",
+          "note": "Connects to intermediate outcomes rather than function directly.",
+          "citations": []
+        },
+        "consistency": {
+          "rating": "moderate",
+          "note": "Broadly consistent with notable exceptions.",
+          "citations": []
+        },
+        "recency": {
+          "rating": "strong",
+          "note": "Supported by work from the last decade.",
+          "citations": []
+        }
+      },
+      "overall_label": "human_observational",
+      "label_basis": "Human somatic-mutation data are solid and mechanism is well worked out, but the link from mutation burden to functional decline rests on inference rather than demonstration, which is what holds the overall label at observational.",
+      "last_reviewed_at": "2026-09-18",
+      "record_version": 1
+    },
+    {
+      "profile_id": "prof_telomere_attrition",
+      "dimensions": {
+        "species_relevance": {
+          "rating": "strong",
+          "note": "Directly measured in human tissue or human cohorts.",
+          "citations": []
+        },
+        "study_design": {
+          "rating": "moderate",
+          "note": "Mostly cross-sectional or observational designs with known confounding.",
+          "citations": []
+        },
+        "replication": {
+          "rating": "strong",
+          "note": "Reproduced independently across laboratories and cohorts.",
+          "citations": []
+        },
+        "sample_adequacy": {
+          "rating": "strong",
+          "note": "Sample sizes are adequate for the effects being claimed.",
+          "citations": []
+        },
+        "mechanistic_support": {
+          "rating": "moderate",
+          "note": "A mechanism is proposed and partly supported.",
+          "citations": []
+        },
+        "clinical_relevance": {
+          "rating": "moderate",
+          "note": "Connects to intermediate outcomes rather than function directly.",
+          "citations": []
+        },
+        "consistency": {
+          "rating": "limited",
+          "note": "Findings conflict between cohorts or methods.",
+          "citations": []
+        },
+        "recency": {
+          "rating": "strong",
+          "note": "Supported by work from the last decade.",
+          "citations": []
+        }
+      },
+      "overall_label": "human_observational",
+      "label_basis": "Shortening with age is reproducible in humans; the label stays at observational because outcome associations are confounded and the popular causal reading is not supported.",
+      "last_reviewed_at": "2026-09-18",
+      "record_version": 1
+    },
+    {
+      "profile_id": "prof_epigenetic_alterations",
+      "dimensions": {
+        "species_relevance": {
+          "rating": "strong",
+          "note": "Directly measured in human tissue or human cohorts.",
+          "citations": []
+        },
+        "study_design": {
+          "rating": "moderate",
+          "note": "Mostly cross-sectional or observational designs with known confounding.",
+          "citations": []
+        },
+        "replication": {
+          "rating": "strong",
+          "note": "Reproduced independently across laboratories and cohorts.",
+          "citations": []
+        },
+        "sample_adequacy": {
+          "rating": "strong",
+          "note": "Sample sizes are adequate for the effects being claimed.",
+          "citations": []
+        },
+        "mechanistic_support": {
+          "rating": "limited",
+          "note": "Mechanism is largely inferred from correlation.",
+          "citations": []
+        },
+        "clinical_relevance": {
+          "rating": "limited",
+          "note": "Relevance to human health outcomes is indirect or surrogate.",
+          "citations": []
+        },
+        "consistency": {
+          "rating": "moderate",
+          "note": "Broadly consistent with notable exceptions.",
+          "citations": []
+        },
+        "recency": {
+          "rating": "strong",
+          "note": "Supported by work from the last decade.",
+          "citations": []
+        }
+      },
+      "overall_label": "human_observational",
+      "label_basis": "Age-predictive methylation patterns replicate strongly in humans, but clinical relevance is limited because a predictor of chronological age is not a measure of an individual's functional state.",
+      "last_reviewed_at": "2026-09-18",
+      "record_version": 1
+    },
+    {
+      "profile_id": "prof_loss_of_proteostasis",
+      "dimensions": {
+        "species_relevance": {
+          "rating": "limited",
+          "note": "Evidence rests mainly on short-lived model organisms or cultured cells.",
+          "citations": []
+        },
+        "study_design": {
+          "rating": "moderate",
+          "note": "Mostly cross-sectional or observational designs with known confounding.",
+          "citations": []
+        },
+        "replication": {
+          "rating": "moderate",
+          "note": "Replicated, though with variation in effect size and method.",
+          "citations": []
+        },
+        "sample_adequacy": {
+          "rating": "moderate",
+          "note": "Adequate for the central claim but thin for subgroup statements.",
+          "citations": []
+        },
+        "mechanistic_support": {
+          "rating": "strong",
+          "note": "A plausible mechanism is characterised and experimentally supported.",
+          "citations": []
+        },
+        "clinical_relevance": {
+          "rating": "limited",
+          "note": "Relevance to human health outcomes is indirect or surrogate.",
+          "citations": []
+        },
+        "consistency": {
+          "rating": "moderate",
+          "note": "Broadly consistent with notable exceptions.",
+          "citations": []
+        },
+        "recency": {
+          "rating": "strong",
+          "note": "Supported by work from the last decade.",
+          "citations": []
+        }
+      },
+      "overall_label": "in_vitro",
+      "label_basis": "Mechanism is the strongest dimension here; the label sits at in vitro because tissue-level proteostatic capacity in living humans is largely unmeasured.",
+      "last_reviewed_at": "2026-09-18",
+      "record_version": 1
+    },
+    {
+      "profile_id": "prof_disabled_macroautophagy",
+      "dimensions": {
+        "species_relevance": {
+          "rating": "limited",
+          "note": "Evidence rests mainly on short-lived model organisms or cultured cells.",
+          "citations": []
+        },
+        "study_design": {
+          "rating": "moderate",
+          "note": "Mostly cross-sectional or observational designs with known confounding.",
+          "citations": []
+        },
+        "replication": {
+          "rating": "moderate",
+          "note": "Replicated, though with variation in effect size and method.",
+          "citations": []
+        },
+        "sample_adequacy": {
+          "rating": "limited",
+          "note": "Small samples relative to the variability observed.",
+          "citations": []
+        },
+        "mechanistic_support": {
+          "rating": "strong",
+          "note": "A plausible mechanism is characterised and experimentally supported.",
+          "citations": []
+        },
+        "clinical_relevance": {
+          "rating": "limited",
+          "note": "Relevance to human health outcomes is indirect or surrogate.",
+          "citations": []
+        },
+        "consistency": {
+          "rating": "moderate",
+          "note": "Broadly consistent with notable exceptions.",
+          "citations": []
+        },
+        "recency": {
+          "rating": "strong",
+          "note": "Supported by work from the last decade.",
+          "citations": []
+        }
+      },
+      "overall_label": "animal",
+      "label_basis": "Rests on model-organism work with good mechanistic grounding; human flux measurement is the binding constraint, so the label stays at animal.",
+      "last_reviewed_at": "2026-09-18",
+      "record_version": 1
+    },
+    {
+      "profile_id": "prof_deregulated_nutrient_sensing",
+      "dimensions": {
+        "species_relevance": {
+          "rating": "limited",
+          "note": "Evidence rests mainly on short-lived model organisms or cultured cells.",
+          "citations": []
+        },
+        "study_design": {
+          "rating": "strong",
+          "note": "Includes controlled or longitudinal designs appropriate to the claim.",
+          "citations": []
+        },
+        "replication": {
+          "rating": "strong",
+          "note": "Reproduced independently across laboratories and cohorts.",
+          "citations": []
+        },
+        "sample_adequacy": {
+          "rating": "strong",
+          "note": "Sample sizes are adequate for the effects being claimed.",
+          "citations": []
+        },
+        "mechanistic_support": {
+          "rating": "strong",
+          "note": "A plausible mechanism is characterised and experimentally supported.",
+          "citations": []
+        },
+        "clinical_relevance": {
+          "rating": "limited",
+          "note": "Relevance to human health outcomes is indirect or surrogate.",
+          "citations": []
+        },
+        "consistency": {
+          "rating": "strong",
+          "note": "Findings point the same way across populations and methods.",
+          "citations": []
+        },
+        "recency": {
+          "rating": "strong",
+          "note": "Supported by work from the last decade.",
+          "citations": []
+        }
+      },
+      "overall_label": "animal",
+      "label_basis": "Unusually strong and replicated animal evidence including lifespan endpoints, but no human lifespan data and real intervention trade-offs, so the label is animal rather than higher.",
+      "last_reviewed_at": "2026-09-18",
+      "record_version": 1
+    },
+    {
+      "profile_id": "prof_mitochondrial_dysfunction",
+      "dimensions": {
+        "species_relevance": {
+          "rating": "moderate",
+          "note": "Human data exist but much mechanistic work is in model organisms.",
+          "citations": []
+        },
+        "study_design": {
+          "rating": "moderate",
+          "note": "Mostly cross-sectional or observational designs with known confounding.",
+          "citations": []
+        },
+        "replication": {
+          "rating": "strong",
+          "note": "Reproduced independently across laboratories and cohorts.",
+          "citations": []
+        },
+        "sample_adequacy": {
+          "rating": "moderate",
+          "note": "Adequate for the central claim but thin for subgroup statements.",
+          "citations": []
+        },
+        "mechanistic_support": {
+          "rating": "strong",
+          "note": "A plausible mechanism is characterised and experimentally supported.",
+          "citations": []
+        },
+        "clinical_relevance": {
+          "rating": "limited",
+          "note": "Relevance to human health outcomes is indirect or surrogate.",
+          "citations": []
+        },
+        "consistency": {
+          "rating": "limited",
+          "note": "Findings conflict between cohorts or methods.",
+          "citations": []
+        },
+        "recency": {
+          "rating": "strong",
+          "note": "Supported by work from the last decade.",
+          "citations": []
+        }
+      },
+      "overall_label": "human_observational",
+      "label_basis": "Human tissue data support the association; the label stays at observational because the original causal theory was not borne out and changes are strongly tissue-dependent.",
+      "last_reviewed_at": "2026-09-18",
+      "record_version": 1
+    },
+    {
+      "profile_id": "prof_cellular_senescence",
+      "dimensions": {
+        "species_relevance": {
+          "rating": "moderate",
+          "note": "Human data exist but much mechanistic work is in model organisms.",
+          "citations": []
+        },
+        "study_design": {
+          "rating": "strong",
+          "note": "Includes controlled or longitudinal designs appropriate to the claim.",
+          "citations": []
+        },
+        "replication": {
+          "rating": "strong",
+          "note": "Reproduced independently across laboratories and cohorts.",
+          "citations": []
+        },
+        "sample_adequacy": {
+          "rating": "moderate",
+          "note": "Adequate for the central claim but thin for subgroup statements.",
+          "citations": []
+        },
+        "mechanistic_support": {
+          "rating": "strong",
+          "note": "A plausible mechanism is characterised and experimentally supported.",
+          "citations": []
+        },
+        "clinical_relevance": {
+          "rating": "limited",
+          "note": "Relevance to human health outcomes is indirect or surrogate.",
+          "citations": []
+        },
+        "consistency": {
+          "rating": "moderate",
+          "note": "Broadly consistent with notable exceptions.",
+          "citations": []
+        },
+        "recency": {
+          "rating": "strong",
+          "note": "Supported by work from the last decade.",
+          "citations": []
+        }
+      },
+      "overall_label": "animal",
+      "label_basis": "Animal clearance experiments are the strongest evidence; human data are small open-label pilots with surrogate endpoints, so the label is animal.",
+      "last_reviewed_at": "2026-09-18",
+      "record_version": 1
+    },
+    {
+      "profile_id": "prof_stem_cell_exhaustion",
+      "dimensions": {
+        "species_relevance": {
+          "rating": "limited",
+          "note": "Evidence rests mainly on short-lived model organisms or cultured cells.",
+          "citations": []
+        },
+        "study_design": {
+          "rating": "moderate",
+          "note": "Mostly cross-sectional or observational designs with known confounding.",
+          "citations": []
+        },
+        "replication": {
+          "rating": "moderate",
+          "note": "Replicated, though with variation in effect size and method.",
+          "citations": []
+        },
+        "sample_adequacy": {
+          "rating": "moderate",
+          "note": "Adequate for the central claim but thin for subgroup statements.",
+          "citations": []
+        },
+        "mechanistic_support": {
+          "rating": "strong",
+          "note": "A plausible mechanism is characterised and experimentally supported.",
+          "citations": []
+        },
+        "clinical_relevance": {
+          "rating": "limited",
+          "note": "Relevance to human health outcomes is indirect or surrogate.",
+          "citations": []
+        },
+        "consistency": {
+          "rating": "moderate",
+          "note": "Broadly consistent with notable exceptions.",
+          "citations": []
+        },
+        "recency": {
+          "rating": "strong",
+          "note": "Supported by work from the last decade.",
+          "citations": []
+        }
+      },
+      "overall_label": "animal",
+      "label_basis": "Mechanistically well supported in animals; cross-tissue measurement heterogeneity and unresolved proliferation risk keep the label at animal.",
+      "last_reviewed_at": "2026-09-18",
+      "record_version": 1
+    },
+    {
+      "profile_id": "prof_altered_intercellular_communication",
+      "dimensions": {
+        "species_relevance": {
+          "rating": "limited",
+          "note": "Evidence rests mainly on short-lived model organisms or cultured cells.",
+          "citations": []
+        },
+        "study_design": {
+          "rating": "moderate",
+          "note": "Mostly cross-sectional or observational designs with known confounding.",
+          "citations": []
+        },
+        "replication": {
+          "rating": "moderate",
+          "note": "Replicated, though with variation in effect size and method.",
+          "citations": []
+        },
+        "sample_adequacy": {
+          "rating": "limited",
+          "note": "Small samples relative to the variability observed.",
+          "citations": []
+        },
+        "mechanistic_support": {
+          "rating": "moderate",
+          "note": "A mechanism is proposed and partly supported.",
+          "citations": []
+        },
+        "clinical_relevance": {
+          "rating": "very_limited",
+          "note": "No demonstrated connection to human outcomes.",
+          "citations": []
+        },
+        "consistency": {
+          "rating": "limited",
+          "note": "Findings conflict between cohorts or methods.",
+          "citations": []
+        },
+        "recency": {
+          "rating": "strong",
+          "note": "Supported by work from the last decade.",
+          "citations": []
+        }
+      },
+      "overall_label": "animal",
+      "label_basis": "Parabiosis is striking but has no human counterpart and the responsible factors are not fully identified, so both clinical relevance and the overall label stay low.",
+      "last_reviewed_at": "2026-09-18",
+      "record_version": 1
+    },
+    {
+      "profile_id": "prof_chronic_inflammation",
+      "dimensions": {
+        "species_relevance": {
+          "rating": "strong",
+          "note": "Directly measured in human tissue or human cohorts.",
+          "citations": []
+        },
+        "study_design": {
+          "rating": "limited",
+          "note": "Designs cannot separate aging from cohort, disease or selection effects.",
+          "citations": []
+        },
+        "replication": {
+          "rating": "strong",
+          "note": "Reproduced independently across laboratories and cohorts.",
+          "citations": []
+        },
+        "sample_adequacy": {
+          "rating": "strong",
+          "note": "Sample sizes are adequate for the effects being claimed.",
+          "citations": []
+        },
+        "mechanistic_support": {
+          "rating": "moderate",
+          "note": "A mechanism is proposed and partly supported.",
+          "citations": []
+        },
+        "clinical_relevance": {
+          "rating": "strong",
+          "note": "Connects to measured health or function outcomes in people.",
+          "citations": []
+        },
+        "consistency": {
+          "rating": "strong",
+          "note": "Findings point the same way across populations and methods.",
+          "citations": []
+        },
+        "recency": {
+          "rating": "strong",
+          "note": "Supported by work from the last decade.",
+          "citations": []
+        }
+      },
+      "overall_label": "human_observational",
+      "label_basis": "Large, consistent, recent human cohort evidence supports the association, which is why the label is observational — but causal direction is unresolved, so it goes no higher.",
+      "last_reviewed_at": "2026-09-18",
+      "record_version": 1
+    },
+    {
+      "profile_id": "prof_dysbiosis",
+      "dimensions": {
+        "species_relevance": {
+          "rating": "strong",
+          "note": "Directly measured in human tissue or human cohorts.",
+          "citations": []
+        },
+        "study_design": {
+          "rating": "limited",
+          "note": "Designs cannot separate aging from cohort, disease or selection effects.",
+          "citations": []
+        },
+        "replication": {
+          "rating": "moderate",
+          "note": "Replicated, though with variation in effect size and method.",
+          "citations": []
+        },
+        "sample_adequacy": {
+          "rating": "strong",
+          "note": "Sample sizes are adequate for the effects being claimed.",
+          "citations": []
+        },
+        "mechanistic_support": {
+          "rating": "limited",
+          "note": "Mechanism is largely inferred from correlation.",
+          "citations": []
+        },
+        "clinical_relevance": {
+          "rating": "moderate",
+          "note": "Connects to intermediate outcomes rather than function directly.",
+          "citations": []
+        },
+        "consistency": {
+          "rating": "limited",
+          "note": "Findings conflict between cohorts or methods.",
+          "citations": []
+        },
+        "recency": {
+          "rating": "strong",
+          "note": "Supported by work from the last decade.",
+          "citations": []
+        }
+      },
+      "overall_label": "human_observational",
+      "label_basis": "Human cohort evidence is recent and reasonably large, but diet and care setting confound it severely and mechanism is thin, so the label stays at observational.",
+      "last_reviewed_at": "2026-09-18",
+      "record_version": 1
+    }
+  ]
+}

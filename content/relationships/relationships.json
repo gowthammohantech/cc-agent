@@ -1,0 +1,1138 @@
+{
+  "relationships": [
+    {
+      "relationship_id": "rel_001",
+      "from_node": "genomic_instability",
+      "to_node": "dna_damage_response",
+      "relationship": "ACTIVATES",
+      "directionality": "directed",
+      "age_context": null,
+      "mechanism_note": "DNA lesions activate sensing and repair kinases.",
+      "provenance": {
+        "evidence_level": "human_established",
+        "causal_status": "established_causal",
+        "review_status": "in_review",
+        "confidence": "high",
+        "citations": [
+          {
+            "source_id": "SRC-003",
+            "supports": "direct"
+          }
+        ],
+        "uncertainty": {
+          "description": "The response itself is well characterised; what is less certain is how much cumulative damage a human tissue actually sustains in vivo.",
+          "known_conflicts": [],
+          "generalizability": "tissue_dependent"
+        },
+        "reviewed_by": null,
+        "reviewed_at": null,
+        "record_version": 1
+      }
+    },
+    {
+      "relationship_id": "rel_002",
+      "from_node": "dna_damage_response",
+      "to_node": "cellular_senescence",
+      "relationship": "CONTRIBUTES_TO",
+      "directionality": "directed",
+      "age_context": null,
+      "mechanism_note": "Unresolved damage signalling sustains a growth-arrest programme.",
+      "provenance": {
+        "evidence_level": "in_vitro",
+        "causal_status": "supported_mechanistically",
+        "review_status": "in_review",
+        "confidence": "high",
+        "citations": [
+          {
+            "source_id": "SRC-015",
+            "supports": "direct"
+          },
+          {
+            "source_id": "SRC-003",
+            "supports": "direct"
+          }
+        ],
+        "uncertainty": {
+          "description": "Persistent damage signalling drives senescence entry in culture; how much of the senescent burden in aged human tissue arises this way is unknown.",
+          "known_conflicts": [],
+          "generalizability": "tissue_dependent"
+        },
+        "reviewed_by": null,
+        "reviewed_at": null,
+        "record_version": 1
+      }
+    },
+    {
+      "relationship_id": "rel_003",
+      "from_node": "telomere_attrition",
+      "to_node": "dna_damage_response",
+      "relationship": "ACTIVATES",
+      "directionality": "directed",
+      "age_context": null,
+      "mechanism_note": "Uncapped telomeres are detected as double-strand breaks.",
+      "provenance": {
+        "evidence_level": "in_vitro",
+        "causal_status": "supported_mechanistically",
+        "review_status": "in_review",
+        "confidence": "high",
+        "citations": [
+          {
+            "source_id": "SRC-004",
+            "supports": "direct"
+          },
+          {
+            "source_id": "SRC-005",
+            "supports": "direct"
+          }
+        ],
+        "uncertainty": {
+          "description": "Critically short telomeres are recognised as damage in culture. Most human cells do not reach this limit in vivo, so the in-vivo contribution is uncertain.",
+          "known_conflicts": [],
+          "generalizability": "tissue_dependent"
+        },
+        "reviewed_by": null,
+        "reviewed_at": null,
+        "record_version": 1
+      }
+    },
+    {
+      "relationship_id": "rel_004",
+      "from_node": "cellular_senescence",
+      "to_node": "sasp_signaling",
+      "relationship": "ACTIVATES",
+      "directionality": "directed",
+      "age_context": null,
+      "mechanism_note": "Senescent cells adopt a pro-inflammatory secretory phenotype.",
+      "provenance": {
+        "evidence_level": "in_vitro",
+        "causal_status": "supported_mechanistically",
+        "review_status": "in_review",
+        "confidence": "high",
+        "citations": [
+          {
+            "source_id": "SRC-015",
+            "supports": "direct"
+          }
+        ],
+        "uncertainty": {
+          "description": "The secretory programme is well described in culture but its composition varies by cell type and inducing stimulus.",
+          "known_conflicts": [],
+          "generalizability": "tissue_dependent"
+        },
+        "reviewed_by": null,
+        "reviewed_at": null,
+        "record_version": 1
+      }
+    },
+    {
+      "relationship_id": "rel_005",
+      "from_node": "sasp_signaling",
+      "to_node": "chronic_inflammation",
+      "relationship": "CONTRIBUTES_TO",
+      "directionality": "directed",
+      "age_context": null,
+      "mechanism_note": "Secreted cytokines raise local and potentially systemic inflammatory tone.",
+      "provenance": {
+        "evidence_level": "animal",
+        "causal_status": "supported_mechanistically",
+        "review_status": "in_review",
+        "confidence": "moderate",
+        "citations": [
+          {
+            "source_id": "SRC-015",
+            "supports": "direct"
+          },
+          {
+            "source_id": "SRC-019",
+            "supports": "direct"
+          }
+        ],
+        "uncertainty": {
+          "description": "The contribution of senescent secretion to systemic inflammation in humans has not been quantified; other sources of inflammation are substantial.",
+          "known_conflicts": [
+            "Relative contribution versus adiposity, infection and other sources is unknown."
+          ],
+          "generalizability": "tissue_dependent"
+        },
+        "reviewed_by": null,
+        "reviewed_at": null,
+        "record_version": 1
+      }
+    },
+    {
+      "relationship_id": "rel_006",
+      "from_node": "chronic_inflammation",
+      "to_node": "skeletal_muscle",
+      "relationship": "DAMAGES",
+      "directionality": "directed",
+      "age_context": null,
+      "mechanism_note": "Inflammatory signalling is associated with catabolic muscle states.",
+      "provenance": {
+        "evidence_level": "human_observational",
+        "causal_status": "correlational_only",
+        "review_status": "in_review",
+        "confidence": "moderate",
+        "citations": [
+          {
+            "source_id": "SRC-019",
+            "supports": "direct"
+          },
+          {
+            "source_id": "SRC-024",
+            "supports": "direct"
+          }
+        ],
+        "uncertainty": {
+          "description": "Inflammation and muscle loss co-occur in older adults, but the direction of causation is not established and both may follow a shared cause.",
+          "known_conflicts": [
+            "Reverse causation is plausible: reduced muscle and activity may raise inflammatory tone."
+          ],
+          "generalizability": "individual_variable"
+        },
+        "reviewed_by": null,
+        "reviewed_at": null,
+        "record_version": 1
+      }
+    },
+    {
+      "relationship_id": "rel_007",
+      "from_node": "cellular_senescence",
+      "to_node": "organism",
+      "relationship": "CONTRIBUTES_TO",
+      "directionality": "directed",
+      "age_context": null,
+      "mechanism_note": "Genetic clearance of p16-positive cells delayed several age-associated changes in mice.",
+      "provenance": {
+        "evidence_level": "animal",
+        "causal_status": "supported_mechanistically",
+        "review_status": "in_review",
+        "confidence": "moderate",
+        "citations": [
+          {
+            "source_id": "SRC-013",
+            "supports": "direct"
+          },
+          {
+            "source_id": "SRC-014",
+            "supports": "direct"
+          }
+        ],
+        "uncertainty": {
+          "description": "Clearing senescent cells improved several measures in mice. Whether senescent burden limits human healthspan is untested.",
+          "known_conflicts": [
+            "Senescent cells also support wound healing and tumour suppression, so burden is not purely harmful."
+          ],
+          "generalizability": "population_average"
+        },
+        "reviewed_by": null,
+        "reviewed_at": null,
+        "record_version": 1
+      }
+    },
+    {
+      "relationship_id": "rel_008",
+      "from_node": "stem_cell_exhaustion",
+      "to_node": "skeletal_muscle",
+      "relationship": "DAMAGES",
+      "directionality": "directed",
+      "age_context": null,
+      "mechanism_note": "Reduced satellite-cell response limits repair capacity after damage.",
+      "provenance": {
+        "evidence_level": "animal",
+        "causal_status": "supported_mechanistically",
+        "review_status": "in_review",
+        "confidence": "moderate",
+        "citations": [
+          {
+            "source_id": "SRC-017",
+            "supports": "direct"
+          },
+          {
+            "source_id": "SRC-018",
+            "supports": "direct"
+          }
+        ],
+        "uncertainty": {
+          "description": "Regenerative decline is shown in animal injury models; the contribution to ordinary human muscle loss without injury is unclear.",
+          "known_conflicts": [],
+          "generalizability": "tissue_dependent"
+        },
+        "reviewed_by": null,
+        "reviewed_at": null,
+        "record_version": 1
+      }
+    },
+    {
+      "relationship_id": "rel_009",
+      "from_node": "altered_intercellular_communication",
+      "to_node": "stem_cell_exhaustion",
+      "relationship": "CONTRIBUTES_TO",
+      "directionality": "directed",
+      "age_context": null,
+      "mechanism_note": "Circulating factors from an aged systemic environment suppress progenitor activity.",
+      "provenance": {
+        "evidence_level": "animal",
+        "causal_status": "supported_mechanistically",
+        "review_status": "in_review",
+        "confidence": "moderate",
+        "citations": [
+          {
+            "source_id": "SRC-018",
+            "supports": "direct"
+          }
+        ],
+        "uncertainty": {
+          "description": "Heterochronic parabiosis shows systemic factors alter progenitor function in mice; the responsible factors are not fully identified and there is no human counterpart.",
+          "known_conflicts": [],
+          "generalizability": "tissue_dependent"
+        },
+        "reviewed_by": null,
+        "reviewed_at": null,
+        "record_version": 1
+      }
+    },
+    {
+      "relationship_id": "rel_010",
+      "from_node": "stem_cell_exhaustion",
+      "to_node": "bone_marrow",
+      "relationship": "DAMAGES",
+      "directionality": "directed",
+      "age_context": null,
+      "mechanism_note": "Reduced per-cell regenerative output with lineage bias.",
+      "provenance": {
+        "evidence_level": "animal",
+        "causal_status": "supported_mechanistically",
+        "review_status": "in_review",
+        "confidence": "moderate",
+        "citations": [
+          {
+            "source_id": "SRC-017",
+            "supports": "direct"
+          }
+        ],
+        "uncertainty": {
+          "description": "Human evidence is largely correlative, based on clonal composition rather than direct functional assay.",
+          "known_conflicts": [],
+          "generalizability": "tissue_dependent"
+        },
+        "reviewed_by": null,
+        "reviewed_at": null,
+        "record_version": 1
+      }
+    },
+    {
+      "relationship_id": "rel_011",
+      "from_node": "deregulated_nutrient_sensing",
+      "to_node": "mtor_signaling",
+      "relationship": "ACTIVATES",
+      "directionality": "directed",
+      "age_context": null,
+      "mechanism_note": "Nutrient abundance sustains mTOR signalling.",
+      "provenance": {
+        "evidence_level": "animal",
+        "causal_status": "supported_mechanistically",
+        "review_status": "in_review",
+        "confidence": "moderate",
+        "citations": [
+          {
+            "source_id": "SRC-010",
+            "supports": "direct"
+          }
+        ],
+        "uncertainty": {
+          "description": "Pathway activity in aged human tissue is not systematically measured, so the human version of this relationship is inferred.",
+          "known_conflicts": [],
+          "generalizability": "tissue_dependent"
+        },
+        "reviewed_by": null,
+        "reviewed_at": null,
+        "record_version": 1
+      }
+    },
+    {
+      "relationship_id": "rel_012",
+      "from_node": "mtor_signaling",
+      "to_node": "autophagy_pathway",
+      "relationship": "INHIBITS",
+      "directionality": "directed",
+      "age_context": null,
+      "mechanism_note": "Active mTOR suppresses autophagy initiation.",
+      "provenance": {
+        "evidence_level": "in_vitro",
+        "causal_status": "established_causal",
+        "review_status": "in_review",
+        "confidence": "high",
+        "citations": [
+          {
+            "source_id": "SRC-009",
+            "supports": "direct"
+          },
+          {
+            "source_id": "SRC-010",
+            "supports": "direct"
+          }
+        ],
+        "uncertainty": {
+          "description": "The inhibitory relationship is well established biochemically; its magnitude in aged human tissue is unmeasured.",
+          "known_conflicts": [],
+          "generalizability": "tissue_dependent"
+        },
+        "reviewed_by": null,
+        "reviewed_at": null,
+        "record_version": 1
+      }
+    },
+    {
+      "relationship_id": "rel_013",
+      "from_node": "ampk_signaling",
+      "to_node": "autophagy_pathway",
+      "relationship": "ACTIVATES",
+      "directionality": "directed",
+      "age_context": null,
+      "mechanism_note": "Energy stress signalling promotes autophagy initiation.",
+      "provenance": {
+        "evidence_level": "in_vitro",
+        "causal_status": "established_causal",
+        "review_status": "in_review",
+        "confidence": "high",
+        "citations": [
+          {
+            "source_id": "SRC-010",
+            "supports": "direct"
+          },
+          {
+            "source_id": "SRC-009",
+            "supports": "direct"
+          }
+        ],
+        "uncertainty": {
+          "description": "Established in cells; the degree to which this is modifiable in humans at tissue level is unclear.",
+          "known_conflicts": [],
+          "generalizability": "tissue_dependent"
+        },
+        "reviewed_by": null,
+        "reviewed_at": null,
+        "record_version": 1
+      }
+    },
+    {
+      "relationship_id": "rel_014",
+      "from_node": "autophagy_pathway",
+      "to_node": "loss_of_proteostasis",
+      "relationship": "REPAIRS",
+      "directionality": "directed",
+      "age_context": null,
+      "mechanism_note": "Autophagic degradation removes aggregated and damaged proteins.",
+      "provenance": {
+        "evidence_level": "animal",
+        "causal_status": "supported_mechanistically",
+        "review_status": "in_review",
+        "confidence": "moderate",
+        "citations": [
+          {
+            "source_id": "SRC-009",
+            "supports": "direct"
+          },
+          {
+            "source_id": "SRC-008",
+            "supports": "direct"
+          }
+        ],
+        "uncertainty": {
+          "description": "Autophagic clearance supports proteostasis, but flux cannot be measured in living human tissue, so the human contribution is inferred.",
+          "known_conflicts": [],
+          "generalizability": "tissue_dependent"
+        },
+        "reviewed_by": null,
+        "reviewed_at": null,
+        "record_version": 1
+      }
+    },
+    {
+      "relationship_id": "rel_015",
+      "from_node": "disabled_macroautophagy",
+      "to_node": "loss_of_proteostasis",
+      "relationship": "CONTRIBUTES_TO",
+      "directionality": "directed",
+      "age_context": null,
+      "mechanism_note": "Reduced clearance capacity allows damaged proteins to accumulate.",
+      "provenance": {
+        "evidence_level": "animal",
+        "causal_status": "supported_mechanistically",
+        "review_status": "in_review",
+        "confidence": "moderate",
+        "citations": [
+          {
+            "source_id": "SRC-009",
+            "supports": "direct"
+          },
+          {
+            "source_id": "SRC-008",
+            "supports": "direct"
+          }
+        ],
+        "uncertainty": {
+          "description": "Mainly model-organism evidence; whether restoring autophagy in humans improves proteostasis is untested.",
+          "known_conflicts": [],
+          "generalizability": "tissue_dependent"
+        },
+        "reviewed_by": null,
+        "reviewed_at": null,
+        "record_version": 1
+      }
+    },
+    {
+      "relationship_id": "rel_016",
+      "from_node": "loss_of_proteostasis",
+      "to_node": "neuron",
+      "relationship": "DAMAGES",
+      "directionality": "directed",
+      "age_context": null,
+      "mechanism_note": "Accumulated misfolded protein burdens long-lived post-mitotic cells.",
+      "provenance": {
+        "evidence_level": "human_observational",
+        "causal_status": "proposed",
+        "review_status": "in_review",
+        "confidence": "low",
+        "citations": [
+          {
+            "source_id": "SRC-008",
+            "supports": "direct"
+          }
+        ],
+        "uncertainty": {
+          "description": "Post-mortem markers cannot establish flux, and whether impaired clearance causes neuronal dysfunction or follows it is unresolved.",
+          "known_conflicts": [],
+          "generalizability": "tissue_dependent"
+        },
+        "reviewed_by": null,
+        "reviewed_at": null,
+        "record_version": 1
+      }
+    },
+    {
+      "relationship_id": "rel_017",
+      "from_node": "loss_of_proteostasis",
+      "to_node": "eyes",
+      "relationship": "DAMAGES",
+      "directionality": "directed",
+      "age_context": null,
+      "mechanism_note": "Crystallin damage accumulates because lens proteins are not turned over.",
+      "provenance": {
+        "evidence_level": "human_established",
+        "causal_status": "supported_mechanistically",
+        "review_status": "in_review",
+        "confidence": "high",
+        "citations": [
+          {
+            "source_id": "SRC-008",
+            "supports": "direct"
+          }
+        ],
+        "uncertainty": {
+          "description": "The lens is atypical because its proteins are never replaced, so this relationship may not generalise to other tissues.",
+          "known_conflicts": [],
+          "generalizability": "tissue_dependent"
+        },
+        "reviewed_by": null,
+        "reviewed_at": null,
+        "record_version": 1
+      }
+    },
+    {
+      "relationship_id": "rel_018",
+      "from_node": "mitochondrial_dysfunction",
+      "to_node": "cardiomyocyte",
+      "relationship": "DAMAGES",
+      "directionality": "directed",
+      "age_context": null,
+      "mechanism_note": "Reduced mitochondrial quality control in a highly energy-dependent post-mitotic cell.",
+      "provenance": {
+        "evidence_level": "animal",
+        "causal_status": "proposed",
+        "review_status": "in_review",
+        "confidence": "low",
+        "citations": [
+          {
+            "source_id": "SRC-012",
+            "supports": "direct"
+          }
+        ],
+        "uncertainty": {
+          "description": "Whether mitochondrial change drives cardiac decline or accompanies it is unresolved, and direction of change is tissue-dependent.",
+          "known_conflicts": [
+            "The original oxidative-damage account is not supported in its simple form."
+          ],
+          "generalizability": "tissue_dependent"
+        },
+        "reviewed_by": null,
+        "reviewed_at": null,
+        "record_version": 1
+      }
+    },
+    {
+      "relationship_id": "rel_019",
+      "from_node": "mitochondrial_dysfunction",
+      "to_node": "skeletal_muscle",
+      "relationship": "ASSOCIATED_WITH",
+      "directionality": "directed",
+      "age_context": null,
+      "mechanism_note": "Mitochondrial measures and muscle mass covary with age.",
+      "provenance": {
+        "evidence_level": "human_observational",
+        "causal_status": "correlational_only",
+        "review_status": "in_review",
+        "confidence": "moderate",
+        "citations": [
+          {
+            "source_id": "SRC-012",
+            "supports": "direct"
+          },
+          {
+            "source_id": "SRC-025",
+            "supports": "direct"
+          }
+        ],
+        "uncertainty": {
+          "description": "This is an association only. Physical activity affects both mitochondrial measures and muscle mass, and is rarely controlled.",
+          "known_conflicts": ["Activity level is a shared cause that is seldom measured."],
+          "generalizability": "individual_variable"
+        },
+        "reviewed_by": null,
+        "reviewed_at": null,
+        "record_version": 1
+      }
+    },
+    {
+      "relationship_id": "rel_020",
+      "from_node": "mitochondrial_dysfunction",
+      "to_node": "mitochondria",
+      "relationship": "ASSOCIATED_WITH",
+      "directionality": "directed",
+      "age_context": null,
+      "mechanism_note": "The hallmark is defined over the organelle whose state it describes.",
+      "provenance": {
+        "evidence_level": "human_observational",
+        "causal_status": "correlational_only",
+        "review_status": "in_review",
+        "confidence": "low",
+        "citations": [
+          {
+            "source_id": "SRC-012",
+            "supports": "direct"
+          }
+        ],
+        "uncertainty": {
+          "description": "Direction of change differs by tissue, so a single organism-level statement is not supportable.",
+          "known_conflicts": [],
+          "generalizability": "tissue_dependent"
+        },
+        "reviewed_by": null,
+        "reviewed_at": null,
+        "record_version": 1
+      }
+    },
+    {
+      "relationship_id": "rel_021",
+      "from_node": "epigenetic_alterations",
+      "to_node": "dna_methylation_age",
+      "relationship": "ASSOCIATED_WITH",
+      "directionality": "directed",
+      "age_context": null,
+      "mechanism_note": "Methylation patterns at selected sites change reproducibly with age.",
+      "provenance": {
+        "evidence_level": "human_established",
+        "causal_status": "correlational_only",
+        "review_status": "in_review",
+        "confidence": "high",
+        "citations": [
+          {
+            "source_id": "SRC-006",
+            "supports": "direct"
+          }
+        ],
+        "uncertainty": {
+          "description": "The predictor tracks chronological age by construction. This edge is explicitly an association and must never be read as the epigenome causing the clock reading.",
+          "known_conflicts": [
+            "Epigenetic age is widely misread as a causal measure of biological condition."
+          ],
+          "generalizability": "population_average"
+        },
+        "reviewed_by": null,
+        "reviewed_at": null,
+        "record_version": 1
+      }
+    },
+    {
+      "relationship_id": "rel_022",
+      "from_node": "epigenetic_alterations",
+      "to_node": "stem_cell_exhaustion",
+      "relationship": "CONTRIBUTES_TO",
+      "directionality": "directed",
+      "age_context": null,
+      "mechanism_note": "Age-associated regulatory changes may constrain progenitor function.",
+      "provenance": {
+        "evidence_level": "animal",
+        "causal_status": "proposed",
+        "review_status": "in_review",
+        "confidence": "low",
+        "citations": [
+          {
+            "source_id": "SRC-007",
+            "supports": "direct"
+          },
+          {
+            "source_id": "SRC-017",
+            "supports": "direct"
+          }
+        ],
+        "uncertainty": {
+          "description": "Proposed on the basis of reprogramming experiments in animals; the direction of causation in normal human aging is not established.",
+          "known_conflicts": [],
+          "generalizability": "tissue_dependent"
+        },
+        "reviewed_by": null,
+        "reviewed_at": null,
+        "record_version": 1
+      }
+    },
+    {
+      "relationship_id": "rel_023",
+      "from_node": "chronic_inflammation",
+      "to_node": "immune_system",
+      "relationship": "DAMAGES",
+      "directionality": "directed",
+      "age_context": null,
+      "mechanism_note": "Persistent inflammatory signalling accompanies immune remodelling.",
+      "provenance": {
+        "evidence_level": "human_observational",
+        "causal_status": "correlational_only",
+        "review_status": "in_review",
+        "confidence": "moderate",
+        "citations": [
+          {
+            "source_id": "SRC-019",
+            "supports": "direct"
+          },
+          {
+            "source_id": "SRC-021",
+            "supports": "direct"
+          }
+        ],
+        "uncertainty": {
+          "description": "Association is consistent but causal direction is unresolved; inflammatory tone also responds to infection history and adiposity.",
+          "known_conflicts": [],
+          "generalizability": "individual_variable"
+        },
+        "reviewed_by": null,
+        "reviewed_at": null,
+        "record_version": 1
+      }
+    },
+    {
+      "relationship_id": "rel_024",
+      "from_node": "thymus",
+      "to_node": "t_cell",
+      "relationship": "REGENERATES",
+      "directionality": "directed",
+      "age_context": null,
+      "mechanism_note": "Thymic output supplies the naive T-cell repertoire.",
+      "provenance": {
+        "evidence_level": "human_established",
+        "causal_status": "established_causal",
+        "review_status": "in_review",
+        "confidence": "high",
+        "citations": [
+          {
+            "source_id": "SRC-021",
+            "supports": "direct"
+          }
+        ],
+        "uncertainty": {
+          "description": "The thymus produces naive T cells; what is uncertain is how much peripheral maintenance compensates for declining output.",
+          "known_conflicts": [],
+          "generalizability": "population_average"
+        },
+        "reviewed_by": null,
+        "reviewed_at": null,
+        "record_version": 1
+      }
+    },
+    {
+      "relationship_id": "rel_025",
+      "from_node": "chronic_inflammation",
+      "to_node": "arteries",
+      "relationship": "DAMAGES",
+      "directionality": "directed",
+      "age_context": null,
+      "mechanism_note": "Inflammatory signalling contributes to vascular wall remodelling.",
+      "provenance": {
+        "evidence_level": "human_observational",
+        "causal_status": "proposed",
+        "review_status": "in_review",
+        "confidence": "moderate",
+        "citations": [
+          {
+            "source_id": "SRC-026",
+            "supports": "direct"
+          },
+          {
+            "source_id": "SRC-019",
+            "supports": "direct"
+          }
+        ],
+        "uncertainty": {
+          "description": "Inflammation and arterial stiffening co-occur, but distinguishing this from subclinical atherosclerosis is difficult.",
+          "known_conflicts": [],
+          "generalizability": "population_average"
+        },
+        "reviewed_by": null,
+        "reviewed_at": null,
+        "record_version": 1
+      }
+    },
+    {
+      "relationship_id": "rel_026",
+      "from_node": "dysbiosis",
+      "to_node": "chronic_inflammation",
+      "relationship": "ASSOCIATED_WITH",
+      "directionality": "directed",
+      "age_context": null,
+      "mechanism_note": "Microbiome composition and inflammatory markers covary in older cohorts.",
+      "provenance": {
+        "evidence_level": "human_observational",
+        "causal_status": "correlational_only",
+        "review_status": "in_review",
+        "confidence": "low",
+        "citations": [
+          {
+            "source_id": "SRC-022",
+            "supports": "direct"
+          },
+          {
+            "source_id": "SRC-023",
+            "supports": "direct"
+          }
+        ],
+        "uncertainty": {
+          "description": "Association only. Diet, medication and care setting confound both variables severely, and no causal claim in humans is supported.",
+          "known_conflicts": [
+            "Residential setting explains much of the microbiome difference in elderly cohorts."
+          ],
+          "generalizability": "individual_variable"
+        },
+        "reviewed_by": null,
+        "reviewed_at": null,
+        "record_version": 1
+      }
+    },
+    {
+      "relationship_id": "rel_027",
+      "from_node": "dysbiosis",
+      "to_node": "gut_epithelium",
+      "relationship": "ASSOCIATED_WITH",
+      "directionality": "directed",
+      "age_context": null,
+      "mechanism_note": "Microbial ecology and epithelial barrier state covary.",
+      "provenance": {
+        "evidence_level": "human_observational",
+        "causal_status": "correlational_only",
+        "review_status": "in_review",
+        "confidence": "low",
+        "citations": [
+          {
+            "source_id": "SRC-022",
+            "supports": "direct"
+          }
+        ],
+        "uncertainty": {
+          "description": "Barrier function and microbial composition are related, but the human evidence is cross-sectional and confounded.",
+          "known_conflicts": [],
+          "generalizability": "individual_variable"
+        },
+        "reviewed_by": null,
+        "reviewed_at": null,
+        "record_version": 1
+      }
+    },
+    {
+      "relationship_id": "rel_028",
+      "from_node": "skeletal_muscle",
+      "to_node": "organism",
+      "relationship": "CONTRIBUTES_TO",
+      "directionality": "directed",
+      "age_context": null,
+      "mechanism_note": "Muscle strength underlies mobility and functional independence.",
+      "provenance": {
+        "evidence_level": "human_observational",
+        "causal_status": "supported_mechanistically",
+        "review_status": "in_review",
+        "confidence": "moderate",
+        "citations": [
+          {
+            "source_id": "SRC-024",
+            "supports": "direct"
+          }
+        ],
+        "uncertainty": {
+          "description": "Muscle strength relates to functional outcomes, though the clinical thresholds defining impairment are contested.",
+          "known_conflicts": [],
+          "generalizability": "population_average"
+        },
+        "reviewed_by": null,
+        "reviewed_at": null,
+        "record_version": 1
+      }
+    },
+    {
+      "relationship_id": "rel_029",
+      "from_node": "arteries",
+      "to_node": "heart",
+      "relationship": "DAMAGES",
+      "directionality": "directed",
+      "age_context": null,
+      "mechanism_note": "Increased arterial stiffness raises systolic load on the left ventricle.",
+      "provenance": {
+        "evidence_level": "human_established",
+        "causal_status": "supported_mechanistically",
+        "review_status": "in_review",
+        "confidence": "high",
+        "citations": [
+          {
+            "source_id": "SRC-026",
+            "supports": "direct"
+          }
+        ],
+        "uncertainty": {
+          "description": "The mechanical relationship is well established; the age at which it becomes functionally significant varies widely.",
+          "known_conflicts": [],
+          "generalizability": "population_average"
+        },
+        "reviewed_by": null,
+        "reviewed_at": null,
+        "record_version": 1
+      }
+    },
+    {
+      "relationship_id": "rel_030",
+      "from_node": "bone",
+      "to_node": "organism",
+      "relationship": "CONTRIBUTES_TO",
+      "directionality": "directed",
+      "age_context": null,
+      "mechanism_note": "Bone density underlies structural integrity and fracture resistance.",
+      "provenance": {
+        "evidence_level": "human_established",
+        "causal_status": "supported_mechanistically",
+        "review_status": "in_review",
+        "confidence": "high",
+        "citations": [
+          {
+            "source_id": "SRC-002",
+            "supports": "direct"
+          }
+        ],
+        "uncertainty": {
+          "description": "Bone density relates to fracture risk, but this seed corpus does not stratify by sex, which materially affects the relationship.",
+          "known_conflicts": [],
+          "generalizability": "population_average"
+        },
+        "reviewed_by": null,
+        "reviewed_at": null,
+        "record_version": 1
+      }
+    },
+    {
+      "relationship_id": "rel_031",
+      "from_node": "genomic_instability",
+      "to_node": "organism",
+      "relationship": "CONTRIBUTES_TO",
+      "directionality": "directed",
+      "age_context": null,
+      "mechanism_note": "Accumulated somatic damage is proposed to reduce tissue functional capacity.",
+      "provenance": {
+        "evidence_level": "human_observational",
+        "causal_status": "proposed",
+        "review_status": "in_review",
+        "confidence": "low",
+        "citations": [
+          {
+            "source_id": "SRC-003",
+            "supports": "direct"
+          },
+          {
+            "source_id": "SRC-001",
+            "supports": "direct"
+          }
+        ],
+        "uncertainty": {
+          "description": "Whether somatic mutation burden drives organism-level decline or largely marks it is one of the central unresolved questions in the field.",
+          "known_conflicts": ["Cause versus consequence is unresolved."],
+          "generalizability": "tissue_dependent"
+        },
+        "reviewed_by": null,
+        "reviewed_at": null,
+        "record_version": 1
+      }
+    },
+    {
+      "relationship_id": "rel_032",
+      "from_node": "cellular_senescence",
+      "to_node": "skin",
+      "relationship": "DAMAGES",
+      "directionality": "directed",
+      "age_context": null,
+      "mechanism_note": "Senescent cell burden affects dermal repair and matrix maintenance.",
+      "provenance": {
+        "evidence_level": "animal",
+        "causal_status": "supported_mechanistically",
+        "review_status": "in_review",
+        "confidence": "moderate",
+        "citations": [
+          {
+            "source_id": "SRC-014",
+            "supports": "direct"
+          },
+          {
+            "source_id": "SRC-002",
+            "supports": "direct"
+          }
+        ],
+        "uncertainty": {
+          "description": "Animal clearance work supports a role; human skin data are confounded by cumulative ultraviolet exposure.",
+          "known_conflicts": [],
+          "generalizability": "tissue_dependent"
+        },
+        "reviewed_by": null,
+        "reviewed_at": null,
+        "record_version": 1
+      }
+    },
+    {
+      "relationship_id": "rel_033",
+      "from_node": "cellular_senescence",
+      "to_node": "kidneys",
+      "relationship": "CONTRIBUTES_TO",
+      "directionality": "directed",
+      "age_context": null,
+      "mechanism_note": "Senescent cell accumulation is proposed to contribute to nephron loss.",
+      "provenance": {
+        "evidence_level": "animal",
+        "causal_status": "proposed",
+        "review_status": "in_review",
+        "confidence": "low",
+        "citations": [
+          {
+            "source_id": "SRC-027",
+            "supports": "direct"
+          },
+          {
+            "source_id": "SRC-014",
+            "supports": "direct"
+          }
+        ],
+        "uncertainty": {
+          "description": "Proposed from animal work; human renal senescence burden and its functional consequence are not established.",
+          "known_conflicts": [],
+          "generalizability": "tissue_dependent"
+        },
+        "reviewed_by": null,
+        "reviewed_at": null,
+        "record_version": 1
+      }
+    },
+    {
+      "relationship_id": "rel_034",
+      "from_node": "cellular_senescence",
+      "to_node": "lungs",
+      "relationship": "CONTRIBUTES_TO",
+      "directionality": "directed",
+      "age_context": null,
+      "mechanism_note": "Senescent cells are proposed to contribute to fibrotic and structural lung change.",
+      "provenance": {
+        "evidence_level": "animal",
+        "causal_status": "proposed",
+        "review_status": "in_review",
+        "confidence": "low",
+        "citations": [
+          {
+            "source_id": "SRC-016",
+            "supports": "direct"
+          },
+          {
+            "source_id": "SRC-015",
+            "supports": "direct"
+          }
+        ],
+        "uncertainty": {
+          "description": "A small open-label human pilot targeted senescence in pulmonary fibrosis; that is a disease context and does not establish a role in normal lung aging.",
+          "known_conflicts": [
+            "The human evidence comes from a disease population, not normal aging."
+          ],
+          "generalizability": "tissue_dependent"
+        },
+        "reviewed_by": null,
+        "reviewed_at": null,
+        "record_version": 1
+      }
+    },
+    {
+      "relationship_id": "rel_035",
+      "from_node": "brain",
+      "to_node": "organism",
+      "relationship": "CONTRIBUTES_TO",
+      "directionality": "directed",
+      "age_context": null,
+      "mechanism_note": "Brain structural integrity underlies cognitive function.",
+      "provenance": {
+        "evidence_level": "human_observational",
+        "causal_status": "supported_mechanistically",
+        "review_status": "in_review",
+        "confidence": "moderate",
+        "citations": [
+          {
+            "source_id": "SRC-028",
+            "supports": "direct"
+          }
+        ],
+        "uncertainty": {
+          "description": "Brain structural change relates to cognitive function, but individual variation is very large and preclinical disease confounds the relationship.",
+          "known_conflicts": [],
+          "generalizability": "individual_variable"
+        },
+        "reviewed_by": null,
+        "reviewed_at": null,
+        "record_version": 1
+      }
+    },
+    {
+      "relationship_id": "rel_036",
+      "from_node": "kidneys",
+      "to_node": "organism",
+      "relationship": "CONTRIBUTES_TO",
+      "directionality": "directed",
+      "age_context": null,
+      "mechanism_note": "Renal filtration capacity underlies clearance and fluid regulation.",
+      "provenance": {
+        "evidence_level": "human_observational",
+        "causal_status": "supported_mechanistically",
+        "review_status": "in_review",
+        "confidence": "moderate",
+        "citations": [
+          {
+            "source_id": "SRC-027",
+            "supports": "direct"
+          }
+        ],
+        "uncertainty": {
+          "description": "Filtration capacity relates to clearance of drugs and waste; the boundary with early disease is contested.",
+          "known_conflicts": [],
+          "generalizability": "population_average"
+        },
+        "reviewed_by": null,
+        "reviewed_at": null,
+        "record_version": 1
+      }
+    }
+  ]
+}

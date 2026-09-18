@@ -1,0 +1,960 @@
+{
+  "observations": [
+    {
+      "observation_id": "obs_001",
+      "entity_id": "organism",
+      "hallmark_ids": [],
+      "age_min": 0,
+      "age_max": 20,
+      "observation": "Height, organ size and most physiological capacities increase through childhood and adolescence toward a lifetime peak. These are developmental changes and are not age-associated deterioration.",
+      "trajectory_type": "developmental_change",
+      "change_class": "development",
+      "population_id": "general_adult",
+      "effect": {
+        "kind": "qualitative",
+        "direction": "increases",
+        "statement": "Capacity rises toward a peak reached in early adulthood."
+      },
+      "provenance": {
+        "evidence_level": "human_established",
+        "causal_status": "established_causal",
+        "review_status": "in_review",
+        "confidence": "high",
+        "citations": [
+          {
+            "source_id": "SRC-002",
+            "supports": "direct"
+          }
+        ],
+        "uncertainty": {
+          "description": "Timing of peak capacity varies by system and by individual, and differs between sexes for several measures.",
+          "known_conflicts": [],
+          "generalizability": "population_average"
+        },
+        "reviewed_by": null,
+        "reviewed_at": null,
+        "record_version": 1
+      }
+    },
+    {
+      "observation_id": "obs_002",
+      "entity_id": "thymus",
+      "hallmark_ids": ["stem_cell_exhaustion", "cellular_senescence"],
+      "age_min": 1,
+      "age_max": 90,
+      "observation": "The thymus begins involuting from early childhood, long before any other system shows age-associated decline, progressively reducing output of new naive T cells.",
+      "trajectory_type": "population_association",
+      "change_class": "age_associated_change",
+      "population_id": "general_adult",
+      "effect": {
+        "kind": "qualitative",
+        "direction": "decreases",
+        "statement": "Thymic mass and naive T-cell output decline progressively from early life."
+      },
+      "provenance": {
+        "evidence_level": "human_observational",
+        "causal_status": "supported_mechanistically",
+        "review_status": "in_review",
+        "confidence": "moderate",
+        "citations": [
+          {
+            "source_id": "SRC-021",
+            "supports": "direct"
+          }
+        ],
+        "uncertainty": {
+          "description": "The functional consequence of involution is debated, since peripheral T-cell maintenance partly compensates. Onset in early childhood makes this hard to classify as straightforwardly age-associated.",
+          "known_conflicts": [
+            "Thymic involution begins during development, so it does not fit neatly into either the developmental or the aging category."
+          ],
+          "generalizability": "population_average"
+        },
+        "reviewed_by": null,
+        "reviewed_at": null,
+        "record_version": 1
+      }
+    },
+    {
+      "observation_id": "obs_003",
+      "entity_id": "skeletal_muscle",
+      "hallmark_ids": ["stem_cell_exhaustion", "mitochondrial_dysfunction"],
+      "age_min": 40,
+      "age_max": 90,
+      "observation": "Skeletal muscle mass declines with age in adult populations, with the decline more pronounced in the lower body than the upper body.",
+      "trajectory_type": "cross_sectional",
+      "change_class": "age_associated_change",
+      "population_id": "general_adult",
+      "effect": {
+        "kind": "qualitative",
+        "direction": "decreases",
+        "statement": "Muscle mass is lower on population average at older ages, with regional differences."
+      },
+      "provenance": {
+        "evidence_level": "human_observational",
+        "causal_status": "correlational_only",
+        "review_status": "in_review",
+        "confidence": "moderate",
+        "citations": [
+          {
+            "source_id": "SRC-025",
+            "supports": "direct"
+          }
+        ],
+        "uncertainty": {
+          "description": "Cross-sectional data cannot separate aging from cohort effects, and physical activity is a large uncontrolled contributor. Individual variation is wide.",
+          "known_conflicts": [],
+          "generalizability": "individual_variable"
+        },
+        "reviewed_by": null,
+        "reviewed_at": null,
+        "record_version": 1
+      }
+    },
+    {
+      "observation_id": "obs_004",
+      "entity_id": "skeletal_muscle",
+      "hallmark_ids": ["stem_cell_exhaustion"],
+      "age_min": 50,
+      "age_max": 90,
+      "observation": "Muscle strength declines faster than muscle mass with age, so strength loss is not explained by mass loss alone. Current sarcopenia definitions therefore centre on strength rather than mass.",
+      "trajectory_type": "cross_sectional",
+      "change_class": "age_associated_change",
+      "population_id": "general_adult",
+      "effect": {
+        "kind": "qualitative",
+        "direction": "decreases",
+        "statement": "Strength declines disproportionately relative to mass."
+      },
+      "provenance": {
+        "evidence_level": "human_observational",
+        "causal_status": "supported_mechanistically",
+        "review_status": "in_review",
+        "confidence": "moderate",
+        "citations": [
+          {
+            "source_id": "SRC-024",
+            "supports": "direct"
+          }
+        ],
+        "uncertainty": {
+          "description": "Sarcopenia is a clinical condition with contested cut-points, and is distinct from normal age-associated muscle change. Where the boundary lies is a definitional choice, not a measurement.",
+          "known_conflicts": [
+            "Diagnostic thresholds differ between working groups and populations."
+          ],
+          "generalizability": "population_average"
+        },
+        "reviewed_by": null,
+        "reviewed_at": null,
+        "record_version": 1
+      }
+    },
+    {
+      "observation_id": "obs_005",
+      "entity_id": "satellite_cell",
+      "hallmark_ids": ["stem_cell_exhaustion"],
+      "age_min": 50,
+      "age_max": 90,
+      "observation": "The regenerative response of muscle satellite cells to injury is reduced in aged tissue, and is partly restored in animal models by exposure to a young systemic environment.",
+      "trajectory_type": "mechanistic_inference",
+      "change_class": "age_associated_change",
+      "population_id": "general_adult",
+      "effect": {
+        "kind": "not_quantified",
+        "direction": "decreases",
+        "reason": "Human satellite-cell function is measured by heterogeneous assays that do not yield a comparable population figure."
+      },
+      "provenance": {
+        "evidence_level": "animal",
+        "causal_status": "supported_mechanistically",
+        "review_status": "in_review",
+        "confidence": "moderate",
+        "citations": [
+          {
+            "source_id": "SRC-018",
+            "supports": "direct"
+          },
+          {
+            "source_id": "SRC-017",
+            "supports": "direct"
+          }
+        ],
+        "uncertainty": {
+          "description": "The restoration evidence comes from parabiosis in mice, which has no human counterpart, and the responsible circulating factors are not fully identified.",
+          "known_conflicts": [],
+          "generalizability": "tissue_dependent"
+        },
+        "reviewed_by": null,
+        "reviewed_at": null,
+        "record_version": 1
+      }
+    },
+    {
+      "observation_id": "obs_006",
+      "entity_id": "bone",
+      "hallmark_ids": ["stem_cell_exhaustion", "chronic_inflammation"],
+      "age_min": 35,
+      "age_max": 90,
+      "observation": "Bone remodelling balance shifts with age such that resorption exceeds formation, reducing bone mineral density. The change is substantially faster in women in the years following menopause.",
+      "trajectory_type": "population_association",
+      "change_class": "age_associated_change",
+      "population_id": "general_adult",
+      "effect": {
+        "kind": "qualitative",
+        "direction": "decreases",
+        "statement": "Bone mineral density declines, with a sex-specific acceleration after menopause."
+      },
+      "provenance": {
+        "evidence_level": "human_established",
+        "causal_status": "supported_mechanistically",
+        "review_status": "in_review",
+        "confidence": "high",
+        "citations": [
+          {
+            "source_id": "SRC-002",
+            "supports": "direct"
+          }
+        ],
+        "uncertainty": {
+          "description": "This seed corpus uses a single mixed-sex population, which obscures a difference that is large and well documented. Sex-stratified content is needed before this record should be used for comparison.",
+          "known_conflicts": [
+            "Mixed-sex population framing is inadequate for a change this strongly sex-dependent."
+          ],
+          "generalizability": "population_average"
+        },
+        "reviewed_by": null,
+        "reviewed_at": null,
+        "record_version": 1
+      }
+    },
+    {
+      "observation_id": "obs_007",
+      "entity_id": "arteries",
+      "hallmark_ids": ["chronic_inflammation", "cellular_senescence"],
+      "age_min": 30,
+      "age_max": 90,
+      "observation": "Large arteries stiffen progressively with age as elastin fragments and collagen content rises, increasing pulse wave velocity and systolic load on the heart.",
+      "trajectory_type": "population_association",
+      "change_class": "age_associated_change",
+      "population_id": "general_adult",
+      "effect": {
+        "kind": "qualitative",
+        "direction": "increases",
+        "statement": "Arterial stiffness increases across adult ages."
+      },
+      "provenance": {
+        "evidence_level": "human_established",
+        "causal_status": "supported_mechanistically",
+        "review_status": "in_review",
+        "confidence": "high",
+        "citations": [
+          {
+            "source_id": "SRC-026",
+            "supports": "direct"
+          }
+        ],
+        "uncertainty": {
+          "description": "Separating normal arterial aging from subclinical atherosclerosis is difficult, and the cohorts are not globally representative.",
+          "known_conflicts": [],
+          "generalizability": "population_average"
+        },
+        "reviewed_by": null,
+        "reviewed_at": null,
+        "record_version": 1
+      }
+    },
+    {
+      "observation_id": "obs_008",
+      "entity_id": "heart",
+      "hallmark_ids": ["mitochondrial_dysfunction"],
+      "age_min": 40,
+      "age_max": 90,
+      "observation": "The aging heart shows increased left ventricular wall thickness and slowed early diastolic filling, with maximal heart rate under exertion declining.",
+      "trajectory_type": "population_association",
+      "change_class": "age_associated_change",
+      "population_id": "general_adult",
+      "effect": {
+        "kind": "qualitative",
+        "direction": "changes_qualitatively",
+        "statement": "Filling dynamics and maximal rate change; resting output is often preserved."
+      },
+      "provenance": {
+        "evidence_level": "human_observational",
+        "causal_status": "supported_mechanistically",
+        "review_status": "in_review",
+        "confidence": "moderate",
+        "citations": [
+          {
+            "source_id": "SRC-026",
+            "supports": "direct"
+          }
+        ],
+        "uncertainty": {
+          "description": "Resting cardiac function is often well preserved, so these changes appear mainly as reduced reserve under stress rather than as resting impairment.",
+          "known_conflicts": [],
+          "generalizability": "population_average"
+        },
+        "reviewed_by": null,
+        "reviewed_at": null,
+        "record_version": 1
+      }
+    },
+    {
+      "observation_id": "obs_009",
+      "entity_id": "cardiomyocyte",
+      "hallmark_ids": ["mitochondrial_dysfunction"],
+      "age_min": 50,
+      "age_max": 90,
+      "observation": "Cardiomyocytes are largely post-mitotic and accumulate damaged mitochondria with age, with reduced mitochondrial turnover capacity.",
+      "trajectory_type": "mechanistic_inference",
+      "change_class": "age_associated_change",
+      "population_id": "general_adult",
+      "effect": {
+        "kind": "not_quantified",
+        "direction": "increases",
+        "reason": "Mitochondrial damage burden in living human myocardium is not measurable by any routine method."
+      },
+      "provenance": {
+        "evidence_level": "animal",
+        "causal_status": "supported_mechanistically",
+        "review_status": "in_review",
+        "confidence": "low",
+        "citations": [
+          {
+            "source_id": "SRC-012",
+            "supports": "direct"
+          }
+        ],
+        "uncertainty": {
+          "description": "Most evidence is from animal tissue and post-mortem human samples. Whether mitochondrial change drives cardiac functional decline or accompanies it is unresolved.",
+          "known_conflicts": [],
+          "generalizability": "tissue_dependent"
+        },
+        "reviewed_by": null,
+        "reviewed_at": null,
+        "record_version": 1
+      }
+    },
+    {
+      "observation_id": "obs_010",
+      "entity_id": "t_cell",
+      "hallmark_ids": ["chronic_inflammation", "cellular_senescence"],
+      "age_min": 40,
+      "age_max": 90,
+      "observation": "The naive T-cell pool contracts with age while memory and terminally differentiated populations expand, narrowing the repertoire available to respond to novel antigens.",
+      "trajectory_type": "population_association",
+      "change_class": "age_associated_change",
+      "population_id": "general_adult",
+      "effect": {
+        "kind": "qualitative",
+        "direction": "changes_qualitatively",
+        "statement": "Repertoire composition shifts from naive toward memory and differentiated subsets."
+      },
+      "provenance": {
+        "evidence_level": "human_observational",
+        "causal_status": "supported_mechanistically",
+        "review_status": "in_review",
+        "confidence": "moderate",
+        "citations": [
+          {
+            "source_id": "SRC-021",
+            "supports": "direct"
+          }
+        ],
+        "uncertainty": {
+          "description": "Immune aging varies widely between individuals and is strongly affected by cytomegalovirus status, which is often unmeasured.",
+          "known_conflicts": [
+            "Chronic viral exposure history is a major confounder that cohorts rarely control for."
+          ],
+          "generalizability": "individual_variable"
+        },
+        "reviewed_by": null,
+        "reviewed_at": null,
+        "record_version": 1
+      }
+    },
+    {
+      "observation_id": "obs_011",
+      "entity_id": "il6",
+      "hallmark_ids": ["chronic_inflammation"],
+      "age_min": 50,
+      "age_max": 90,
+      "observation": "Circulating inflammatory markers including interleukin-6 tend to be higher in older adults, and higher levels associate with frailty and adverse outcomes.",
+      "trajectory_type": "population_association",
+      "change_class": "age_associated_change",
+      "population_id": "general_adult",
+      "effect": {
+        "kind": "qualitative",
+        "direction": "increases",
+        "statement": "Inflammatory marker levels are higher on population average at older ages."
+      },
+      "provenance": {
+        "evidence_level": "human_observational",
+        "causal_status": "correlational_only",
+        "review_status": "in_review",
+        "confidence": "moderate",
+        "citations": [
+          {
+            "source_id": "SRC-019",
+            "supports": "direct"
+          },
+          {
+            "source_id": "SRC-020",
+            "supports": "direct"
+          }
+        ],
+        "uncertainty": {
+          "description": "The causal direction is not established: inflammation may drive functional decline, result from it, or both. Marker levels also respond to infection, adiposity, medication and acute illness.",
+          "known_conflicts": [
+            "Whether inflammaging is a cause or a consequence of frailty remains unresolved."
+          ],
+          "generalizability": "individual_variable"
+        },
+        "reviewed_by": null,
+        "reviewed_at": null,
+        "record_version": 1
+      }
+    },
+    {
+      "observation_id": "obs_012",
+      "entity_id": "hematopoietic_stem_cell",
+      "hallmark_ids": ["stem_cell_exhaustion", "genomic_instability"],
+      "age_min": 60,
+      "age_max": 90,
+      "observation": "Haematopoietic stem cells show age-associated lineage bias toward myeloid output and reduced regenerative capacity per cell, even as their number does not decline.",
+      "trajectory_type": "mechanistic_inference",
+      "change_class": "age_associated_change",
+      "population_id": "general_adult",
+      "effect": {
+        "kind": "not_quantified",
+        "direction": "changes_qualitatively",
+        "reason": "Per-cell regenerative capacity is assayed by transplantation, which cannot be done in humans for this purpose."
+      },
+      "provenance": {
+        "evidence_level": "animal",
+        "causal_status": "supported_mechanistically",
+        "review_status": "in_review",
+        "confidence": "moderate",
+        "citations": [
+          {
+            "source_id": "SRC-017",
+            "supports": "direct"
+          }
+        ],
+        "uncertainty": {
+          "description": "The core functional evidence is from mouse transplantation assays. Human data are largely correlative and based on clonal composition rather than function.",
+          "known_conflicts": [],
+          "generalizability": "tissue_dependent"
+        },
+        "reviewed_by": null,
+        "reviewed_at": null,
+        "record_version": 1
+      }
+    },
+    {
+      "observation_id": "obs_013",
+      "entity_id": "kidneys",
+      "hallmark_ids": ["cellular_senescence"],
+      "age_min": 40,
+      "age_max": 90,
+      "observation": "Nephron number and measured filtration capacity decline with age, with substantial variation between individuals and considerable overlap with early kidney disease.",
+      "trajectory_type": "cross_sectional",
+      "change_class": "age_associated_change",
+      "population_id": "general_adult",
+      "effect": {
+        "kind": "qualitative",
+        "direction": "decreases",
+        "statement": "Filtration capacity is lower on population average at older ages."
+      },
+      "provenance": {
+        "evidence_level": "human_observational",
+        "causal_status": "correlational_only",
+        "review_status": "in_review",
+        "confidence": "moderate",
+        "citations": [
+          {
+            "source_id": "SRC-027",
+            "supports": "direct"
+          }
+        ],
+        "uncertainty": {
+          "description": "Much of the structural data comes from living kidney donors, who are healthier than the general population. Distinguishing normal nephron loss from early disease is contested.",
+          "known_conflicts": [
+            "Donor cohorts are health-selected, likely understating decline in the general population."
+          ],
+          "generalizability": "population_average"
+        },
+        "reviewed_by": null,
+        "reviewed_at": null,
+        "record_version": 1
+      }
+    },
+    {
+      "observation_id": "obs_014",
+      "entity_id": "brain",
+      "hallmark_ids": ["genomic_instability", "chronic_inflammation"],
+      "age_min": 40,
+      "age_max": 90,
+      "observation": "Brain volume decreases with age, with the change more pronounced in prefrontal and hippocampal regions than elsewhere, alongside changes in white matter integrity.",
+      "trajectory_type": "cross_sectional",
+      "change_class": "age_associated_change",
+      "population_id": "general_adult",
+      "effect": {
+        "kind": "qualitative",
+        "direction": "decreases",
+        "statement": "Regional brain volume is lower on population average at older ages."
+      },
+      "provenance": {
+        "evidence_level": "human_observational",
+        "causal_status": "correlational_only",
+        "review_status": "in_review",
+        "confidence": "moderate",
+        "citations": [
+          {
+            "source_id": "SRC-028",
+            "supports": "direct"
+          }
+        ],
+        "uncertainty": {
+          "description": "Cognitive aging varies enormously between individuals, and separating normal aging from preclinical neurodegenerative disease remains unresolved in cross-sectional data.",
+          "known_conflicts": [],
+          "generalizability": "individual_variable"
+        },
+        "reviewed_by": null,
+        "reviewed_at": null,
+        "record_version": 1
+      }
+    },
+    {
+      "observation_id": "obs_015",
+      "entity_id": "neuron",
+      "hallmark_ids": ["loss_of_proteostasis"],
+      "age_min": 50,
+      "age_max": 90,
+      "observation": "Long-lived neurons depend heavily on proteostasis and autophagy to clear damaged proteins, and markers of impaired clearance increase with age in human brain tissue.",
+      "trajectory_type": "mechanistic_inference",
+      "change_class": "age_associated_change",
+      "population_id": "general_adult",
+      "effect": {
+        "kind": "not_quantified",
+        "direction": "decreases",
+        "reason": "Autophagic flux cannot be measured directly in living human brain."
+      },
+      "provenance": {
+        "evidence_level": "human_observational",
+        "causal_status": "proposed",
+        "review_status": "in_review",
+        "confidence": "low",
+        "citations": [
+          {
+            "source_id": "SRC-008",
+            "supports": "direct"
+          },
+          {
+            "source_id": "SRC-009",
+            "supports": "direct"
+          }
+        ],
+        "uncertainty": {
+          "description": "Post-mortem markers are static snapshots and cannot establish flux. Whether impaired clearance causes neuronal dysfunction or follows it is not resolved.",
+          "known_conflicts": [],
+          "generalizability": "tissue_dependent"
+        },
+        "reviewed_by": null,
+        "reviewed_at": null,
+        "record_version": 1
+      }
+    },
+    {
+      "observation_id": "obs_016",
+      "entity_id": "fibroblast",
+      "hallmark_ids": ["cellular_senescence", "telomere_attrition"],
+      "age_min": 0,
+      "age_max": 90,
+      "observation": "Human diploid fibroblasts in culture undergo a limited number of divisions before entering a stable growth-arrested state, an in-vitro limit associated with telomere shortening.",
+      "trajectory_type": "mechanistic_inference",
+      "change_class": "unclear",
+      "population_id": "general_adult",
+      "effect": {
+        "kind": "not_quantified",
+        "direction": "decreases",
+        "reason": "A replicative limit in culture does not correspond to a measurable population quantity in tissue."
+      },
+      "provenance": {
+        "evidence_level": "in_vitro",
+        "causal_status": "supported_mechanistically",
+        "review_status": "in_review",
+        "confidence": "high",
+        "citations": [
+          {
+            "source_id": "SRC-004",
+            "supports": "direct"
+          },
+          {
+            "source_id": "SRC-005",
+            "supports": "direct"
+          }
+        ],
+        "uncertainty": {
+          "description": "This is an in-vitro phenomenon under culture conditions that differ substantially from tissue. It is often misread as demonstrating that cell division limits drive human aging, which it does not.",
+          "known_conflicts": [
+            "The replicative limit is frequently over-extrapolated to whole-organism aging."
+          ],
+          "generalizability": "unclear"
+        },
+        "reviewed_by": null,
+        "reviewed_at": null,
+        "record_version": 1
+      }
+    },
+    {
+      "observation_id": "obs_017",
+      "entity_id": "p16_burden",
+      "hallmark_ids": ["cellular_senescence"],
+      "age_min": 50,
+      "age_max": 90,
+      "observation": "Markers used to estimate senescent-cell burden increase with age in multiple human tissues, though no single marker is reliable on its own.",
+      "trajectory_type": "population_association",
+      "change_class": "age_associated_change",
+      "population_id": "general_adult",
+      "effect": {
+        "kind": "qualitative",
+        "direction": "increases",
+        "statement": "Estimated senescent-cell burden is higher at older ages."
+      },
+      "provenance": {
+        "evidence_level": "human_observational",
+        "causal_status": "supported_mechanistically",
+        "review_status": "in_review",
+        "confidence": "moderate",
+        "citations": [
+          {
+            "source_id": "SRC-014",
+            "supports": "direct"
+          },
+          {
+            "source_id": "SRC-015",
+            "supports": "direct"
+          }
+        ],
+        "uncertainty": {
+          "description": "Senescence has no universal marker and phenotypes are heterogeneous, so burden estimates depend heavily on which markers are chosen.",
+          "known_conflicts": [
+            "Different marker panels yield materially different burden estimates."
+          ],
+          "generalizability": "tissue_dependent"
+        },
+        "reviewed_by": null,
+        "reviewed_at": null,
+        "record_version": 1
+      }
+    },
+    {
+      "observation_id": "obs_018",
+      "entity_id": "leukocyte_telomere_length",
+      "hallmark_ids": ["telomere_attrition"],
+      "age_min": 20,
+      "age_max": 90,
+      "observation": "Telomere length measured in leukocytes is shorter on average at older ages, but the relationship is noisy and individual variation at any given age is large.",
+      "trajectory_type": "cross_sectional",
+      "change_class": "age_associated_change",
+      "population_id": "general_adult",
+      "effect": {
+        "kind": "qualitative",
+        "direction": "decreases",
+        "statement": "Average leukocyte telomere length is shorter at older ages."
+      },
+      "provenance": {
+        "evidence_level": "human_observational",
+        "causal_status": "correlational_only",
+        "review_status": "in_review",
+        "confidence": "moderate",
+        "citations": [
+          {
+            "source_id": "SRC-005",
+            "supports": "direct"
+          }
+        ],
+        "uncertainty": {
+          "description": "Leukocyte measurements are a poor proxy for telomere state in other tissues, measurement methods differ substantially between studies, and within-age variation exceeds the between-age difference.",
+          "known_conflicts": [
+            "Associations between telomere length and mortality are inconsistent across cohorts."
+          ],
+          "generalizability": "individual_variable"
+        },
+        "reviewed_by": null,
+        "reviewed_at": null,
+        "record_version": 1
+      }
+    },
+    {
+      "observation_id": "obs_019",
+      "entity_id": "dna_methylation_age",
+      "hallmark_ids": ["epigenetic_alterations"],
+      "age_min": 0,
+      "age_max": 90,
+      "observation": "Methylation at selected CpG sites tracks chronological age closely enough to build accurate age predictors across many human tissues.",
+      "trajectory_type": "cross_sectional",
+      "change_class": "age_associated_change",
+      "population_id": "general_adult",
+      "effect": {
+        "kind": "qualitative",
+        "direction": "increases",
+        "statement": "Predicted methylation age tracks chronological age across the lifespan."
+      },
+      "provenance": {
+        "evidence_level": "human_established",
+        "causal_status": "correlational_only",
+        "review_status": "in_review",
+        "confidence": "high",
+        "citations": [
+          {
+            "source_id": "SRC-006",
+            "supports": "direct"
+          }
+        ],
+        "uncertainty": {
+          "description": "A predictor trained on chronological age necessarily tracks chronological age; this establishes no mechanism. Epigenetic age is not a validated measure of any individual's functional state, and must not be read as one.",
+          "known_conflicts": [
+            "Epigenetic age is widely misinterpreted as a measure of biological condition rather than a statistical predictor."
+          ],
+          "generalizability": "population_average"
+        },
+        "reviewed_by": null,
+        "reviewed_at": null,
+        "record_version": 1
+      }
+    },
+    {
+      "observation_id": "obs_020",
+      "entity_id": "microbiome_uniqueness",
+      "hallmark_ids": ["dysbiosis"],
+      "age_min": 40,
+      "age_max": 90,
+      "observation": "Gut microbiome composition shifts with age in adult cohorts, and in some cohorts increasing individual uniqueness associates with health measures and survival.",
+      "trajectory_type": "population_association",
+      "change_class": "age_associated_change",
+      "population_id": "general_adult",
+      "effect": {
+        "kind": "qualitative",
+        "direction": "changes_qualitatively",
+        "statement": "Composition shifts with age, with increasing between-individual divergence."
+      },
+      "provenance": {
+        "evidence_level": "human_observational",
+        "causal_status": "correlational_only",
+        "review_status": "in_review",
+        "confidence": "low",
+        "citations": [
+          {
+            "source_id": "SRC-023",
+            "supports": "direct"
+          },
+          {
+            "source_id": "SRC-022",
+            "supports": "direct"
+          }
+        ],
+        "uncertainty": {
+          "description": "Diet, medication and residential care setting are severely confounded with age in these cohorts. No causal claim about the microbiome driving aging is supported in humans.",
+          "known_conflicts": [
+            "Residential setting explains much of the composition difference in elderly cohorts."
+          ],
+          "generalizability": "individual_variable"
+        },
+        "reviewed_by": null,
+        "reviewed_at": null,
+        "record_version": 1
+      }
+    },
+    {
+      "observation_id": "obs_021",
+      "entity_id": "mitochondria",
+      "hallmark_ids": ["mitochondrial_dysfunction"],
+      "age_min": 40,
+      "age_max": 90,
+      "observation": "Mitochondrial content and respiratory capacity change with age in a strongly tissue-dependent way, increasing in some tissues and decreasing in others.",
+      "trajectory_type": "mechanistic_inference",
+      "change_class": "age_associated_change",
+      "population_id": "general_adult",
+      "effect": {
+        "kind": "qualitative",
+        "direction": "tissue_dependent",
+        "statement": "Direction of change differs between tissues and cannot be summarised as a single trend."
+      },
+      "provenance": {
+        "evidence_level": "human_observational",
+        "causal_status": "proposed",
+        "review_status": "in_review",
+        "confidence": "low",
+        "citations": [
+          {
+            "source_id": "SRC-012",
+            "supports": "direct"
+          }
+        ],
+        "uncertainty": {
+          "description": "Because the direction of change differs by tissue, any whole-body statement about mitochondrial decline is an oversimplification.",
+          "known_conflicts": [
+            "The simple oxidative-damage account of mitochondrial aging is not supported."
+          ],
+          "generalizability": "tissue_dependent"
+        },
+        "reviewed_by": null,
+        "reviewed_at": null,
+        "record_version": 1
+      }
+    },
+    {
+      "observation_id": "obs_022",
+      "entity_id": "mtor_signaling",
+      "hallmark_ids": ["deregulated_nutrient_sensing"],
+      "age_min": 30,
+      "age_max": 90,
+      "observation": "Nutrient-sensing signalling through mTOR is implicated in aging across species, and its inhibition extends lifespan in several model organisms including mice treated late in life.",
+      "trajectory_type": "mechanistic_inference",
+      "change_class": "age_associated_change",
+      "population_id": "general_adult",
+      "effect": {
+        "kind": "not_quantified",
+        "direction": "changes_qualitatively",
+        "reason": "Pathway activity in human tissue across age is not systematically measured."
+      },
+      "provenance": {
+        "evidence_level": "animal",
+        "causal_status": "supported_mechanistically",
+        "review_status": "in_review",
+        "confidence": "moderate",
+        "citations": [
+          {
+            "source_id": "SRC-010",
+            "supports": "direct"
+          },
+          {
+            "source_id": "SRC-011",
+            "supports": "direct"
+          }
+        ],
+        "uncertainty": {
+          "description": "Lifespan extension is robust in mice but there is no human lifespan evidence, and mTOR inhibition carries immunosuppressive and metabolic costs that complicate translation.",
+          "known_conflicts": [
+            "Benefits in mice differed by sex and come with meaningful adverse effects."
+          ],
+          "generalizability": "population_average"
+        },
+        "reviewed_by": null,
+        "reviewed_at": null,
+        "record_version": 1
+      }
+    },
+    {
+      "observation_id": "obs_023",
+      "entity_id": "lungs",
+      "hallmark_ids": ["cellular_senescence"],
+      "age_min": 40,
+      "age_max": 90,
+      "observation": "Lung elastic recoil decreases and alveolar surface area is reduced at older ages, lowering maximal ventilatory capacity while resting gas exchange is usually preserved.",
+      "trajectory_type": "population_association",
+      "change_class": "age_associated_change",
+      "population_id": "general_adult",
+      "effect": {
+        "kind": "qualitative",
+        "direction": "decreases",
+        "statement": "Maximal ventilatory capacity declines while resting function is typically maintained."
+      },
+      "provenance": {
+        "evidence_level": "human_observational",
+        "causal_status": "supported_mechanistically",
+        "review_status": "in_review",
+        "confidence": "moderate",
+        "citations": [
+          {
+            "source_id": "SRC-002",
+            "supports": "direct"
+          }
+        ],
+        "uncertainty": {
+          "description": "Smoking history and environmental exposure are large confounders that are inconsistently controlled across the underlying literature.",
+          "known_conflicts": [],
+          "generalizability": "population_average"
+        },
+        "reviewed_by": null,
+        "reviewed_at": null,
+        "record_version": 1
+      }
+    },
+    {
+      "observation_id": "obs_024",
+      "entity_id": "skin",
+      "hallmark_ids": ["cellular_senescence", "stem_cell_exhaustion"],
+      "age_min": 30,
+      "age_max": 90,
+      "observation": "Skin becomes thinner and less elastic with age and wound healing slows, with cumulative ultraviolet exposure contributing substantially to the observed change.",
+      "trajectory_type": "population_association",
+      "change_class": "age_associated_change",
+      "population_id": "general_adult",
+      "effect": {
+        "kind": "qualitative",
+        "direction": "decreases",
+        "statement": "Elasticity and repair speed decline with age."
+      },
+      "provenance": {
+        "evidence_level": "human_observational",
+        "causal_status": "supported_mechanistically",
+        "review_status": "in_review",
+        "confidence": "moderate",
+        "citations": [
+          {
+            "source_id": "SRC-002",
+            "supports": "direct"
+          }
+        ],
+        "uncertainty": {
+          "description": "Photoaging from sun exposure is confounded with chronological aging in most skin data, and the two have different mechanisms and different reversibility.",
+          "known_conflicts": [
+            "Photoaging and intrinsic skin aging are routinely conflated in the literature."
+          ],
+          "generalizability": "individual_variable"
+        },
+        "reviewed_by": null,
+        "reviewed_at": null,
+        "record_version": 1
+      }
+    },
+    {
+      "observation_id": "obs_025",
+      "entity_id": "eyes",
+      "hallmark_ids": ["loss_of_proteostasis"],
+      "age_min": 40,
+      "age_max": 90,
+      "observation": "Lens proteins accumulate damage and cross-linking over decades, reducing accommodation and transparency, because lens crystallins are not replaced after development.",
+      "trajectory_type": "population_association",
+      "change_class": "age_associated_change",
+      "population_id": "general_adult",
+      "effect": {
+        "kind": "qualitative",
+        "direction": "decreases",
+        "statement": "Accommodation and lens transparency decline with age."
+      },
+      "provenance": {
+        "evidence_level": "human_established",
+        "causal_status": "supported_mechanistically",
+        "review_status": "in_review",
+        "confidence": "high",
+        "citations": [
+          {
+            "source_id": "SRC-008",
+            "supports": "direct"
+          }
+        ],
+        "uncertainty": {
+          "description": "The lens is an unusual case because its proteins are effectively never turned over, so it may not generalise to proteostasis in other tissues.",
+          "known_conflicts": [],
+          "generalizability": "tissue_dependent"
+        },
+        "reviewed_by": null,
+        "reviewed_at": null,
+        "record_version": 1
+      }
+    }
+  ]
+}

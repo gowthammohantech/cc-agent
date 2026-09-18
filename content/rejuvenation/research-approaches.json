@@ -1,0 +1,392 @@
+{
+  "research_approaches": [
+    {
+      "id": "lifestyle_functional",
+      "name": "Lifestyle-mediated functional improvement",
+      "description": "Exercise, nutrition, sleep and related behavioural factors that demonstrably improve age-associated function. This is the only category in this list with routine, established human evidence for functional benefit.",
+      "maturity": "standard_of_care",
+      "provenance": {
+        "evidence_level": "human_established",
+        "causal_status": "supported_mechanistically",
+        "review_status": "in_review",
+        "confidence": "high",
+        "citations": [
+          {
+            "source_id": "SRC-029",
+            "supports": "direct"
+          },
+          {
+            "source_id": "SRC-033",
+            "supports": "direct"
+          }
+        ],
+        "uncertainty": {
+          "description": "Functional benefits in humans are well established. What is not established is whether any of it alters underlying aging processes as opposed to improving function at a given age.",
+          "known_conflicts": [],
+          "generalizability": "population_average"
+        },
+        "reviewed_by": null,
+        "reviewed_at": null,
+        "record_version": 1
+      }
+    },
+    {
+      "id": "senolytics",
+      "name": "Senescence-targeting research",
+      "description": "Approaches that selectively clear senescent cells or suppress their secretory phenotype, studied because senescent burden rises with age and its clearance improved several measures in mice.",
+      "maturity": "experimental",
+      "provenance": {
+        "evidence_level": "animal",
+        "causal_status": "supported_mechanistically",
+        "review_status": "in_review",
+        "confidence": "moderate",
+        "citations": [
+          {
+            "source_id": "SRC-013",
+            "supports": "direct"
+          },
+          {
+            "source_id": "SRC-014",
+            "supports": "direct"
+          },
+          {
+            "source_id": "SRC-016",
+            "supports": "direct"
+          }
+        ],
+        "uncertainty": {
+          "description": "Animal evidence is the strongest available. Human evidence is limited to small open-label pilots with surrogate endpoints and no control groups.",
+          "known_conflicts": [
+            "Senescent cells contribute to wound healing and tumour suppression, so clearance has potential costs."
+          ],
+          "generalizability": "tissue_dependent"
+        },
+        "reviewed_by": null,
+        "reviewed_at": null,
+        "record_version": 1
+      }
+    },
+    {
+      "id": "autophagy_modulation",
+      "name": "Autophagy modulation",
+      "description": "Interventions intended to restore cellular recycling capacity, typically via nutrient-sensing pathways.",
+      "maturity": "preclinical",
+      "provenance": {
+        "evidence_level": "animal",
+        "causal_status": "supported_mechanistically",
+        "review_status": "in_review",
+        "confidence": "moderate",
+        "citations": [
+          {
+            "source_id": "SRC-009",
+            "supports": "direct"
+          },
+          {
+            "source_id": "SRC-010",
+            "supports": "direct"
+          }
+        ],
+        "uncertainty": {
+          "description": "Autophagic flux cannot be measured in living human tissue, so there is currently no way to confirm target engagement in humans.",
+          "known_conflicts": [],
+          "generalizability": "tissue_dependent"
+        },
+        "reviewed_by": null,
+        "reviewed_at": null,
+        "record_version": 1
+      }
+    },
+    {
+      "id": "nutrient_sensing_modulation",
+      "name": "Nutrient-sensing pathway research",
+      "description": "Interventions targeting mTOR, AMPK, insulin/IGF-1 and sirtuin signalling, the pathways whose manipulation most reliably extends lifespan in model organisms.",
+      "maturity": "investigational_trials",
+      "provenance": {
+        "evidence_level": "animal",
+        "causal_status": "supported_mechanistically",
+        "review_status": "in_review",
+        "confidence": "moderate",
+        "citations": [
+          {
+            "source_id": "SRC-010",
+            "supports": "direct"
+          },
+          {
+            "source_id": "SRC-011",
+            "supports": "direct"
+          },
+          {
+            "source_id": "SRC-029",
+            "supports": "direct"
+          }
+        ],
+        "uncertainty": {
+          "description": "Lifespan extension is robust across several species but entirely unreplicated in humans, and the interventions carry meaningful adverse effects.",
+          "known_conflicts": [
+            "Immunosuppressive and metabolic side effects complicate long-term use."
+          ],
+          "generalizability": "population_average"
+        },
+        "reviewed_by": null,
+        "reviewed_at": null,
+        "record_version": 1
+      }
+    },
+    {
+      "id": "mitochondrial_quality_control",
+      "name": "Mitochondrial quality-control research",
+      "description": "Approaches aimed at improving mitochondrial turnover, biogenesis or function.",
+      "maturity": "preclinical",
+      "provenance": {
+        "evidence_level": "animal",
+        "causal_status": "proposed",
+        "review_status": "in_review",
+        "confidence": "low",
+        "citations": [
+          {
+            "source_id": "SRC-012",
+            "supports": "direct"
+          }
+        ],
+        "uncertainty": {
+          "description": "The direction of mitochondrial change differs by tissue, so what counts as improvement is not well defined at the organism level.",
+          "known_conflicts": [
+            "Antioxidant supplementation, predicted to help by the original free-radical theory, has not shown the expected benefits."
+          ],
+          "generalizability": "tissue_dependent"
+        },
+        "reviewed_by": null,
+        "reviewed_at": null,
+        "record_version": 1
+      }
+    },
+    {
+      "id": "regenerative_medicine",
+      "name": "Regenerative medicine",
+      "description": "Tissue and organ repair approaches including engineered grafts and cell replacement.",
+      "maturity": "investigational_trials",
+      "provenance": {
+        "evidence_level": "human_clinical",
+        "causal_status": "supported_mechanistically",
+        "review_status": "in_review",
+        "confidence": "moderate",
+        "citations": [
+          {
+            "source_id": "SRC-017",
+            "supports": "direct"
+          },
+          {
+            "source_id": "SRC-031",
+            "supports": "direct"
+          }
+        ],
+        "uncertainty": {
+          "description": "Some applications are established clinical care for specific indications; none is established as an intervention on aging itself.",
+          "known_conflicts": [],
+          "generalizability": "tissue_dependent"
+        },
+        "reviewed_by": null,
+        "reviewed_at": null,
+        "record_version": 1
+      }
+    },
+    {
+      "id": "stem_cell_research",
+      "name": "Stem-cell research",
+      "description": "Approaches seeking to restore regenerative capacity by supplementing, replacing or rejuvenating tissue-resident stem cells.",
+      "maturity": "experimental",
+      "provenance": {
+        "evidence_level": "animal",
+        "causal_status": "supported_mechanistically",
+        "review_status": "in_review",
+        "confidence": "moderate",
+        "citations": [
+          {
+            "source_id": "SRC-017",
+            "supports": "direct"
+          },
+          {
+            "source_id": "SRC-018",
+            "supports": "direct"
+          }
+        ],
+        "uncertainty": {
+          "description": "Restoring proliferative capacity raises tumour risk that has not been resolved, and delivery to the right niche remains a major obstacle.",
+          "known_conflicts": [
+            "Unregulated clinics market unproven stem-cell products; this category describes research, not available treatment."
+          ],
+          "generalizability": "tissue_dependent"
+        },
+        "reviewed_by": null,
+        "reviewed_at": null,
+        "record_version": 1
+      }
+    },
+    {
+      "id": "gene_therapy",
+      "name": "Gene therapy research",
+      "description": "Targeted modification of gene expression or sequence, applied to aging-related targets.",
+      "maturity": "experimental",
+      "provenance": {
+        "evidence_level": "animal",
+        "causal_status": "proposed",
+        "review_status": "in_review",
+        "confidence": "low",
+        "citations": [
+          {
+            "source_id": "SRC-031",
+            "supports": "direct"
+          }
+        ],
+        "uncertainty": {
+          "description": "Delivery, durability, off-target effects and immune response are all unresolved for aging applications, which would require broad rather than tissue-limited delivery.",
+          "known_conflicts": [],
+          "generalizability": "tissue_dependent"
+        },
+        "reviewed_by": null,
+        "reviewed_at": null,
+        "record_version": 1
+      }
+    },
+    {
+      "id": "epigenetic_reprogramming",
+      "name": "Epigenetic reprogramming",
+      "description": "Approaches that reset age-associated epigenetic marks, typically via transient expression of reprogramming factors.",
+      "maturity": "preclinical",
+      "provenance": {
+        "evidence_level": "animal",
+        "causal_status": "proposed",
+        "review_status": "in_review",
+        "confidence": "low",
+        "citations": [
+          {
+            "source_id": "SRC-032",
+            "supports": "direct"
+          },
+          {
+            "source_id": "SRC-007",
+            "supports": "direct"
+          }
+        ],
+        "uncertainty": {
+          "description": "The central unresolved question is whether regulatory state can be reset without losing cell identity or inducing cancer. Continuous reprogramming killed the animals; only cyclic induction was tolerated.",
+          "known_conflicts": ["Teratoma formation is a demonstrated risk, not a theoretical one."],
+          "generalizability": "tissue_dependent"
+        },
+        "reviewed_by": null,
+        "reviewed_at": null,
+        "record_version": 1
+      }
+    },
+    {
+      "id": "partial_reprogramming",
+      "name": "Partial cellular reprogramming",
+      "description": "Cyclic, incomplete reprogramming intended to recover youthful cellular characteristics while preserving differentiated identity.",
+      "maturity": "preclinical",
+      "provenance": {
+        "evidence_level": "animal",
+        "causal_status": "proposed",
+        "review_status": "in_review",
+        "confidence": "low",
+        "citations": [
+          {
+            "source_id": "SRC-032",
+            "supports": "direct"
+          }
+        ],
+        "uncertainty": {
+          "description": "Demonstrated mainly in a progeroid mouse model, which does not represent normal aging. No human evidence exists.",
+          "known_conflicts": [
+            "The headline result comes from a progeroid model with a short lifespan and an atypical mechanism."
+          ],
+          "generalizability": "tissue_dependent"
+        },
+        "reviewed_by": null,
+        "reviewed_at": null,
+        "record_version": 1
+      }
+    },
+    {
+      "id": "tissue_engineering",
+      "name": "Tissue engineering",
+      "description": "Construction of functional tissue substitutes to replace structures whose function has declined.",
+      "maturity": "investigational_trials",
+      "provenance": {
+        "evidence_level": "human_clinical",
+        "causal_status": "supported_mechanistically",
+        "review_status": "in_review",
+        "confidence": "moderate",
+        "citations": [
+          {
+            "source_id": "SRC-031",
+            "supports": "direct"
+          }
+        ],
+        "uncertainty": {
+          "description": "Structural replacement addresses consequences rather than underlying aging processes, and vascularisation of engineered tissue remains a limiting problem.",
+          "known_conflicts": [],
+          "generalizability": "tissue_dependent"
+        },
+        "reviewed_by": null,
+        "reviewed_at": null,
+        "record_version": 1
+      }
+    },
+    {
+      "id": "immune_rejuvenation",
+      "name": "Immune rejuvenation research",
+      "description": "Approaches intended to restore thymic output or rebalance an aged immune repertoire.",
+      "maturity": "experimental",
+      "provenance": {
+        "evidence_level": "animal",
+        "causal_status": "proposed",
+        "review_status": "in_review",
+        "confidence": "low",
+        "citations": [
+          {
+            "source_id": "SRC-021",
+            "supports": "direct"
+          }
+        ],
+        "uncertainty": {
+          "description": "Whether expanding naive T-cell output in an older person improves outcomes, or simply adds cells to a system whose limitation lies elsewhere, is unknown.",
+          "known_conflicts": [],
+          "generalizability": "individual_variable"
+        },
+        "reviewed_by": null,
+        "reviewed_at": null,
+        "record_version": 1
+      }
+    },
+    {
+      "id": "microbiome_intervention",
+      "name": "Microbiome interventions",
+      "description": "Dietary, probiotic or transplant-based approaches to alter gut microbial ecology.",
+      "maturity": "experimental",
+      "provenance": {
+        "evidence_level": "human_observational",
+        "causal_status": "correlational_only",
+        "review_status": "in_review",
+        "confidence": "low",
+        "citations": [
+          {
+            "source_id": "SRC-022",
+            "supports": "direct"
+          },
+          {
+            "source_id": "SRC-023",
+            "supports": "direct"
+          }
+        ],
+        "uncertainty": {
+          "description": "Human microbiome-aging evidence is correlational and heavily confounded by diet and setting. No causal target has been established, so there is nothing yet to intervene on with confidence.",
+          "known_conflicts": [],
+          "generalizability": "individual_variable"
+        },
+        "reviewed_by": null,
+        "reviewed_at": null,
+        "record_version": 1
+      }
+    }
+  ]
+}

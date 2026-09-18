@@ -1,7 +1,85 @@
 {
-  "content_version": "0.0.0",
+  "content_version": "0.1.0",
   "generated_at": "2026-09-18",
-  "records_hash": "sha256:0000000000000000000000000000000000000000000000000000000000000000",
-  "framework_versions": {},
-  "files": []
+  "records_hash": "sha256:78e9e23f56db005e1081b3826bd292c174ebcdce5a7438ab2cf3a9d0a148997c",
+  "framework_versions": {
+    "hallmarks_of_aging": "2023"
+  },
+  "files": [
+    {
+      "path": "content/age-bands.json",
+      "sha256": "dc89a7b3cdd29580bcf07355993acfb684169ec5a3d2a094aad093021c5d25a3",
+      "record_count": 8
+    },
+    {
+      "path": "content/copy/disclaimers.json",
+      "sha256": "98450eba81b0c2443eac3187d9f1e182f1b6913bd557e2d83b61fd5440a2ffb5",
+      "record_count": 1
+    },
+    {
+      "path": "content/copy/rejuvenation-definitions.json",
+      "sha256": "a1f2dbb89aec9459b88eea40f08a6d2c091fc1e1cd26e61ce45cd394acb33f14",
+      "record_count": 7
+    },
+    {
+      "path": "content/entities/entities.json",
+      "sha256": "73bfb98f338986db47d39f6d4043546d9ac834f3fa2a2014fd3b2deea33e53ff",
+      "record_count": 55
+    },
+    {
+      "path": "content/evidence/evidence-profiles.json",
+      "sha256": "33b774a00d19da93e4f291212c5dff901c20dbf462fd97232a26fb705b2be2ea",
+      "record_count": 12
+    },
+    {
+      "path": "content/evidence/studies.json",
+      "sha256": "d344ec036d5af32f165379239c3a6ce499a1edf02bf7613a3ae2c6b65d112db5",
+      "record_count": 33
+    },
+    {
+      "path": "content/geometry/body-layout.json",
+      "sha256": "5c43bd65c8a1e2277d452cd3f611fea369e7bf5f1502c14fb121111d5b1c3530",
+      "record_count": 39
+    },
+    {
+      "path": "content/hallmarks/hallmarks.json",
+      "sha256": "3f1a0706bd80312753e5bf09cba9a809754e39b7ca2217327b22e864890b96c3",
+      "record_count": 12
+    },
+    {
+      "path": "content/observations/observations.json",
+      "sha256": "a8b4f85c9c5d59a7543c9defadeccca788de8f7ea9811ca203c454e1d8dbe161",
+      "record_count": 25
+    },
+    {
+      "path": "content/populations.json",
+      "sha256": "12e8f36783345f9d9cb8d76f05e0e4295b2f912f6182f02cc0b03e02f99e502f",
+      "record_count": 1
+    },
+    {
+      "path": "content/rejuvenation/research-approaches.json",
+      "sha256": "52fd10b0428030d34d3cefcb0d3225a500185a9fe1133b6fbfdc5382d74789f4",
+      "record_count": 13
+    },
+    {
+      "path": "content/rejuvenation/targets.json",
+      "sha256": "a8f1f8deed959152eb25a58d379295a330f9c80943ac75ab5f52652275a474bd",
+      "record_count": 6
+    },
+    {
+      "path": "content/relationships/relationships.json",
+      "sha256": "3e7e554602d215358d97567e7439315754d0027120e8d0da523470d3661072c8",
+      "record_count": 36
+    },
+    {
+      "path": "content/simulation/model-v1.json",
+      "sha256": "6daf5f229f3e85568c49f72aff8dd305763607a552084af966160fa00bb2cb17",
+      "record_count": 4
+    },
+    {
+      "path": "content/trajectories/trajectories.json",
+      "sha256": "68bcad642bf37e0d5c8a8f167481224acde091ae624a74dfe51fe7a1fb667386",
+      "record_count": 0
+    }
+  ]
 }

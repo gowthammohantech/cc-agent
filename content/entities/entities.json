@@ -1,0 +1,888 @@
+{
+  "entities": [
+    {
+      "id": "organism",
+      "name": "Human organism",
+      "description": "The whole human body, considered as one integrated system of interacting organ systems across the lifespan.",
+      "layer": "L1_organism",
+      "kind": "organism",
+      "parent_id": null,
+      "hallmark_ids": [],
+      "citations": [
+        {
+          "source_id": "SRC-001",
+          "supports": "direct"
+        },
+        {
+          "source_id": "SRC-030",
+          "supports": "contextual"
+        }
+      ],
+      "record_version": 1
+    },
+    {
+      "id": "nervous_system",
+      "name": "Nervous system",
+      "description": "The brain, spinal cord and peripheral nerves, responsible for sensing, processing, and coordinating responses throughout the body.",
+      "layer": "L2_system",
+      "kind": "system",
+      "parent_id": "organism",
+      "hallmark_ids": ["genomic_instability", "chronic_inflammation", "loss_of_proteostasis"],
+      "citations": [
+        {
+          "source_id": "SRC-028",
+          "supports": "direct"
+        }
+      ],
+      "record_version": 1
+    },
+    {
+      "id": "cardiovascular_system",
+      "name": "Cardiovascular system",
+      "description": "The heart and blood vessels, which circulate blood, oxygen, nutrients and signalling molecules throughout the body.",
+      "layer": "L2_system",
+      "kind": "system",
+      "parent_id": "organism",
+      "hallmark_ids": ["mitochondrial_dysfunction", "chronic_inflammation", "cellular_senescence"],
+      "citations": [
+        {
+          "source_id": "SRC-026",
+          "supports": "direct"
+        }
+      ],
+      "record_version": 1
+    },
+    {
+      "id": "respiratory_system",
+      "name": "Respiratory system",
+      "description": "The airways and lungs, which exchange oxygen and carbon dioxide between air and blood.",
+      "layer": "L2_system",
+      "kind": "system",
+      "parent_id": "organism",
+      "hallmark_ids": ["cellular_senescence", "chronic_inflammation"],
+      "citations": [
+        {
+          "source_id": "SRC-002",
+          "supports": "direct"
+        }
+      ],
+      "record_version": 1
+    },
+    {
+      "id": "musculoskeletal_system",
+      "name": "Musculoskeletal system",
+      "description": "Skeletal muscle, bone, cartilage, tendon and ligament, providing structure, movement and metabolic reserve.",
+      "layer": "L2_system",
+      "kind": "system",
+      "parent_id": "organism",
+      "hallmark_ids": ["stem_cell_exhaustion", "mitochondrial_dysfunction", "chronic_inflammation"],
+      "citations": [
+        {
+          "source_id": "SRC-024",
+          "supports": "direct"
+        }
+      ],
+      "record_version": 1
+    },
+    {
+      "id": "immune_system",
+      "name": "Immune system",
+      "description": "The cells, tissues and signalling networks that defend against infection and maintain tissue homeostasis.",
+      "layer": "L2_system",
+      "kind": "system",
+      "parent_id": "organism",
+      "hallmark_ids": ["chronic_inflammation", "cellular_senescence", "stem_cell_exhaustion"],
+      "citations": [
+        {
+          "source_id": "SRC-021",
+          "supports": "direct"
+        }
+      ],
+      "record_version": 1
+    },
+    {
+      "id": "endocrine_system",
+      "name": "Endocrine system",
+      "description": "Hormone-secreting glands that regulate growth, metabolism, reproduction and stress responses across tissues.",
+      "layer": "L2_system",
+      "kind": "system",
+      "parent_id": "organism",
+      "hallmark_ids": ["altered_intercellular_communication", "deregulated_nutrient_sensing"],
+      "citations": [
+        {
+          "source_id": "SRC-002",
+          "supports": "direct"
+        }
+      ],
+      "record_version": 1
+    },
+    {
+      "id": "metabolic_system",
+      "name": "Metabolic system",
+      "description": "The liver, pancreas, adipose tissue and associated signalling that manage energy storage, release and nutrient handling.",
+      "layer": "L2_system",
+      "kind": "system",
+      "parent_id": "organism",
+      "hallmark_ids": ["deregulated_nutrient_sensing", "mitochondrial_dysfunction"],
+      "citations": [
+        {
+          "source_id": "SRC-010",
+          "supports": "direct"
+        }
+      ],
+      "record_version": 1
+    },
+    {
+      "id": "renal_system",
+      "name": "Renal system",
+      "description": "The kidneys and urinary tract, which filter blood, regulate fluid and electrolyte balance, and clear waste.",
+      "layer": "L2_system",
+      "kind": "system",
+      "parent_id": "organism",
+      "hallmark_ids": ["cellular_senescence", "genomic_instability"],
+      "citations": [
+        {
+          "source_id": "SRC-027",
+          "supports": "direct"
+        }
+      ],
+      "record_version": 1
+    },
+    {
+      "id": "gastrointestinal_system",
+      "name": "Gastrointestinal system",
+      "description": "The digestive tract and its resident microbial ecosystem, handling digestion, absorption and barrier function.",
+      "layer": "L2_system",
+      "kind": "system",
+      "parent_id": "organism",
+      "hallmark_ids": ["dysbiosis", "chronic_inflammation"],
+      "citations": [
+        {
+          "source_id": "SRC-022",
+          "supports": "direct"
+        }
+      ],
+      "record_version": 1
+    },
+    {
+      "id": "reproductive_system",
+      "name": "Reproductive system",
+      "description": "The organs and hormonal axes governing reproduction, which undergo distinctive and sex-specific age-associated change.",
+      "layer": "L2_system",
+      "kind": "system",
+      "parent_id": "organism",
+      "hallmark_ids": ["altered_intercellular_communication"],
+      "citations": [
+        {
+          "source_id": "SRC-002",
+          "supports": "direct"
+        }
+      ],
+      "record_version": 1
+    },
+    {
+      "id": "integumentary_system",
+      "name": "Skin",
+      "description": "The skin and associated structures, forming the barrier between the body and its environment.",
+      "layer": "L2_system",
+      "kind": "system",
+      "parent_id": "organism",
+      "hallmark_ids": ["cellular_senescence", "stem_cell_exhaustion"],
+      "citations": [
+        {
+          "source_id": "SRC-002",
+          "supports": "direct"
+        }
+      ],
+      "record_version": 1
+    },
+    {
+      "id": "sensory_system",
+      "name": "Sensory systems",
+      "description": "The eyes, ears and other sensory organs that transduce environmental signals into neural activity.",
+      "layer": "L2_system",
+      "kind": "system",
+      "parent_id": "organism",
+      "hallmark_ids": ["loss_of_proteostasis", "mitochondrial_dysfunction"],
+      "citations": [
+        {
+          "source_id": "SRC-028",
+          "supports": "direct"
+        }
+      ],
+      "record_version": 1
+    },
+    {
+      "id": "brain",
+      "name": "Brain",
+      "description": "The central organ of the nervous system, showing regionally varied age-associated change in volume, connectivity and vascular supply.",
+      "layer": "L3_organ",
+      "kind": "organ",
+      "parent_id": "nervous_system",
+      "hallmark_ids": ["genomic_instability", "chronic_inflammation"],
+      "citations": [
+        {
+          "source_id": "SRC-028",
+          "supports": "direct"
+        }
+      ],
+      "record_version": 1
+    },
+    {
+      "id": "spinal_cord",
+      "name": "Spinal cord",
+      "description": "The neural pathway connecting brain and peripheral nerves.",
+      "layer": "L3_organ",
+      "kind": "organ",
+      "parent_id": "nervous_system",
+      "hallmark_ids": ["loss_of_proteostasis"],
+      "citations": [
+        {
+          "source_id": "SRC-028",
+          "supports": "direct"
+        }
+      ],
+      "record_version": 1
+    },
+    {
+      "id": "heart",
+      "name": "Heart",
+      "description": "The muscular pump that circulates blood; shows age-associated changes in wall thickness, filling and rhythm.",
+      "layer": "L3_organ",
+      "kind": "organ",
+      "parent_id": "cardiovascular_system",
+      "hallmark_ids": ["mitochondrial_dysfunction", "cellular_senescence"],
+      "citations": [
+        {
+          "source_id": "SRC-026",
+          "supports": "direct"
+        }
+      ],
+      "record_version": 1
+    },
+    {
+      "id": "arteries",
+      "name": "Arteries",
+      "description": "Vessels carrying blood away from the heart; arterial stiffening is among the better-characterised age-associated changes.",
+      "layer": "L3_organ",
+      "kind": "organ",
+      "parent_id": "cardiovascular_system",
+      "hallmark_ids": ["chronic_inflammation", "cellular_senescence"],
+      "citations": [
+        {
+          "source_id": "SRC-026",
+          "supports": "direct"
+        }
+      ],
+      "record_version": 1
+    },
+    {
+      "id": "lungs",
+      "name": "Lungs",
+      "description": "Paired organs of gas exchange, showing age-associated change in elastic recoil and alveolar surface.",
+      "layer": "L3_organ",
+      "kind": "organ",
+      "parent_id": "respiratory_system",
+      "hallmark_ids": ["cellular_senescence"],
+      "citations": [
+        {
+          "source_id": "SRC-002",
+          "supports": "direct"
+        }
+      ],
+      "record_version": 1
+    },
+    {
+      "id": "skeletal_muscle",
+      "name": "Skeletal muscle",
+      "description": "Voluntary muscle tissue; mass and strength decline with age, with strength typically declining faster than mass.",
+      "layer": "L3_organ",
+      "kind": "organ",
+      "parent_id": "musculoskeletal_system",
+      "hallmark_ids": ["stem_cell_exhaustion", "mitochondrial_dysfunction"],
+      "citations": [
+        {
+          "source_id": "SRC-025",
+          "supports": "direct"
+        }
+      ],
+      "record_version": 1
+    },
+    {
+      "id": "bone",
+      "name": "Bone",
+      "description": "Mineralised connective tissue undergoing continuous remodelling, whose balance shifts with age and hormonal status.",
+      "layer": "L3_organ",
+      "kind": "organ",
+      "parent_id": "musculoskeletal_system",
+      "hallmark_ids": ["stem_cell_exhaustion", "chronic_inflammation"],
+      "citations": [
+        {
+          "source_id": "SRC-002",
+          "supports": "direct"
+        }
+      ],
+      "record_version": 1
+    },
+    {
+      "id": "thymus",
+      "name": "Thymus",
+      "description": "The organ in which T cells mature; it involutes progressively from early life onward.",
+      "layer": "L3_organ",
+      "kind": "organ",
+      "parent_id": "immune_system",
+      "hallmark_ids": ["stem_cell_exhaustion", "cellular_senescence"],
+      "citations": [
+        {
+          "source_id": "SRC-021",
+          "supports": "direct"
+        }
+      ],
+      "record_version": 1
+    },
+    {
+      "id": "bone_marrow",
+      "name": "Bone marrow",
+      "description": "The site of blood and immune cell production, housing haematopoietic stem cells.",
+      "layer": "L3_organ",
+      "kind": "organ",
+      "parent_id": "immune_system",
+      "hallmark_ids": ["stem_cell_exhaustion", "genomic_instability"],
+      "citations": [
+        {
+          "source_id": "SRC-017",
+          "supports": "direct"
+        }
+      ],
+      "record_version": 1
+    },
+    {
+      "id": "liver",
+      "name": "Liver",
+      "description": "The principal organ of metabolic processing, detoxification and protein synthesis.",
+      "layer": "L3_organ",
+      "kind": "organ",
+      "parent_id": "metabolic_system",
+      "hallmark_ids": ["deregulated_nutrient_sensing", "loss_of_proteostasis"],
+      "citations": [
+        {
+          "source_id": "SRC-002",
+          "supports": "direct"
+        }
+      ],
+      "record_version": 1
+    },
+    {
+      "id": "pancreas",
+      "name": "Pancreas",
+      "description": "Source of digestive enzymes and of the hormones regulating blood glucose.",
+      "layer": "L3_organ",
+      "kind": "organ",
+      "parent_id": "metabolic_system",
+      "hallmark_ids": ["deregulated_nutrient_sensing"],
+      "citations": [
+        {
+          "source_id": "SRC-002",
+          "supports": "direct"
+        }
+      ],
+      "record_version": 1
+    },
+    {
+      "id": "kidneys",
+      "name": "Kidneys",
+      "description": "Paired filtering organs; nephron number and filtration capacity decline with age.",
+      "layer": "L3_organ",
+      "kind": "organ",
+      "parent_id": "renal_system",
+      "hallmark_ids": ["cellular_senescence"],
+      "citations": [
+        {
+          "source_id": "SRC-027",
+          "supports": "direct"
+        }
+      ],
+      "record_version": 1
+    },
+    {
+      "id": "intestines",
+      "name": "Intestines",
+      "description": "The absorptive tract and principal site of the gut microbial ecosystem.",
+      "layer": "L3_organ",
+      "kind": "organ",
+      "parent_id": "gastrointestinal_system",
+      "hallmark_ids": ["dysbiosis"],
+      "citations": [
+        {
+          "source_id": "SRC-022",
+          "supports": "direct"
+        }
+      ],
+      "record_version": 1
+    },
+    {
+      "id": "skin",
+      "name": "Skin tissue",
+      "description": "The layered barrier organ, showing age-associated change in thickness, elasticity and repair capacity.",
+      "layer": "L3_organ",
+      "kind": "organ",
+      "parent_id": "integumentary_system",
+      "hallmark_ids": ["cellular_senescence", "stem_cell_exhaustion"],
+      "citations": [
+        {
+          "source_id": "SRC-002",
+          "supports": "direct"
+        }
+      ],
+      "record_version": 1
+    },
+    {
+      "id": "eyes",
+      "name": "Eyes",
+      "description": "Sensory organs of vision, where lens proteins accumulate damage over decades.",
+      "layer": "L3_organ",
+      "kind": "organ",
+      "parent_id": "sensory_system",
+      "hallmark_ids": ["loss_of_proteostasis"],
+      "citations": [
+        {
+          "source_id": "SRC-002",
+          "supports": "direct"
+        }
+      ],
+      "record_version": 1
+    },
+    {
+      "id": "cardiac_tissue",
+      "name": "Cardiac tissue",
+      "description": "The contractile and connective tissue of the heart wall.",
+      "layer": "L3_tissue",
+      "kind": "tissue",
+      "parent_id": "heart",
+      "hallmark_ids": ["mitochondrial_dysfunction"],
+      "citations": [
+        {
+          "source_id": "SRC-026",
+          "supports": "direct"
+        }
+      ],
+      "record_version": 1
+    },
+    {
+      "id": "arterial_wall",
+      "name": "Arterial wall",
+      "description": "The layered vessel wall whose elastin and collagen composition changes with age.",
+      "layer": "L3_tissue",
+      "kind": "tissue",
+      "parent_id": "arteries",
+      "hallmark_ids": ["chronic_inflammation"],
+      "citations": [
+        {
+          "source_id": "SRC-026",
+          "supports": "direct"
+        }
+      ],
+      "record_version": 1
+    },
+    {
+      "id": "muscle_tissue",
+      "name": "Skeletal muscle tissue",
+      "description": "Bundled muscle fibres with their satellite-cell niche and connective scaffold.",
+      "layer": "L3_tissue",
+      "kind": "tissue",
+      "parent_id": "skeletal_muscle",
+      "hallmark_ids": ["stem_cell_exhaustion"],
+      "citations": [
+        {
+          "source_id": "SRC-025",
+          "supports": "direct"
+        }
+      ],
+      "record_version": 1
+    },
+    {
+      "id": "trabecular_bone",
+      "name": "Trabecular bone",
+      "description": "The internal lattice of bone, more metabolically active than cortical bone.",
+      "layer": "L3_tissue",
+      "kind": "tissue",
+      "parent_id": "bone",
+      "hallmark_ids": ["chronic_inflammation"],
+      "citations": [
+        {
+          "source_id": "SRC-002",
+          "supports": "direct"
+        }
+      ],
+      "record_version": 1
+    },
+    {
+      "id": "gut_epithelium",
+      "name": "Gut epithelium",
+      "description": "The rapidly renewing absorptive lining of the intestine.",
+      "layer": "L3_tissue",
+      "kind": "tissue",
+      "parent_id": "intestines",
+      "hallmark_ids": ["stem_cell_exhaustion", "dysbiosis"],
+      "citations": [
+        {
+          "source_id": "SRC-022",
+          "supports": "direct"
+        }
+      ],
+      "record_version": 1
+    },
+    {
+      "id": "cardiomyocyte",
+      "name": "Cardiomyocyte",
+      "description": "The contractile cell of cardiac muscle, largely post-mitotic in adults and heavily dependent on mitochondrial energy supply.",
+      "layer": "L4_cell_type",
+      "kind": "cell_type",
+      "parent_id": "cardiac_tissue",
+      "hallmark_ids": ["mitochondrial_dysfunction"],
+      "citations": [
+        {
+          "source_id": "SRC-012",
+          "supports": "direct"
+        }
+      ],
+      "record_version": 1
+    },
+    {
+      "id": "satellite_cell",
+      "name": "Muscle satellite cell",
+      "description": "The resident muscle stem cell responsible for repair and regeneration of muscle fibres.",
+      "layer": "L4_cell_type",
+      "kind": "cell_type",
+      "parent_id": "muscle_tissue",
+      "hallmark_ids": ["stem_cell_exhaustion"],
+      "citations": [
+        {
+          "source_id": "SRC-017",
+          "supports": "direct"
+        }
+      ],
+      "record_version": 1
+    },
+    {
+      "id": "fibroblast",
+      "name": "Fibroblast",
+      "description": "A connective-tissue cell producing extracellular matrix; the cell type in which replicative limits were first described.",
+      "layer": "L4_cell_type",
+      "kind": "cell_type",
+      "parent_id": "skin",
+      "hallmark_ids": ["cellular_senescence", "telomere_attrition"],
+      "citations": [
+        {
+          "source_id": "SRC-004",
+          "supports": "direct"
+        }
+      ],
+      "record_version": 1
+    },
+    {
+      "id": "hematopoietic_stem_cell",
+      "name": "Haematopoietic stem cell",
+      "description": "The blood-forming stem cell, which shows age-associated lineage bias and reduced regenerative output.",
+      "layer": "L4_cell_type",
+      "kind": "cell_type",
+      "parent_id": "bone_marrow",
+      "hallmark_ids": ["stem_cell_exhaustion", "genomic_instability"],
+      "citations": [
+        {
+          "source_id": "SRC-017",
+          "supports": "direct"
+        }
+      ],
+      "record_version": 1
+    },
+    {
+      "id": "t_cell",
+      "name": "T cell",
+      "description": "An adaptive immune cell whose naive population contracts as the thymus involutes.",
+      "layer": "L4_cell_type",
+      "kind": "cell_type",
+      "parent_id": "thymus",
+      "hallmark_ids": ["chronic_inflammation", "cellular_senescence"],
+      "citations": [
+        {
+          "source_id": "SRC-021",
+          "supports": "direct"
+        }
+      ],
+      "record_version": 1
+    },
+    {
+      "id": "neuron",
+      "name": "Neuron",
+      "description": "The signalling cell of the nervous system, long-lived and dependent on proteostasis and mitochondrial quality control.",
+      "layer": "L4_cell_type",
+      "kind": "cell_type",
+      "parent_id": "brain",
+      "hallmark_ids": ["loss_of_proteostasis", "mitochondrial_dysfunction"],
+      "citations": [
+        {
+          "source_id": "SRC-028",
+          "supports": "direct"
+        }
+      ],
+      "record_version": 1
+    },
+    {
+      "id": "mitochondria",
+      "name": "Mitochondria",
+      "description": "Organelles generating most cellular ATP and acting as hubs for metabolic and stress signalling.",
+      "layer": "L5_organelle",
+      "kind": "organelle",
+      "parent_id": "cardiomyocyte",
+      "hallmark_ids": ["mitochondrial_dysfunction"],
+      "citations": [
+        {
+          "source_id": "SRC-012",
+          "supports": "direct"
+        }
+      ],
+      "record_version": 1
+    },
+    {
+      "id": "lysosome",
+      "name": "Lysosome",
+      "description": "The degradative organelle that receives and breaks down material delivered by autophagy.",
+      "layer": "L5_organelle",
+      "kind": "organelle",
+      "parent_id": "neuron",
+      "hallmark_ids": ["disabled_macroautophagy"],
+      "citations": [
+        {
+          "source_id": "SRC-009",
+          "supports": "direct"
+        }
+      ],
+      "record_version": 1
+    },
+    {
+      "id": "nucleus",
+      "name": "Nucleus",
+      "description": "The organelle housing genomic DNA and its chromatin organisation.",
+      "layer": "L5_organelle",
+      "kind": "organelle",
+      "parent_id": "fibroblast",
+      "hallmark_ids": ["genomic_instability", "epigenetic_alterations"],
+      "citations": [
+        {
+          "source_id": "SRC-003",
+          "supports": "direct"
+        }
+      ],
+      "record_version": 1
+    },
+    {
+      "id": "mtor_signaling",
+      "name": "mTOR signalling",
+      "description": "A nutrient-sensing pathway coupling amino-acid and growth-factor availability to protein synthesis and autophagy.",
+      "layer": "L5_pathway",
+      "kind": "pathway",
+      "parent_id": "mitochondria",
+      "hallmark_ids": ["deregulated_nutrient_sensing", "disabled_macroautophagy"],
+      "citations": [
+        {
+          "source_id": "SRC-010",
+          "supports": "direct"
+        }
+      ],
+      "record_version": 1
+    },
+    {
+      "id": "ampk_signaling",
+      "name": "AMPK signalling",
+      "description": "An energy-sensing pathway activated by low cellular energy that promotes catabolism and autophagy.",
+      "layer": "L5_pathway",
+      "kind": "pathway",
+      "parent_id": "mitochondria",
+      "hallmark_ids": ["deregulated_nutrient_sensing"],
+      "citations": [
+        {
+          "source_id": "SRC-010",
+          "supports": "direct"
+        }
+      ],
+      "record_version": 1
+    },
+    {
+      "id": "insulin_igf1_signaling",
+      "name": "Insulin/IGF-1 signalling",
+      "description": "A conserved growth and nutrient pathway whose reduction extends lifespan in several model organisms.",
+      "layer": "L5_pathway",
+      "kind": "pathway",
+      "parent_id": "mitochondria",
+      "hallmark_ids": ["deregulated_nutrient_sensing"],
+      "citations": [
+        {
+          "source_id": "SRC-029",
+          "supports": "direct"
+        }
+      ],
+      "record_version": 1
+    },
+    {
+      "id": "dna_damage_response",
+      "name": "DNA damage response",
+      "description": "The network detecting and repairing DNA lesions, which can trigger senescence when damage is persistent.",
+      "layer": "L5_pathway",
+      "kind": "pathway",
+      "parent_id": "nucleus",
+      "hallmark_ids": ["genomic_instability", "cellular_senescence"],
+      "citations": [
+        {
+          "source_id": "SRC-003",
+          "supports": "direct"
+        }
+      ],
+      "record_version": 1
+    },
+    {
+      "id": "sasp_signaling",
+      "name": "Senescence-associated secretory phenotype",
+      "description": "The pro-inflammatory secretory programme of senescent cells, affecting neighbouring tissue.",
+      "layer": "L5_pathway",
+      "kind": "pathway",
+      "parent_id": "nucleus",
+      "hallmark_ids": ["cellular_senescence", "chronic_inflammation"],
+      "citations": [
+        {
+          "source_id": "SRC-015",
+          "supports": "direct"
+        }
+      ],
+      "record_version": 1
+    },
+    {
+      "id": "autophagy_pathway",
+      "name": "Macroautophagy pathway",
+      "description": "The pathway sequestering damaged components for lysosomal degradation and recycling.",
+      "layer": "L5_pathway",
+      "kind": "pathway",
+      "parent_id": "lysosome",
+      "hallmark_ids": ["disabled_macroautophagy", "loss_of_proteostasis"],
+      "citations": [
+        {
+          "source_id": "SRC-009",
+          "supports": "direct"
+        }
+      ],
+      "record_version": 1
+    },
+    {
+      "id": "leukocyte_telomere_length",
+      "name": "Leukocyte telomere length",
+      "description": "Telomere length measured in circulating white blood cells; a widely used but imperfect proxy for telomere state elsewhere.",
+      "layer": "L6_biomarker",
+      "kind": "biomarker",
+      "parent_id": "dna_damage_response",
+      "hallmark_ids": ["telomere_attrition"],
+      "citations": [
+        {
+          "source_id": "SRC-005",
+          "supports": "direct"
+        }
+      ],
+      "record_version": 1
+    },
+    {
+      "id": "dna_methylation_age",
+      "name": "DNA methylation age",
+      "description": "An age predictor built from methylation at selected CpG sites; predicts chronological age well, but is not a validated measure of an individual's functional state.",
+      "layer": "L6_biomarker",
+      "kind": "biomarker",
+      "parent_id": "nucleus",
+      "hallmark_ids": ["epigenetic_alterations"],
+      "citations": [
+        {
+          "source_id": "SRC-006",
+          "supports": "direct"
+        }
+      ],
+      "record_version": 1
+    },
+    {
+      "id": "il6",
+      "name": "Interleukin-6",
+      "description": "A circulating inflammatory cytokine commonly elevated in older adults and associated with frailty outcomes.",
+      "layer": "L6_biomarker",
+      "kind": "biomarker",
+      "parent_id": "sasp_signaling",
+      "hallmark_ids": ["chronic_inflammation"],
+      "citations": [
+        {
+          "source_id": "SRC-019",
+          "supports": "direct"
+        }
+      ],
+      "record_version": 1
+    },
+    {
+      "id": "p16_burden",
+      "name": "p16INK4a-positive cell burden",
+      "description": "A marker used to estimate senescent-cell load in tissue; no single marker is universally reliable.",
+      "layer": "L6_biomarker",
+      "kind": "biomarker",
+      "parent_id": "sasp_signaling",
+      "hallmark_ids": ["cellular_senescence"],
+      "citations": [
+        {
+          "source_id": "SRC-014",
+          "supports": "direct"
+        }
+      ],
+      "record_version": 1
+    },
+    {
+      "id": "grip_strength",
+      "name": "Grip strength",
+      "description": "A simple functional measure of muscle strength used in sarcopenia assessment.",
+      "layer": "L6_biomarker",
+      "kind": "biomarker",
+      "parent_id": "muscle_tissue",
+      "hallmark_ids": ["stem_cell_exhaustion"],
+      "citations": [
+        {
+          "source_id": "SRC-024",
+          "supports": "direct"
+        }
+      ],
+      "record_version": 1
+    },
+    {
+      "id": "egfr",
+      "name": "Estimated glomerular filtration rate",
+      "description": "An estimate of kidney filtering capacity derived from serum markers.",
+      "layer": "L6_biomarker",
+      "kind": "biomarker",
+      "parent_id": "kidneys",
+      "hallmark_ids": [],
+      "citations": [
+        {
+          "source_id": "SRC-027",
+          "supports": "direct"
+        }
+      ],
+      "record_version": 1
+    },
+    {
+      "id": "microbiome_uniqueness",
+      "name": "Gut microbiome uniqueness",
+      "description": "A measure of how distinct an individual's gut microbial profile is relative to a reference population.",
+      "layer": "L6_biomarker",
+      "kind": "biomarker",
+      "parent_id": "gut_epithelium",
+      "hallmark_ids": ["dysbiosis"],
+      "citations": [
+        {
+          "source_id": "SRC-023",
+          "supports": "direct"
+        }
+      ],
+      "record_version": 1
+    }
+  ]
+}

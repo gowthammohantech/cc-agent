@@ -1,0 +1,19 @@
+{
+  "populations": [
+    {
+      "id": "general_adult",
+      "label": "General adult population",
+      "sex": "mixed",
+      "ancestry_note": "Source cohorts are predominantly of European ancestry and drawn from high-income countries; ancestry is inconsistently reported across the underlying studies.",
+      "cohort_note": "A composite of the mixed-sex adult cohorts used by the cited sources. It is not a single measured cohort and should not be treated as one.",
+      "health_context": "general",
+      "caveats": [
+        "Composite of heterogeneous cohorts; values from different sources are not directly poolable.",
+        "Predominantly high-income, European-ancestry samples, so generalisation elsewhere is uncertain.",
+        "Sex-stratified differences are real for several measures but are not separated in this seed corpus.",
+        "Cross-sectional sources cannot distinguish aging from cohort effects."
+      ],
+      "record_version": 1
+    }
+  ]
+}

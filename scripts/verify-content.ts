@@ -1,20 +1,51 @@
 /**
- * Content integrity gate (Phase 1 fills this in against the real schemas).
- * Until the seed corpus lands, this reports an empty corpus rather than
- * silently passing, so an empty content tree can never look like a green check.
+ * Content integrity gate. Runs before every build.
+ *
+ * Schema validation happens inside the loader (which throws), so this script
+ * covers what a schema cannot see: references that point at nothing, ids that
+ * collide, and the coverage floors that stop the app shipping a visibly empty
+ * core.
  */
-import { resolve } from 'node:path';
-import { walkFiles } from './lib/walk.js';
-
-const ROOT = resolve(import.meta.dirname, '..');
+import { getBundle } from '../src/content/bundle.js';
+import { checkReferentialIntegrity, checkCoverage } from '../src/content/integrity.js';
 
 function main(): void {
-  const files = walkFiles(ROOT, resolve(ROOT, 'content'), ['.json']);
-  const records = files.filter((f) => f !== 'content/manifest.json');
-  console.log(
-    `verify:content — ${records.length} content file(s) found.` +
-      (records.length === 0 ? ' Seed corpus not yet authored (Phase 1).' : ''),
-  );
+  let bundle;
+  try {
+    bundle = getBundle();
+  } catch (err) {
+    console.error('\nverify:content FAILED — schema validation error:\n');
+    console.error(err instanceof Error ? err.message : String(err));
+    process.exit(1);
+  }
+
+  const problems = [...checkReferentialIntegrity(bundle), ...checkCoverage(bundle)];
+
+  const counts = [
+    `${bundle.entities.length} entities`,
+    `${bundle.hallmarks.length} hallmarks`,
+    `${bundle.observations.length} observations`,
+    `${bundle.trajectories.length} trajectories`,
+    `${bundle.relationships.length} relationships`,
+    `${bundle.rejuvenationTargets.length} rejuvenation targets`,
+    `${bundle.researchApproaches.length} research approaches`,
+    `${bundle.studies.length} studies`,
+  ].join(', ');
+
+  if (problems.length === 0) {
+    console.log(`verify:content — OK. ${counts}.`);
+    if (bundle.trajectories.length === 0) {
+      console.log(
+        'verify:content — note: the trajectory corpus is empty by design; see content/trajectories/trajectories.json.',
+      );
+    }
+    return;
+  }
+
+  console.error(`\nverify:content FAILED — ${problems.length} problem(s):\n`);
+  for (const p of problems) console.error(`  [${p.kind}] ${p.message}`);
+  console.error('');
+  process.exit(1);
 }
 
 main();

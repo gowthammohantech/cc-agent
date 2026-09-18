@@ -1,0 +1,55 @@
+{
+  "model_version": "v1",
+  "edge_semantics": {
+    "ACTIVATES": {
+      "sign": 1,
+      "propagates": true
+    },
+    "INHIBITS": {
+      "sign": -1,
+      "propagates": true
+    },
+    "REPAIRS": {
+      "sign": 1,
+      "propagates": true
+    },
+    "CLEARS": {
+      "sign": 1,
+      "propagates": true
+    },
+    "REGENERATES": {
+      "sign": 1,
+      "propagates": true
+    },
+    "DAMAGES": {
+      "sign": -1,
+      "propagates": true
+    },
+    "CONTRIBUTES_TO": {
+      "sign": 1,
+      "propagates": true
+    },
+    "ASSOCIATED_WITH": {
+      "sign": 0,
+      "propagates": false
+    },
+    "UNKNOWN_RELATIONSHIP": {
+      "sign": 0,
+      "propagates": false
+    }
+  },
+  "confidence_multipliers": {
+    "high": 0.9,
+    "moderate": 0.6,
+    "low": 0.3,
+    "very_low": 0.1,
+    "not_assessed": 0.0
+  },
+  "propagating_causal_statuses": ["established_causal", "supported_mechanistically"],
+  "propagating_review_statuses": ["approved", "in_review"],
+  "min_confidence": 0.15,
+  "max_depth": 4,
+  "max_iterations": 5000,
+  "disclaimer": "SIMULATION — NOT A CLINICAL PREDICTION. This traces directions through a curated map of relationships. It does not predict what would happen to any person.",
+  "bounds_description": "This model propagates direction only, across curated edges whose causal standing is at least mechanistically supported, to a maximum of four steps. It does not model magnitude, timing, dose, individual variation, interaction effects, or compensation. Correlational edges do not propagate at all, so a correlation can never appear here as a consequence. Where the model stops, it says so rather than extrapolating."
+}

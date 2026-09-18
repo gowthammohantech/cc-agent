@@ -1,0 +1,675 @@
+{
+  "figure_height": 1.8,
+  "shell": [
+    {
+      "geometry_key": "shell_torso",
+      "entity_id": "organism",
+      "label": "Torso",
+      "system_id": "organism",
+      "position": [0, 0, 0],
+      "rotation": [0, 0, 0],
+      "primitive": {
+        "shape": "lathe",
+        "profile": [
+          [0.02, 1.45],
+          [0.15, 1.42],
+          [0.185, 1.34],
+          [0.19, 1.24],
+          [0.17, 1.14],
+          [0.148, 1.05],
+          [0.165, 0.97],
+          [0.175, 0.92],
+          [0.14, 0.88]
+        ],
+        "depth_scale": 0.62
+      },
+      "mirror_x": false,
+      "svg_depth": 0
+    },
+    {
+      "geometry_key": "shell_pelvis",
+      "entity_id": "organism",
+      "label": "Pelvis",
+      "system_id": "organism",
+      "position": [0, 0, 0],
+      "rotation": [0, 0, 0],
+      "primitive": {
+        "shape": "lathe",
+        "profile": [
+          [0.175, 0.92],
+          [0.18, 0.88],
+          [0.165, 0.83],
+          [0.12, 0.8]
+        ],
+        "depth_scale": 0.7
+      },
+      "mirror_x": false,
+      "svg_depth": 0
+    },
+    {
+      "geometry_key": "shell_head",
+      "entity_id": "organism",
+      "label": "Head",
+      "system_id": "organism",
+      "position": [0, 1.62, 0],
+      "rotation": [0, 0, 0],
+      "primitive": {
+        "shape": "ellipsoid",
+        "radius": 0.105,
+        "scale": [0.92, 1.16, 1.0]
+      },
+      "mirror_x": false,
+      "svg_depth": 0
+    },
+    {
+      "geometry_key": "shell_neck",
+      "entity_id": "organism",
+      "label": "Neck",
+      "system_id": "organism",
+      "position": [0, 1.485, 0],
+      "rotation": [0, 0, 0],
+      "primitive": {
+        "shape": "capsule",
+        "radius": 0.045,
+        "length": 0.09
+      },
+      "mirror_x": false,
+      "svg_depth": 0
+    },
+    {
+      "geometry_key": "shell_upper_arm",
+      "entity_id": "organism",
+      "label": "Upper arm",
+      "system_id": "organism",
+      "position": [0.205, 1.22, 0],
+      "rotation": [0, 0, 0.2],
+      "primitive": {
+        "shape": "capsule",
+        "radius": 0.046,
+        "length": 0.26
+      },
+      "mirror_x": true,
+      "svg_depth": 1
+    },
+    {
+      "geometry_key": "shell_forearm",
+      "entity_id": "organism",
+      "label": "Forearm",
+      "system_id": "organism",
+      "position": [0.255, 0.95, 0],
+      "rotation": [0, 0, 0.13],
+      "primitive": {
+        "shape": "capsule",
+        "radius": 0.039,
+        "length": 0.24
+      },
+      "mirror_x": true,
+      "svg_depth": 1
+    },
+    {
+      "geometry_key": "shell_hand",
+      "entity_id": "organism",
+      "label": "Hand",
+      "system_id": "organism",
+      "position": [0.285, 0.78, 0],
+      "rotation": [0, 0, 0],
+      "primitive": {
+        "shape": "box",
+        "size": [0.05, 0.12, 0.025],
+        "bevel": 0.01
+      },
+      "mirror_x": true,
+      "svg_depth": 1
+    },
+    {
+      "geometry_key": "shell_thigh",
+      "entity_id": "organism",
+      "label": "Thigh",
+      "system_id": "organism",
+      "position": [0.085, 0.66, 0],
+      "rotation": [0, 0, 0.03],
+      "primitive": {
+        "shape": "capsule",
+        "radius": 0.062,
+        "length": 0.36
+      },
+      "mirror_x": true,
+      "svg_depth": 1
+    },
+    {
+      "geometry_key": "shell_shin",
+      "entity_id": "organism",
+      "label": "Shin",
+      "system_id": "organism",
+      "position": [0.078, 0.27, 0],
+      "rotation": [0, 0, 0],
+      "primitive": {
+        "shape": "capsule",
+        "radius": 0.047,
+        "length": 0.36
+      },
+      "mirror_x": true,
+      "svg_depth": 1
+    },
+    {
+      "geometry_key": "shell_foot",
+      "entity_id": "organism",
+      "label": "Foot",
+      "system_id": "organism",
+      "position": [0.078, 0.035, 0.045],
+      "rotation": [0, 0, 0],
+      "primitive": {
+        "shape": "box",
+        "size": [0.075, 0.06, 0.2],
+        "bevel": 0.015
+      },
+      "mirror_x": true,
+      "svg_depth": 1
+    }
+  ],
+  "parts": [
+    {
+      "geometry_key": "brain",
+      "entity_id": "brain",
+      "label": "Brain",
+      "system_id": "nervous_system",
+      "position": [0, 1.655, 0],
+      "rotation": [0, 0, 0],
+      "primitive": {
+        "shape": "ellipsoid",
+        "radius": 0.082,
+        "scale": [0.95, 0.88, 1.05]
+      },
+      "mirror_x": false,
+      "svg_depth": 5
+    },
+    {
+      "geometry_key": "spinal_cord",
+      "entity_id": "spinal_cord",
+      "label": "Spinal cord",
+      "system_id": "nervous_system",
+      "position": [0, 0, 0],
+      "rotation": [0, 0, 0],
+      "primitive": {
+        "shape": "tube",
+        "path": [
+          [0, 1.5, -0.02],
+          [0, 1.35, -0.035],
+          [0, 1.15, -0.045],
+          [0, 1.0, -0.04],
+          [0, 0.9, -0.03]
+        ],
+        "radius": 0.011
+      },
+      "mirror_x": false,
+      "svg_depth": 3
+    },
+    {
+      "geometry_key": "heart",
+      "entity_id": "heart",
+      "label": "Heart",
+      "system_id": "cardiovascular_system",
+      "position": [-0.025, 1.24, 0.03],
+      "rotation": [0, 0, -0.22],
+      "primitive": {
+        "shape": "ellipsoid",
+        "radius": 0.058,
+        "scale": [0.9, 1.15, 0.85]
+      },
+      "mirror_x": false,
+      "svg_depth": 6
+    },
+    {
+      "geometry_key": "aorta",
+      "entity_id": "arteries",
+      "label": "Aorta and great vessels",
+      "system_id": "cardiovascular_system",
+      "position": [0, 0, 0],
+      "rotation": [0, 0, 0],
+      "primitive": {
+        "shape": "tube",
+        "path": [
+          [-0.02, 1.19, 0.02],
+          [-0.01, 1.3, 0.0],
+          [0.0, 1.36, -0.01],
+          [0.02, 1.3, -0.03],
+          [0.015, 1.15, -0.035],
+          [0.01, 1.0, -0.03]
+        ],
+        "radius": 0.016
+      },
+      "mirror_x": false,
+      "svg_depth": 4
+    },
+    {
+      "geometry_key": "limb_artery",
+      "entity_id": "arteries",
+      "label": "Limb arteries",
+      "system_id": "cardiovascular_system",
+      "position": [0, 0, 0],
+      "rotation": [0, 0, 0],
+      "primitive": {
+        "shape": "tube",
+        "path": [
+          [0.09, 1.0, -0.02],
+          [0.085, 0.8, -0.01],
+          [0.08, 0.5, 0.0],
+          [0.078, 0.2, 0.01]
+        ],
+        "radius": 0.008
+      },
+      "mirror_x": true,
+      "svg_depth": 2
+    },
+    {
+      "geometry_key": "lung",
+      "entity_id": "lungs",
+      "label": "Lung",
+      "system_id": "respiratory_system",
+      "position": [0.075, 1.27, 0.0],
+      "rotation": [0, 0, 0],
+      "primitive": {
+        "shape": "lathe",
+        "profile": [
+          [0.012, 1.4],
+          [0.07, 1.33],
+          [0.082, 1.24],
+          [0.07, 1.14],
+          [0.03, 1.08]
+        ],
+        "depth_scale": 0.72
+      },
+      "mirror_x": true,
+      "svg_depth": 4
+    },
+    {
+      "geometry_key": "trachea",
+      "entity_id": "respiratory_system",
+      "label": "Trachea and bronchi",
+      "system_id": "respiratory_system",
+      "position": [0, 0, 0],
+      "rotation": [0, 0, 0],
+      "primitive": {
+        "shape": "tube",
+        "path": [
+          [0, 1.46, 0.01],
+          [0, 1.38, 0.005],
+          [0, 1.32, 0.0]
+        ],
+        "radius": 0.013
+      },
+      "mirror_x": false,
+      "svg_depth": 5
+    },
+    {
+      "geometry_key": "ribcage",
+      "entity_id": "bone",
+      "label": "Ribcage",
+      "system_id": "musculoskeletal_system",
+      "position": [0, 1.24, 0],
+      "rotation": [0, 0, 0],
+      "primitive": {
+        "shape": "lathe",
+        "profile": [
+          [0.15, 1.36],
+          [0.175, 1.28],
+          [0.178, 1.18],
+          [0.15, 1.1]
+        ],
+        "depth_scale": 0.64
+      },
+      "mirror_x": false,
+      "svg_depth": 2
+    },
+    {
+      "geometry_key": "spine_bone",
+      "entity_id": "bone",
+      "label": "Spine",
+      "system_id": "musculoskeletal_system",
+      "position": [0, 0, 0],
+      "rotation": [0, 0, 0],
+      "primitive": {
+        "shape": "tube",
+        "path": [
+          [0, 1.45, -0.03],
+          [0, 1.25, -0.05],
+          [0, 1.05, -0.05],
+          [0, 0.9, -0.035]
+        ],
+        "radius": 0.018
+      },
+      "mirror_x": false,
+      "svg_depth": 2
+    },
+    {
+      "geometry_key": "femur",
+      "entity_id": "bone",
+      "label": "Femur",
+      "system_id": "musculoskeletal_system",
+      "position": [0.085, 0.66, 0],
+      "rotation": [0, 0, 0],
+      "primitive": {
+        "shape": "capsule",
+        "radius": 0.022,
+        "length": 0.34
+      },
+      "mirror_x": true,
+      "svg_depth": 3
+    },
+    {
+      "geometry_key": "thigh_muscle",
+      "entity_id": "skeletal_muscle",
+      "label": "Thigh muscle",
+      "system_id": "musculoskeletal_system",
+      "position": [0.085, 0.66, 0.005],
+      "rotation": [0, 0, 0],
+      "primitive": {
+        "shape": "capsule",
+        "radius": 0.052,
+        "length": 0.32
+      },
+      "mirror_x": true,
+      "svg_depth": 2
+    },
+    {
+      "geometry_key": "arm_muscle",
+      "entity_id": "skeletal_muscle",
+      "label": "Arm muscle",
+      "system_id": "musculoskeletal_system",
+      "position": [0.205, 1.22, 0.004],
+      "rotation": [0, 0, 0.2],
+      "primitive": {
+        "shape": "capsule",
+        "radius": 0.038,
+        "length": 0.22
+      },
+      "mirror_x": true,
+      "svg_depth": 2
+    },
+    {
+      "geometry_key": "thymus",
+      "entity_id": "thymus",
+      "label": "Thymus",
+      "system_id": "immune_system",
+      "position": [0, 1.345, 0.055],
+      "rotation": [0, 0, 0],
+      "primitive": {
+        "shape": "ellipsoid",
+        "radius": 0.028,
+        "scale": [1.1, 0.75, 0.6]
+      },
+      "mirror_x": false,
+      "svg_depth": 6
+    },
+    {
+      "geometry_key": "spleen",
+      "entity_id": "immune_system",
+      "label": "Spleen",
+      "system_id": "immune_system",
+      "position": [0.105, 1.12, -0.01],
+      "rotation": [0, 0, 0],
+      "primitive": {
+        "shape": "ellipsoid",
+        "radius": 0.038,
+        "scale": [0.8, 1.15, 0.7]
+      },
+      "mirror_x": false,
+      "svg_depth": 5
+    },
+    {
+      "geometry_key": "marrow",
+      "entity_id": "bone_marrow",
+      "label": "Bone marrow",
+      "system_id": "immune_system",
+      "position": [0.085, 0.66, 0],
+      "rotation": [0, 0, 0],
+      "primitive": {
+        "shape": "capsule",
+        "radius": 0.01,
+        "length": 0.26
+      },
+      "mirror_x": true,
+      "svg_depth": 4
+    },
+    {
+      "geometry_key": "lymph_node",
+      "entity_id": "immune_system",
+      "label": "Lymph nodes",
+      "system_id": "immune_system",
+      "position": [0.115, 1.4, 0.02],
+      "rotation": [0, 0, 0],
+      "primitive": {
+        "shape": "ellipsoid",
+        "radius": 0.014,
+        "scale": [1, 1, 1]
+      },
+      "mirror_x": true,
+      "svg_depth": 6
+    },
+    {
+      "geometry_key": "pituitary",
+      "entity_id": "endocrine_system",
+      "label": "Pituitary",
+      "system_id": "endocrine_system",
+      "position": [0, 1.635, -0.01],
+      "rotation": [0, 0, 0],
+      "primitive": {
+        "shape": "ellipsoid",
+        "radius": 0.012,
+        "scale": [1, 0.8, 1]
+      },
+      "mirror_x": false,
+      "svg_depth": 7
+    },
+    {
+      "geometry_key": "thyroid",
+      "entity_id": "endocrine_system",
+      "label": "Thyroid",
+      "system_id": "endocrine_system",
+      "position": [0, 1.455, 0.042],
+      "rotation": [0, 0, 0],
+      "primitive": {
+        "shape": "ellipsoid",
+        "radius": 0.021,
+        "scale": [1.4, 0.7, 0.6]
+      },
+      "mirror_x": false,
+      "svg_depth": 7
+    },
+    {
+      "geometry_key": "adrenal",
+      "entity_id": "endocrine_system",
+      "label": "Adrenal gland",
+      "system_id": "endocrine_system",
+      "position": [0.055, 1.06, -0.03],
+      "rotation": [0, 0, 0],
+      "primitive": {
+        "shape": "ellipsoid",
+        "radius": 0.016,
+        "scale": [1, 0.7, 1]
+      },
+      "mirror_x": true,
+      "svg_depth": 6
+    },
+    {
+      "geometry_key": "liver",
+      "entity_id": "liver",
+      "label": "Liver",
+      "system_id": "metabolic_system",
+      "position": [-0.055, 1.12, 0.03],
+      "rotation": [0, 0, -0.1],
+      "primitive": {
+        "shape": "box",
+        "size": [0.155, 0.085, 0.1],
+        "bevel": 0.03
+      },
+      "mirror_x": false,
+      "svg_depth": 5
+    },
+    {
+      "geometry_key": "pancreas",
+      "entity_id": "pancreas",
+      "label": "Pancreas",
+      "system_id": "metabolic_system",
+      "position": [0.03, 1.045, -0.015],
+      "rotation": [0, 0, 1.35],
+      "primitive": {
+        "shape": "capsule",
+        "radius": 0.017,
+        "length": 0.1
+      },
+      "mirror_x": false,
+      "svg_depth": 5
+    },
+    {
+      "geometry_key": "kidney",
+      "entity_id": "kidneys",
+      "label": "Kidney",
+      "system_id": "renal_system",
+      "position": [0.07, 1.045, -0.045],
+      "rotation": [0, 0, 0],
+      "primitive": {
+        "shape": "lathe",
+        "profile": [
+          [0.008, 1.085],
+          [0.03, 1.062],
+          [0.034, 1.03],
+          [0.01, 1.008]
+        ],
+        "depth_scale": 0.75
+      },
+      "mirror_x": true,
+      "svg_depth": 4
+    },
+    {
+      "geometry_key": "bladder",
+      "entity_id": "renal_system",
+      "label": "Bladder",
+      "system_id": "renal_system",
+      "position": [0, 0.885, 0.03],
+      "rotation": [0, 0, 0],
+      "primitive": {
+        "shape": "ellipsoid",
+        "radius": 0.034,
+        "scale": [1, 0.85, 0.9]
+      },
+      "mirror_x": false,
+      "svg_depth": 5
+    },
+    {
+      "geometry_key": "stomach",
+      "entity_id": "gastrointestinal_system",
+      "label": "Stomach",
+      "system_id": "gastrointestinal_system",
+      "position": [0.045, 1.1, 0.035],
+      "rotation": [0, 0, 0],
+      "primitive": {
+        "shape": "lathe",
+        "profile": [
+          [0.012, 1.145],
+          [0.05, 1.115],
+          [0.052, 1.075],
+          [0.014, 1.045]
+        ],
+        "depth_scale": 0.8
+      },
+      "mirror_x": false,
+      "svg_depth": 5
+    },
+    {
+      "geometry_key": "intestines",
+      "entity_id": "intestines",
+      "label": "Intestines",
+      "system_id": "gastrointestinal_system",
+      "position": [0, 0, 0],
+      "rotation": [0, 0, 0],
+      "primitive": {
+        "shape": "tube",
+        "path": [
+          [-0.06, 1.02, 0.03],
+          [0.06, 1.0, 0.04],
+          [0.07, 0.96, 0.02],
+          [-0.05, 0.95, 0.03],
+          [-0.07, 0.93, 0.045],
+          [0.05, 0.93, 0.05],
+          [0.04, 0.905, 0.03],
+          [-0.02, 0.9, 0.035]
+        ],
+        "radius": 0.023
+      },
+      "mirror_x": false,
+      "svg_depth": 4
+    },
+    {
+      "geometry_key": "reproductive",
+      "entity_id": "reproductive_system",
+      "label": "Reproductive organs",
+      "system_id": "reproductive_system",
+      "position": [0, 0.865, 0.0],
+      "rotation": [0, 0, 0],
+      "primitive": {
+        "shape": "ellipsoid",
+        "radius": 0.028,
+        "scale": [1.1, 0.8, 0.9]
+      },
+      "mirror_x": false,
+      "svg_depth": 5
+    },
+    {
+      "geometry_key": "skin_layer",
+      "entity_id": "skin",
+      "label": "Skin",
+      "system_id": "integumentary_system",
+      "position": [0, 0, 0],
+      "rotation": [0, 0, 0],
+      "primitive": {
+        "shape": "lathe",
+        "profile": [
+          [0.02, 1.45],
+          [0.15, 1.42],
+          [0.185, 1.34],
+          [0.19, 1.24],
+          [0.17, 1.14],
+          [0.148, 1.05],
+          [0.165, 0.97],
+          [0.175, 0.92],
+          [0.14, 0.88]
+        ],
+        "depth_scale": 0.63
+      },
+      "mirror_x": false,
+      "svg_depth": 1
+    },
+    {
+      "geometry_key": "eye",
+      "entity_id": "eyes",
+      "label": "Eye",
+      "system_id": "sensory_system",
+      "position": [0.037, 1.665, 0.088],
+      "rotation": [0, 0, 0],
+      "primitive": {
+        "shape": "ellipsoid",
+        "radius": 0.017,
+        "scale": [1, 1, 1]
+      },
+      "mirror_x": true,
+      "svg_depth": 7
+    },
+    {
+      "geometry_key": "ear",
+      "entity_id": "sensory_system",
+      "label": "Ear",
+      "system_id": "sensory_system",
+      "position": [0.098, 1.655, 0.0],
+      "rotation": [0, 0, 0],
+      "primitive": {
+        "shape": "ellipsoid",
+        "radius": 0.019,
+        "scale": [0.5, 1.3, 0.9]
+      },
+      "mirror_x": true,
+      "svg_depth": 6
+    }
+  ],
+  "stylization_notice": "Stylized schematic — shapes are simplified geometric primitives, not anatomically accurate forms. Positions are indicative only, and this view must not be used as an anatomy reference."
+}

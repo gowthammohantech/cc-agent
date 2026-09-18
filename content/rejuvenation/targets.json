@@ -1,0 +1,753 @@
+{
+  "rejuvenation_targets": [
+    {
+      "target_id": "target_001",
+      "name": "Reduce harmful senescent-cell burden",
+      "aging_process": "cellular_senescence",
+      "desired_direction": "Reduce the burden or the pro-inflammatory signalling of senescent cells, without removing their beneficial roles in repair and tumour suppression.",
+      "rejuvenation_scope": "cellular",
+      "research_approach_ids": ["senolytics"],
+      "human_evidence": [
+        {
+          "summary": "A first-in-human open-label pilot in idiopathic pulmonary fibrosis reported changes in physical-function measures. It had no control group, 14 participants, and a disease rather than aging endpoint.",
+          "citations": [
+            {
+              "source_id": "SRC-016",
+              "supports": "direct"
+            }
+          ]
+        }
+      ],
+      "animal_evidence": [
+        {
+          "summary": "Genetic clearance of p16-positive cells delayed several age-associated changes in a progeroid mouse model.",
+          "citations": [
+            {
+              "source_id": "SRC-013",
+              "supports": "direct"
+            }
+          ]
+        },
+        {
+          "summary": "Clearance in naturally aged wild-type mice affected healthy lifespan measures, with results varying by genetic background.",
+          "citations": [
+            {
+              "source_id": "SRC-014",
+              "supports": "direct"
+            }
+          ]
+        }
+      ],
+      "in_vitro_evidence": [
+        {
+          "summary": "Senescent phenotypes and the secretory programme are well characterised in culture, though no single marker identifies senescence reliably.",
+          "citations": [
+            {
+              "source_id": "SRC-015",
+              "supports": "direct"
+            }
+          ]
+        }
+      ],
+      "risks": [
+        {
+          "risk": "Senescent cells contribute to wound healing and tumour suppression, so clearing them may impair repair or raise cancer risk.",
+          "severity": "observed_preclinical",
+          "citations": [
+            {
+              "source_id": "SRC-015",
+              "supports": "direct"
+            }
+          ]
+        },
+        {
+          "risk": "Senolytic agents studied to date are not senescence-specific and have off-target effects.",
+          "severity": "observed_clinical",
+          "citations": [
+            {
+              "source_id": "SRC-016",
+              "supports": "direct"
+            }
+          ]
+        },
+        {
+          "risk": "Burden cannot be reliably measured in living human tissue, so there is no way to confirm target engagement.",
+          "severity": "theoretical",
+          "citations": [
+            {
+              "source_id": "SRC-015",
+              "supports": "direct"
+            }
+          ]
+        }
+      ],
+      "unknowns": [
+        "Whether senescent-cell burden limits human healthspan at all.",
+        "What fraction of senescent cells it would be safe to remove, and in which tissues.",
+        "Whether benefits seen in short-lived mice have any counterpart over a human lifespan.",
+        "Whether repeated clearance is durable or whether burden simply re-accumulates."
+      ],
+      "clinical_status": "experimental",
+      "reversibility_demonstrated": {
+        "in_vitro": "yes",
+        "in_animals": "partial",
+        "in_humans": "unknown",
+        "note": "Clearance is demonstrated in culture and in mouse models with measurable functional effects. In humans, only small uncontrolled pilots exist, with surrogate endpoints in a disease population; no reversal of an aging measure has been demonstrated.",
+        "citations": [
+          {
+            "source_id": "SRC-013",
+            "supports": "direct"
+          },
+          {
+            "source_id": "SRC-014",
+            "supports": "direct"
+          },
+          {
+            "source_id": "SRC-016",
+            "supports": "direct"
+          }
+        ]
+      },
+      "provenance": {
+        "evidence_level": "animal",
+        "causal_status": "supported_mechanistically",
+        "review_status": "in_review",
+        "confidence": "moderate",
+        "citations": [
+          {
+            "source_id": "SRC-013",
+            "supports": "direct"
+          },
+          {
+            "source_id": "SRC-014",
+            "supports": "direct"
+          },
+          {
+            "source_id": "SRC-016",
+            "supports": "direct"
+          }
+        ],
+        "uncertainty": {
+          "description": "The gap between mouse clearance experiments and any human application is very large, and the seed evidence does not support clinical expectations.",
+          "known_conflicts": ["Senescent cells have both harmful and beneficial roles."],
+          "generalizability": "tissue_dependent"
+        },
+        "reviewed_by": null,
+        "reviewed_at": null,
+        "record_version": 1
+      }
+    },
+    {
+      "target_id": "target_002",
+      "name": "Restore regulated autophagic clearance",
+      "aging_process": "disabled_macroautophagy",
+      "desired_direction": "Restore appropriate autophagic flux so damaged organelles and protein aggregates are cleared, without suppressing the anabolic signalling tissues also require.",
+      "rejuvenation_scope": "cellular",
+      "research_approach_ids": ["autophagy_modulation", "nutrient_sensing_modulation"],
+      "human_evidence": [],
+      "animal_evidence": [
+        {
+          "summary": "mTOR inhibition late in life extended lifespan in genetically heterogeneous mice, with effects differing by sex.",
+          "citations": [
+            {
+              "source_id": "SRC-011",
+              "supports": "direct"
+            }
+          ]
+        },
+        {
+          "summary": "Autophagy is required for lifespan extension by several interventions in model organisms.",
+          "citations": [
+            {
+              "source_id": "SRC-009",
+              "supports": "direct"
+            }
+          ]
+        }
+      ],
+      "in_vitro_evidence": [
+        {
+          "summary": "The inhibitory relationship between mTOR signalling and autophagy initiation is well established biochemically.",
+          "citations": [
+            {
+              "source_id": "SRC-009",
+              "supports": "direct"
+            },
+            {
+              "source_id": "SRC-010",
+              "supports": "direct"
+            }
+          ]
+        }
+      ],
+      "risks": [
+        {
+          "risk": "mTOR inhibition is immunosuppressive and carries metabolic side effects including impaired glucose handling.",
+          "severity": "observed_clinical",
+          "citations": [
+            {
+              "source_id": "SRC-010",
+              "supports": "direct"
+            },
+            {
+              "source_id": "SRC-011",
+              "supports": "direct"
+            }
+          ]
+        },
+        {
+          "risk": "Excessive autophagy induction can be harmful; more is not straightforwardly better.",
+          "severity": "observed_preclinical",
+          "citations": [
+            {
+              "source_id": "SRC-009",
+              "supports": "direct"
+            }
+          ]
+        },
+        {
+          "risk": "Autophagic flux cannot be measured in living human tissue, so dose-finding has no biomarker to work against.",
+          "severity": "theoretical",
+          "citations": [
+            {
+              "source_id": "SRC-009",
+              "supports": "direct"
+            }
+          ]
+        }
+      ],
+      "unknowns": [
+        "Whether autophagic capacity actually declines in aging human tissue, as opposed to model organisms.",
+        "What level of flux would be beneficial rather than harmful in a given tissue.",
+        "Whether lifespan effects in short-lived species have any human counterpart.",
+        "How to confirm target engagement in a living person."
+      ],
+      "clinical_status": "preclinical",
+      "reversibility_demonstrated": {
+        "in_vitro": "yes",
+        "in_animals": "partial",
+        "in_humans": "no",
+        "note": "Autophagic induction is demonstrable in cells and model organisms, with lifespan effects in mice. No human demonstration exists, and there is currently no way to measure flux in living human tissue.",
+        "citations": [
+          {
+            "source_id": "SRC-009",
+            "supports": "direct"
+          },
+          {
+            "source_id": "SRC-010",
+            "supports": "direct"
+          },
+          {
+            "source_id": "SRC-011",
+            "supports": "direct"
+          }
+        ]
+      },
+      "provenance": {
+        "evidence_level": "animal",
+        "causal_status": "supported_mechanistically",
+        "review_status": "in_review",
+        "confidence": "moderate",
+        "citations": [
+          {
+            "source_id": "SRC-009",
+            "supports": "direct"
+          },
+          {
+            "source_id": "SRC-010",
+            "supports": "direct"
+          },
+          {
+            "source_id": "SRC-011",
+            "supports": "direct"
+          }
+        ],
+        "uncertainty": {
+          "description": "Strong mechanistic grounding with no human evidence and no human biomarker.",
+          "known_conflicts": [],
+          "generalizability": "tissue_dependent"
+        },
+        "reviewed_by": null,
+        "reviewed_at": null,
+        "record_version": 1
+      }
+    },
+    {
+      "target_id": "target_003",
+      "name": "Restore age-associated epigenetic regulatory state",
+      "aging_process": "epigenetic_alterations",
+      "desired_direction": "Move age-associated regulatory patterns toward a younger configuration without losing differentiated cell identity and without inducing cancer.",
+      "rejuvenation_scope": "molecular_epigenetic",
+      "research_approach_ids": ["epigenetic_reprogramming", "partial_reprogramming"],
+      "human_evidence": [],
+      "animal_evidence": [
+        {
+          "summary": "Cyclic partial reprogramming ameliorated several age-associated measures in a progeroid mouse model. Continuous induction caused teratoma formation and death.",
+          "citations": [
+            {
+              "source_id": "SRC-032",
+              "supports": "direct"
+            }
+          ]
+        }
+      ],
+      "in_vitro_evidence": [
+        {
+          "summary": "Reprogramming factors can reset methylation patterns in cultured cells.",
+          "citations": [
+            {
+              "source_id": "SRC-007",
+              "supports": "direct"
+            },
+            {
+              "source_id": "SRC-032",
+              "supports": "direct"
+            }
+          ]
+        }
+      ],
+      "risks": [
+        {
+          "risk": "Continuous reprogramming caused teratoma formation and death in mice; this is a demonstrated outcome, not a theoretical concern.",
+          "severity": "observed_preclinical",
+          "citations": [
+            {
+              "source_id": "SRC-032",
+              "supports": "direct"
+            }
+          ]
+        },
+        {
+          "risk": "Loss of differentiated cell identity is a direct mechanistic risk of the approach.",
+          "severity": "observed_preclinical",
+          "citations": [
+            {
+              "source_id": "SRC-032",
+              "supports": "direct"
+            }
+          ]
+        },
+        {
+          "risk": "Delivery would need to reach many tissues, greatly enlarging the exposed surface for off-target effects.",
+          "severity": "theoretical",
+          "citations": [
+            {
+              "source_id": "SRC-031",
+              "supports": "direct"
+            }
+          ]
+        }
+      ],
+      "unknowns": [
+        "Whether age-associated epigenetic change causes functional decline or tracks it.",
+        "Whether identity can be preserved reliably at any useful dose in a normally aged organism.",
+        "Whether results in a progeroid model transfer to normal aging at all.",
+        "Whether a reset epigenetic state is durable or reverts.",
+        "Whether cancer risk can be brought to an acceptable level."
+      ],
+      "clinical_status": "preclinical",
+      "reversibility_demonstrated": {
+        "in_vitro": "yes",
+        "in_animals": "partial",
+        "in_humans": "no",
+        "note": "Epigenetic marks can be reset in culture, and cyclic partial reprogramming improved measures in a progeroid mouse model. There is no human evidence, and the demonstrated cancer risk in animals is central rather than incidental.",
+        "citations": [
+          {
+            "source_id": "SRC-032",
+            "supports": "direct"
+          },
+          {
+            "source_id": "SRC-007",
+            "supports": "direct"
+          }
+        ]
+      },
+      "provenance": {
+        "evidence_level": "animal",
+        "causal_status": "proposed",
+        "review_status": "in_review",
+        "confidence": "low",
+        "citations": [
+          {
+            "source_id": "SRC-032",
+            "supports": "direct"
+          },
+          {
+            "source_id": "SRC-007",
+            "supports": "direct"
+          }
+        ],
+        "uncertainty": {
+          "description": "This is the target most often reported as though human age reversal were imminent. The seed evidence is a progeroid mouse model with a demonstrated lethal failure mode at continuous dosing.",
+          "known_conflicts": [
+            "Progeroid models do not represent normal aging.",
+            "Teratoma formation is a demonstrated outcome."
+          ],
+          "generalizability": "tissue_dependent"
+        },
+        "reviewed_by": null,
+        "reviewed_at": null,
+        "record_version": 1
+      }
+    },
+    {
+      "target_id": "target_004",
+      "name": "Improve age-associated muscle function",
+      "aging_process": "skeletal_muscle",
+      "desired_direction": "Improve muscle strength and functional capacity at a given age, which exercise demonstrably achieves, distinct from reversing underlying muscle aging.",
+      "rejuvenation_scope": "functional",
+      "research_approach_ids": ["lifestyle_functional", "stem_cell_research"],
+      "human_evidence": [
+        {
+          "summary": "Resistance and aerobic exercise improve strength and functional measures in older adults; this is established human evidence and routine clinical advice.",
+          "citations": [
+            {
+              "source_id": "SRC-029",
+              "supports": "direct"
+            }
+          ]
+        },
+        {
+          "summary": "Sarcopenia consensus definitions centre on strength because strength declines faster than mass and relates more closely to outcomes.",
+          "citations": [
+            {
+              "source_id": "SRC-024",
+              "supports": "direct"
+            }
+          ]
+        }
+      ],
+      "animal_evidence": [
+        {
+          "summary": "Aged muscle regenerative response was partly restored by exposure to a young systemic environment in mouse parabiosis.",
+          "citations": [
+            {
+              "source_id": "SRC-018",
+              "supports": "direct"
+            }
+          ]
+        }
+      ],
+      "in_vitro_evidence": [],
+      "risks": [
+        {
+          "risk": "Exercise carries injury risk, particularly where it is begun abruptly at older ages or with existing disease.",
+          "severity": "observed_clinical",
+          "citations": [
+            {
+              "source_id": "SRC-029",
+              "supports": "direct"
+            }
+          ]
+        },
+        {
+          "risk": "Functional improvement at a given age may be mistaken for reversal of underlying aging, which it is not.",
+          "severity": "theoretical",
+          "citations": [
+            {
+              "source_id": "SRC-024",
+              "supports": "direct"
+            }
+          ]
+        }
+      ],
+      "unknowns": [
+        "Whether functional gains reflect any change in underlying muscle aging processes.",
+        "Whether the trajectory of decline is altered or simply shifted upward.",
+        "Which components of the age-associated strength loss are modifiable at all."
+      ],
+      "clinical_status": "standard_of_care",
+      "reversibility_demonstrated": {
+        "in_vitro": "unknown",
+        "in_animals": "partial",
+        "in_humans": "partial",
+        "note": "This is the clearest case in the corpus of functional rejuvenation demonstrated in humans: strength and function measurably improve with training at older ages. It is not a demonstration that muscle aging has been reversed, and the distinction matters.",
+        "citations": [
+          {
+            "source_id": "SRC-029",
+            "supports": "direct"
+          },
+          {
+            "source_id": "SRC-024",
+            "supports": "direct"
+          }
+        ]
+      },
+      "provenance": {
+        "evidence_level": "human_established",
+        "causal_status": "supported_mechanistically",
+        "review_status": "in_review",
+        "confidence": "high",
+        "citations": [
+          {
+            "source_id": "SRC-029",
+            "supports": "direct"
+          },
+          {
+            "source_id": "SRC-024",
+            "supports": "direct"
+          }
+        ],
+        "uncertainty": {
+          "description": "The functional benefit is well established. Whether it reflects altered aging or improved function within an unchanged trajectory is not resolved, and the two are routinely conflated.",
+          "known_conflicts": [],
+          "generalizability": "population_average"
+        },
+        "reviewed_by": null,
+        "reviewed_at": null,
+        "record_version": 1
+      }
+    },
+    {
+      "target_id": "target_005",
+      "name": "Reduce damaging chronic inflammation",
+      "aging_process": "chronic_inflammation",
+      "desired_direction": "Reduce damaging low-grade inflammatory signalling while preserving the immune defence and repair functions that same signalling supports.",
+      "rejuvenation_scope": "systemic",
+      "research_approach_ids": ["lifestyle_functional", "senolytics"],
+      "human_evidence": [
+        {
+          "summary": "Higher inflammatory marker levels associate with frailty and adverse outcomes in older adult cohorts.",
+          "citations": [
+            {
+              "source_id": "SRC-019",
+              "supports": "direct"
+            },
+            {
+              "source_id": "SRC-020",
+              "supports": "direct"
+            }
+          ]
+        }
+      ],
+      "animal_evidence": [
+        {
+          "summary": "Senescent-cell clearance reduced inflammatory signalling alongside functional improvements in mice.",
+          "citations": [
+            {
+              "source_id": "SRC-014",
+              "supports": "direct"
+            }
+          ]
+        }
+      ],
+      "in_vitro_evidence": [
+        {
+          "summary": "The senescence-associated secretory phenotype is a characterised source of inflammatory signalling in culture.",
+          "citations": [
+            {
+              "source_id": "SRC-015",
+              "supports": "direct"
+            }
+          ]
+        }
+      ],
+      "risks": [
+        {
+          "risk": "Broad immunosuppression to lower inflammation would impair infection defence, a trade-off with clear clinical consequences.",
+          "severity": "observed_clinical",
+          "citations": [
+            {
+              "source_id": "SRC-021",
+              "supports": "direct"
+            }
+          ]
+        },
+        {
+          "risk": "Inflammatory signalling is required for tissue repair, so suppression may slow healing.",
+          "severity": "observed_preclinical",
+          "citations": [
+            {
+              "source_id": "SRC-019",
+              "supports": "direct"
+            }
+          ]
+        },
+        {
+          "risk": "Because causal direction is unresolved, lowering a marker may change nothing about the underlying process.",
+          "severity": "theoretical",
+          "citations": [
+            {
+              "source_id": "SRC-019",
+              "supports": "direct"
+            }
+          ]
+        }
+      ],
+      "unknowns": [
+        "Whether inflammation drives functional decline or results from it.",
+        "Which inflammatory pathways are damaging versus protective in older adults.",
+        "Whether lowering marker levels improves any outcome.",
+        "How to separate inflammaging from ordinary responses to infection and adiposity."
+      ],
+      "clinical_status": "experimental",
+      "reversibility_demonstrated": {
+        "in_vitro": "unknown",
+        "in_animals": "partial",
+        "in_humans": "no",
+        "note": "Inflammatory markers can be lowered in humans by several means, but lowering a marker is not the same as reversing an aging process, and no demonstration of the latter exists. The causal direction remains unresolved.",
+        "citations": [
+          {
+            "source_id": "SRC-019",
+            "supports": "direct"
+          },
+          {
+            "source_id": "SRC-020",
+            "supports": "direct"
+          },
+          {
+            "source_id": "SRC-014",
+            "supports": "direct"
+          }
+        ]
+      },
+      "provenance": {
+        "evidence_level": "human_observational",
+        "causal_status": "correlational_only",
+        "review_status": "in_review",
+        "confidence": "moderate",
+        "citations": [
+          {
+            "source_id": "SRC-019",
+            "supports": "direct"
+          },
+          {
+            "source_id": "SRC-020",
+            "supports": "direct"
+          }
+        ],
+        "uncertainty": {
+          "description": "This target rests on a correlation whose direction is unknown. It is included because it is widely pursued, not because the causal case is made.",
+          "known_conflicts": ["Cause versus consequence is unresolved."],
+          "generalizability": "individual_variable"
+        },
+        "reviewed_by": null,
+        "reviewed_at": null,
+        "record_version": 1
+      }
+    },
+    {
+      "target_id": "target_006",
+      "name": "Restore regenerative capacity of tissue stem cells",
+      "aging_process": "stem_cell_exhaustion",
+      "desired_direction": "Restore the regenerative output of tissue-resident stem and progenitor cells without producing uncontrolled proliferation.",
+      "rejuvenation_scope": "tissue",
+      "research_approach_ids": [
+        "stem_cell_research",
+        "regenerative_medicine",
+        "tissue_engineering"
+      ],
+      "human_evidence": [
+        {
+          "summary": "Some regenerative applications are established clinical care for specific indications, though none is established as an intervention on aging.",
+          "citations": [
+            {
+              "source_id": "SRC-031",
+              "supports": "direct"
+            }
+          ]
+        }
+      ],
+      "animal_evidence": [
+        {
+          "summary": "Aged progenitor function was partly restored by a young systemic environment in mouse parabiosis.",
+          "citations": [
+            {
+              "source_id": "SRC-018",
+              "supports": "direct"
+            }
+          ]
+        },
+        {
+          "summary": "Stem-cell functional decline with age is characterised across several mouse tissues.",
+          "citations": [
+            {
+              "source_id": "SRC-017",
+              "supports": "direct"
+            }
+          ]
+        }
+      ],
+      "in_vitro_evidence": [],
+      "risks": [
+        {
+          "risk": "Restoring proliferative capacity carries tumour risk that has not been resolved.",
+          "severity": "observed_preclinical",
+          "citations": [
+            {
+              "source_id": "SRC-017",
+              "supports": "direct"
+            }
+          ]
+        },
+        {
+          "risk": "Delivering cells to the correct niche in a functional state remains a major unsolved obstacle.",
+          "severity": "theoretical",
+          "citations": [
+            {
+              "source_id": "SRC-031",
+              "supports": "direct"
+            }
+          ]
+        },
+        {
+          "risk": "Unregulated clinics market unproven stem-cell products to older adults; the research status and the marketplace are not the same thing.",
+          "severity": "observed_clinical",
+          "citations": [
+            {
+              "source_id": "SRC-017",
+              "supports": "direct"
+            }
+          ]
+        }
+      ],
+      "unknowns": [
+        "Whether stem-cell decline limits human tissue function or is one of several constraints.",
+        "Whether restored proliferation can be controlled well enough to be safe.",
+        "Whether the aged niche would support restored cells at all.",
+        "Which tissues, if any, would benefit measurably."
+      ],
+      "clinical_status": "experimental",
+      "reversibility_demonstrated": {
+        "in_vitro": "partial",
+        "in_animals": "partial",
+        "in_humans": "unknown",
+        "note": "Progenitor function has been partly restored in mouse models, chiefly via parabiosis, which has no human counterpart. Human evidence for restoring regenerative capacity as an aging intervention does not exist.",
+        "citations": [
+          {
+            "source_id": "SRC-017",
+            "supports": "direct"
+          },
+          {
+            "source_id": "SRC-018",
+            "supports": "direct"
+          }
+        ]
+      },
+      "provenance": {
+        "evidence_level": "animal",
+        "causal_status": "supported_mechanistically",
+        "review_status": "in_review",
+        "confidence": "moderate",
+        "citations": [
+          {
+            "source_id": "SRC-017",
+            "supports": "direct"
+          },
+          {
+            "source_id": "SRC-018",
+            "supports": "direct"
+          }
+        ],
+        "uncertainty": {
+          "description": "Animal evidence is reasonable; the translation path is unclear and the risk profile is not resolved.",
+          "known_conflicts": [],
+          "generalizability": "tissue_dependent"
+        },
+        "reviewed_by": null,
+        "reviewed_at": null,
+        "record_version": 1
+      }
+    }
+  ]
+}

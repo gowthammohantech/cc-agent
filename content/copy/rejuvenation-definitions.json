@@ -1,0 +1,47 @@
+{
+  "preamble": "The phrase \"reverse aging\" is used in public discussion as though it named one measurable thing. It does not. AgeLens keeps seven distinct claims separate, ordered here from the weakest to the strongest. A result that satisfies one of them is routinely reported as though it satisfied the last one, which is the single most common way aging science is misrepresented.",
+  "definitions": [
+    {
+      "scope": "functional",
+      "name": "Functional rejuvenation",
+      "definition": "Improvement of an age-associated function — for example, strength or endurance measurably improving with training at an older age.",
+      "what_it_does_not_mean": "It does not mean the underlying aging process changed. Function can improve while the trajectory it sits on is unaltered."
+    },
+    {
+      "scope": "cellular",
+      "name": "Cellular rejuvenation",
+      "definition": "Movement of validated cellular characteristics toward a younger functional state, such as restored proliferative or regenerative behaviour.",
+      "what_it_does_not_mean": "It does not mean the tissue those cells sit in has been rejuvenated, nor that the effect persists once the intervention stops."
+    },
+    {
+      "scope": "molecular_epigenetic",
+      "name": "Molecular / epigenetic rejuvenation",
+      "definition": "Movement of particular molecular biomarkers toward younger reference patterns, such as a shift in methylation profile.",
+      "what_it_does_not_mean": "It does not mean the organism is younger. A biomarker trained to predict chronological age tracks chronological age; moving it does not establish that anything functional has changed."
+    },
+    {
+      "scope": "tissue",
+      "name": "Tissue rejuvenation",
+      "definition": "Restoration of tissue structure or function — for example, recovery of matrix organisation or repair capacity.",
+      "what_it_does_not_mean": "It does not mean the organ containing that tissue has recovered function, nor that other tissues are affected."
+    },
+    {
+      "scope": "organ",
+      "name": "Organ rejuvenation",
+      "definition": "Meaningful restoration of an organ's functional capacity, measured against that organ's age-associated decline.",
+      "what_it_does_not_mean": "It does not mean the interacting systems that organ depends on have improved, and gains in one organ can impose costs elsewhere."
+    },
+    {
+      "scope": "systemic",
+      "name": "Systemic rejuvenation",
+      "definition": "Coordinated improvement across several interacting physiological systems, sustained rather than transient.",
+      "what_it_does_not_mean": "It does not mean age reversal. Coordinated improvement still has to be shown to be durable and to carry acceptable trade-offs."
+    },
+    {
+      "scope": "whole_organism",
+      "name": "Whole-organism age reversal",
+      "definition": "A far stronger claim requiring validated, durable, multi-system human evidence with meaningful health and function outcomes and acceptable trade-offs.",
+      "what_it_does_not_mean": "No approach in this application meets this standard, and none of the evidence collected here supports it. Claims of this kind in popular coverage almost always rest on a result from one of the six weaker categories above."
+    }
+  ]
+}

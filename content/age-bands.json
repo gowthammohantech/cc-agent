@@ -1,0 +1,132 @@
+{
+  "age_bands": [
+    {
+      "id": "infancy_early_childhood",
+      "label": "Infancy and early childhood",
+      "age_min": 0,
+      "age_max": 5,
+      "phase": "development",
+      "description": "Rapid growth and maturation of organ systems, immune education and neural development. Changes in this band are developmental, not aging.",
+      "data_sparsity_note": null,
+      "citations": [
+        {
+          "source_id": "SRC-002",
+          "supports": "contextual"
+        }
+      ],
+      "record_version": 1
+    },
+    {
+      "id": "childhood",
+      "label": "Childhood",
+      "age_min": 5,
+      "age_max": 12,
+      "phase": "development",
+      "description": "Continued growth and skill acquisition, with thymic output already declining from its early-life peak even as overall capacity increases.",
+      "data_sparsity_note": null,
+      "citations": [
+        {
+          "source_id": "SRC-002",
+          "supports": "contextual"
+        }
+      ],
+      "record_version": 1
+    },
+    {
+      "id": "adolescence",
+      "label": "Adolescence",
+      "age_min": 12,
+      "age_max": 20,
+      "phase": "development",
+      "description": "Puberty and the approach to peak bone mass, muscle mass and several physiological capacities.",
+      "data_sparsity_note": null,
+      "citations": [
+        {
+          "source_id": "SRC-002",
+          "supports": "contextual"
+        }
+      ],
+      "record_version": 1
+    },
+    {
+      "id": "early_adulthood",
+      "label": "Early adulthood",
+      "age_min": 20,
+      "age_max": 35,
+      "phase": "maturity",
+      "description": "The period in which most physiological capacities reach or hold near their lifetime peak, commonly used as a reference state for comparison.",
+      "data_sparsity_note": null,
+      "citations": [
+        {
+          "source_id": "SRC-002",
+          "supports": "contextual"
+        }
+      ],
+      "record_version": 1
+    },
+    {
+      "id": "middle_adulthood",
+      "label": "Middle adulthood",
+      "age_min": 35,
+      "age_max": 55,
+      "phase": "maturity",
+      "description": "Gradual, largely subclinical change across many systems, with wide individual variation in onset and rate.",
+      "data_sparsity_note": null,
+      "citations": [
+        {
+          "source_id": "SRC-002",
+          "supports": "contextual"
+        }
+      ],
+      "record_version": 1
+    },
+    {
+      "id": "later_adulthood",
+      "label": "Later adulthood",
+      "age_min": 55,
+      "age_max": 75,
+      "phase": "later_life",
+      "description": "Age-associated changes become more readily measurable across multiple systems, and divergence between individuals widens further.",
+      "data_sparsity_note": null,
+      "citations": [
+        {
+          "source_id": "SRC-002",
+          "supports": "contextual"
+        }
+      ],
+      "record_version": 1
+    },
+    {
+      "id": "older_adulthood",
+      "label": "Older adulthood",
+      "age_min": 75,
+      "age_max": 90,
+      "phase": "later_life",
+      "description": "Functional reserve narrows across systems and the distinction between normal aging and disease becomes harder to draw.",
+      "data_sparsity_note": "Cohort sizes shrink and survivor effects grow, so population averages in this band describe an increasingly selected group.",
+      "citations": [
+        {
+          "source_id": "SRC-002",
+          "supports": "contextual"
+        }
+      ],
+      "record_version": 1
+    },
+    {
+      "id": "oldest_old",
+      "label": "90 and over",
+      "age_min": 90,
+      "age_max": 130,
+      "phase": "later_life",
+      "description": "The oldest band, where survivorship selection is strong and curated data is sparse.",
+      "data_sparsity_note": "Data above 90 is sparse and drawn from small, highly selected cohorts. Treat population statements in this band as weakly supported.",
+      "citations": [
+        {
+          "source_id": "SRC-002",
+          "supports": "contextual"
+        }
+      ],
+      "record_version": 1
+    }
+  ]
+}

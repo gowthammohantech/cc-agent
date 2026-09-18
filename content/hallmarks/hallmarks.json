@@ -1,0 +1,558 @@
+{
+  "hallmarks": [
+    {
+      "id": "genomic_instability",
+      "name": "Genomic Instability",
+      "description": "Accumulation of DNA damage and somatic mutations over the lifespan, together with changes in the capacity of repair pathways to resolve that damage. Damage arises from both exogenous sources and ordinary metabolic byproducts.",
+      "framework": {
+        "name": "hallmarks_of_aging",
+        "version": "2023"
+      },
+      "age_relationships": [],
+      "affected_entities": [],
+      "upstream_nodes": [],
+      "downstream_nodes": [],
+      "research_target_ids": [],
+      "evidence_profile_id": "prof_genomic_instability",
+      "provenance": {
+        "evidence_level": "human_observational",
+        "causal_status": "proposed",
+        "review_status": "in_review",
+        "confidence": "moderate",
+        "citations": [
+          {
+            "source_id": "SRC-001",
+            "supports": "direct"
+          },
+          {
+            "source_id": "SRC-002",
+            "supports": "direct"
+          },
+          {
+            "source_id": "SRC-003",
+            "supports": "direct"
+          }
+        ],
+        "uncertainty": {
+          "description": "Somatic mutation burden clearly rises with age in human tissue, but whether that burden is a primary driver of functional decline or largely a marker of it is unresolved. Measurement is method-dependent and estimates vary widely.",
+          "known_conflicts": [],
+          "generalizability": "tissue_dependent"
+        },
+        "reviewed_by": null,
+        "reviewed_at": null,
+        "record_version": 1
+      }
+    },
+    {
+      "id": "telomere_attrition",
+      "name": "Telomere Attrition",
+      "description": "Progressive shortening of the protective repeat sequences at chromosome ends across successive cell divisions, and the cellular responses triggered when telomeres become critically short or dysfunctional.",
+      "framework": {
+        "name": "hallmarks_of_aging",
+        "version": "2023"
+      },
+      "age_relationships": [],
+      "affected_entities": [],
+      "upstream_nodes": [],
+      "downstream_nodes": [],
+      "research_target_ids": [],
+      "evidence_profile_id": "prof_telomere_attrition",
+      "provenance": {
+        "evidence_level": "human_observational",
+        "causal_status": "correlational_only",
+        "review_status": "in_review",
+        "confidence": "moderate",
+        "citations": [
+          {
+            "source_id": "SRC-001",
+            "supports": "direct"
+          },
+          {
+            "source_id": "SRC-002",
+            "supports": "direct"
+          },
+          {
+            "source_id": "SRC-004",
+            "supports": "direct"
+          },
+          {
+            "source_id": "SRC-005",
+            "supports": "direct"
+          }
+        ],
+        "uncertainty": {
+          "description": "Telomere shortening with age is well documented, but the widely repeated claim that telomeres cause aging is not supported. Leukocyte telomere length is a poor proxy for other tissues, and most human outcome associations are observational and confounded.",
+          "known_conflicts": [
+            "Telomere length associations with mortality are inconsistent across cohorts.",
+            "Telomerase activation carries oncogenic risk, complicating any causal interpretation."
+          ],
+          "generalizability": "tissue_dependent"
+        },
+        "reviewed_by": null,
+        "reviewed_at": null,
+        "record_version": 1
+      }
+    },
+    {
+      "id": "epigenetic_alterations",
+      "name": "Epigenetic Alterations",
+      "description": "Age-associated changes in DNA methylation, histone modification and chromatin organisation that shift patterns of gene regulation without altering the underlying DNA sequence.",
+      "framework": {
+        "name": "hallmarks_of_aging",
+        "version": "2023"
+      },
+      "age_relationships": [],
+      "affected_entities": [],
+      "upstream_nodes": [],
+      "downstream_nodes": [],
+      "research_target_ids": [],
+      "evidence_profile_id": "prof_epigenetic_alterations",
+      "provenance": {
+        "evidence_level": "human_observational",
+        "causal_status": "proposed",
+        "review_status": "in_review",
+        "confidence": "moderate",
+        "citations": [
+          {
+            "source_id": "SRC-001",
+            "supports": "direct"
+          },
+          {
+            "source_id": "SRC-002",
+            "supports": "direct"
+          },
+          {
+            "source_id": "SRC-006",
+            "supports": "direct"
+          },
+          {
+            "source_id": "SRC-007",
+            "supports": "direct"
+          }
+        ],
+        "uncertainty": {
+          "description": "Epigenetic patterns change reproducibly enough with age to build accurate chronological-age predictors, but a predictor is not a mechanism. Whether these changes cause functional decline, or track it, is actively contested.",
+          "known_conflicts": [
+            "Epigenetic clocks predict chronological age well but their relationship to functional state is disputed.",
+            "Partial reprogramming can reset some marks in animals without demonstrated whole-organism benefit."
+          ],
+          "generalizability": "tissue_dependent"
+        },
+        "reviewed_by": null,
+        "reviewed_at": null,
+        "record_version": 1
+      }
+    },
+    {
+      "id": "loss_of_proteostasis",
+      "name": "Loss of Proteostasis",
+      "description": "Decline in the network that keeps proteins correctly folded, repaired and degraded, leading to accumulation of misfolded and aggregated proteins.",
+      "framework": {
+        "name": "hallmarks_of_aging",
+        "version": "2023"
+      },
+      "age_relationships": [],
+      "affected_entities": [],
+      "upstream_nodes": [],
+      "downstream_nodes": [],
+      "research_target_ids": [],
+      "evidence_profile_id": "prof_loss_of_proteostasis",
+      "provenance": {
+        "evidence_level": "in_vitro",
+        "causal_status": "supported_mechanistically",
+        "review_status": "in_review",
+        "confidence": "moderate",
+        "citations": [
+          {
+            "source_id": "SRC-001",
+            "supports": "direct"
+          },
+          {
+            "source_id": "SRC-002",
+            "supports": "direct"
+          },
+          {
+            "source_id": "SRC-008",
+            "supports": "direct"
+          }
+        ],
+        "uncertainty": {
+          "description": "Proteostatic decline is well characterised in cells and short-lived model organisms. Quantifying tissue-level proteostatic capacity in living humans remains difficult, so the human evidence is largely indirect.",
+          "known_conflicts": [],
+          "generalizability": "tissue_dependent"
+        },
+        "reviewed_by": null,
+        "reviewed_at": null,
+        "record_version": 1
+      }
+    },
+    {
+      "id": "disabled_macroautophagy",
+      "name": "Disabled Macroautophagy",
+      "description": "Reduced capacity of the cellular recycling pathway that delivers damaged organelles and protein aggregates to lysosomes for degradation.",
+      "framework": {
+        "name": "hallmarks_of_aging",
+        "version": "2023"
+      },
+      "age_relationships": [],
+      "affected_entities": [],
+      "upstream_nodes": [],
+      "downstream_nodes": [],
+      "research_target_ids": [],
+      "evidence_profile_id": "prof_disabled_macroautophagy",
+      "provenance": {
+        "evidence_level": "animal",
+        "causal_status": "supported_mechanistically",
+        "review_status": "in_review",
+        "confidence": "moderate",
+        "citations": [
+          {
+            "source_id": "SRC-002",
+            "supports": "direct"
+          },
+          {
+            "source_id": "SRC-009",
+            "supports": "direct"
+          }
+        ],
+        "uncertainty": {
+          "description": "Autophagic decline with age is demonstrated mainly in model organisms; autophagic flux is very hard to measure in living human tissue. Whether restoring autophagy in humans would improve function is untested.",
+          "known_conflicts": [],
+          "generalizability": "tissue_dependent"
+        },
+        "reviewed_by": null,
+        "reviewed_at": null,
+        "record_version": 1
+      }
+    },
+    {
+      "id": "deregulated_nutrient_sensing",
+      "name": "Deregulated Nutrient Sensing",
+      "description": "Age-associated changes in the signalling networks — including insulin/IGF-1, mTOR, AMPK and sirtuins — that couple nutrient availability to growth, metabolism and maintenance.",
+      "framework": {
+        "name": "hallmarks_of_aging",
+        "version": "2023"
+      },
+      "age_relationships": [],
+      "affected_entities": [],
+      "upstream_nodes": [],
+      "downstream_nodes": [],
+      "research_target_ids": [],
+      "evidence_profile_id": "prof_deregulated_nutrient_sensing",
+      "provenance": {
+        "evidence_level": "animal",
+        "causal_status": "supported_mechanistically",
+        "review_status": "in_review",
+        "confidence": "moderate",
+        "citations": [
+          {
+            "source_id": "SRC-001",
+            "supports": "direct"
+          },
+          {
+            "source_id": "SRC-002",
+            "supports": "direct"
+          },
+          {
+            "source_id": "SRC-010",
+            "supports": "direct"
+          },
+          {
+            "source_id": "SRC-029",
+            "supports": "direct"
+          }
+        ],
+        "uncertainty": {
+          "description": "Manipulating these pathways extends lifespan robustly in several short-lived species. No equivalent human evidence exists, and the interventions carry substantial trade-offs such as immunosuppression.",
+          "known_conflicts": [
+            "Lifespan extension is consistent in model organisms but unreplicated in humans.",
+            "mTOR inhibition benefits in animals come with immune and metabolic costs."
+          ],
+          "generalizability": "population_average"
+        },
+        "reviewed_by": null,
+        "reviewed_at": null,
+        "record_version": 1
+      }
+    },
+    {
+      "id": "mitochondrial_dysfunction",
+      "name": "Mitochondrial Dysfunction",
+      "description": "Age-associated decline in mitochondrial quality control, bioenergetic efficiency and turnover, with accumulation of damaged mitochondria in some tissues.",
+      "framework": {
+        "name": "hallmarks_of_aging",
+        "version": "2023"
+      },
+      "age_relationships": [],
+      "affected_entities": [],
+      "upstream_nodes": [],
+      "downstream_nodes": [],
+      "research_target_ids": [],
+      "evidence_profile_id": "prof_mitochondrial_dysfunction",
+      "provenance": {
+        "evidence_level": "human_observational",
+        "causal_status": "proposed",
+        "review_status": "in_review",
+        "confidence": "moderate",
+        "citations": [
+          {
+            "source_id": "SRC-001",
+            "supports": "direct"
+          },
+          {
+            "source_id": "SRC-002",
+            "supports": "direct"
+          },
+          {
+            "source_id": "SRC-012",
+            "supports": "direct"
+          }
+        ],
+        "uncertainty": {
+          "description": "Mitochondrial changes with age are strongly tissue-dependent. The original free-radical theory, in which oxidative damage drives aging, is not supported in its simple form, and antioxidant supplementation has not reproduced the predicted benefits.",
+          "known_conflicts": [
+            "The free-radical theory of aging is not supported in its original formulation.",
+            "Some interventions that increase oxidative stress extend lifespan in model organisms."
+          ],
+          "generalizability": "tissue_dependent"
+        },
+        "reviewed_by": null,
+        "reviewed_at": null,
+        "record_version": 1
+      }
+    },
+    {
+      "id": "cellular_senescence",
+      "name": "Cellular Senescence",
+      "description": "Accumulation of cells in a stable growth-arrested state that resist apoptosis and secrete a pro-inflammatory profile of cytokines, chemokines and proteases.",
+      "framework": {
+        "name": "hallmarks_of_aging",
+        "version": "2023"
+      },
+      "age_relationships": [],
+      "affected_entities": [],
+      "upstream_nodes": [],
+      "downstream_nodes": [],
+      "research_target_ids": [],
+      "evidence_profile_id": "prof_cellular_senescence",
+      "provenance": {
+        "evidence_level": "animal",
+        "causal_status": "supported_mechanistically",
+        "review_status": "in_review",
+        "confidence": "moderate",
+        "citations": [
+          {
+            "source_id": "SRC-001",
+            "supports": "direct"
+          },
+          {
+            "source_id": "SRC-002",
+            "supports": "direct"
+          },
+          {
+            "source_id": "SRC-013",
+            "supports": "direct"
+          },
+          {
+            "source_id": "SRC-014",
+            "supports": "direct"
+          },
+          {
+            "source_id": "SRC-015",
+            "supports": "direct"
+          }
+        ],
+        "uncertainty": {
+          "description": "Senescent-cell burden rises with age and their clearance improves several measures in mice. Human evidence is limited to small early-phase trials with surrogate endpoints, and senescent cells also serve beneficial roles in wound healing and tumour suppression.",
+          "known_conflicts": [
+            "Senescent cells contribute to tissue repair and tumour suppression, so clearance is not unambiguously beneficial.",
+            "No single universal marker of senescence exists, complicating burden estimates."
+          ],
+          "generalizability": "tissue_dependent"
+        },
+        "reviewed_by": null,
+        "reviewed_at": null,
+        "record_version": 1
+      }
+    },
+    {
+      "id": "stem_cell_exhaustion",
+      "name": "Stem-Cell Exhaustion",
+      "description": "Decline in the number and regenerative capacity of tissue-resident stem and progenitor cells, reducing the ability of tissues to repair and renew.",
+      "framework": {
+        "name": "hallmarks_of_aging",
+        "version": "2023"
+      },
+      "age_relationships": [],
+      "affected_entities": [],
+      "upstream_nodes": [],
+      "downstream_nodes": [],
+      "research_target_ids": [],
+      "evidence_profile_id": "prof_stem_cell_exhaustion",
+      "provenance": {
+        "evidence_level": "animal",
+        "causal_status": "supported_mechanistically",
+        "review_status": "in_review",
+        "confidence": "moderate",
+        "citations": [
+          {
+            "source_id": "SRC-001",
+            "supports": "direct"
+          },
+          {
+            "source_id": "SRC-002",
+            "supports": "direct"
+          },
+          {
+            "source_id": "SRC-017",
+            "supports": "direct"
+          },
+          {
+            "source_id": "SRC-018",
+            "supports": "direct"
+          }
+        ],
+        "uncertainty": {
+          "description": "Regenerative decline is measured very differently across tissues, making cross-tissue comparison unreliable. Restoring proliferative capacity raises unresolved tumour-risk questions.",
+          "known_conflicts": [],
+          "generalizability": "tissue_dependent"
+        },
+        "reviewed_by": null,
+        "reviewed_at": null,
+        "record_version": 1
+      }
+    },
+    {
+      "id": "altered_intercellular_communication",
+      "name": "Altered Intercellular Communication",
+      "description": "Age-associated changes in endocrine, neuronal and immune signalling between cells and tissues, including circulating factors that alter the behaviour of distant tissues.",
+      "framework": {
+        "name": "hallmarks_of_aging",
+        "version": "2023"
+      },
+      "age_relationships": [],
+      "affected_entities": [],
+      "upstream_nodes": [],
+      "downstream_nodes": [],
+      "research_target_ids": [],
+      "evidence_profile_id": "prof_altered_intercellular_communication",
+      "provenance": {
+        "evidence_level": "animal",
+        "causal_status": "supported_mechanistically",
+        "review_status": "in_review",
+        "confidence": "low",
+        "citations": [
+          {
+            "source_id": "SRC-001",
+            "supports": "direct"
+          },
+          {
+            "source_id": "SRC-002",
+            "supports": "direct"
+          },
+          {
+            "source_id": "SRC-018",
+            "supports": "direct"
+          }
+        ],
+        "uncertainty": {
+          "description": "Heterochronic parabiosis shows that systemic factors can alter progenitor function in mice, but the responsible factors are not fully identified and the approach has no human counterpart.",
+          "known_conflicts": [],
+          "generalizability": "tissue_dependent"
+        },
+        "reviewed_by": null,
+        "reviewed_at": null,
+        "record_version": 1
+      }
+    },
+    {
+      "id": "chronic_inflammation",
+      "name": "Chronic Inflammation",
+      "description": "A persistent low-grade elevation of inflammatory signalling in the absence of overt infection, often described as inflammaging, that accompanies aging in many individuals.",
+      "framework": {
+        "name": "hallmarks_of_aging",
+        "version": "2023"
+      },
+      "age_relationships": [],
+      "affected_entities": [],
+      "upstream_nodes": [],
+      "downstream_nodes": [],
+      "research_target_ids": [],
+      "evidence_profile_id": "prof_chronic_inflammation",
+      "provenance": {
+        "evidence_level": "human_observational",
+        "causal_status": "correlational_only",
+        "review_status": "in_review",
+        "confidence": "moderate",
+        "citations": [
+          {
+            "source_id": "SRC-002",
+            "supports": "direct"
+          },
+          {
+            "source_id": "SRC-019",
+            "supports": "direct"
+          },
+          {
+            "source_id": "SRC-020",
+            "supports": "direct"
+          }
+        ],
+        "uncertainty": {
+          "description": "The association between low-grade inflammation and frailty outcomes in older adults is consistent, but the causal direction is not established and inflammatory markers respond to many non-aging factors.",
+          "known_conflicts": [],
+          "generalizability": "individual_variable"
+        },
+        "reviewed_by": null,
+        "reviewed_at": null,
+        "record_version": 1
+      }
+    },
+    {
+      "id": "dysbiosis",
+      "name": "Dysbiosis",
+      "description": "Age-associated shifts in the composition and functional output of the gut microbial ecosystem, and the loss of its usual relationship with host physiology.",
+      "framework": {
+        "name": "hallmarks_of_aging",
+        "version": "2023"
+      },
+      "age_relationships": [],
+      "affected_entities": [],
+      "upstream_nodes": [],
+      "downstream_nodes": [],
+      "research_target_ids": [],
+      "evidence_profile_id": "prof_dysbiosis",
+      "provenance": {
+        "evidence_level": "human_observational",
+        "causal_status": "correlational_only",
+        "review_status": "in_review",
+        "confidence": "low",
+        "citations": [
+          {
+            "source_id": "SRC-002",
+            "supports": "direct"
+          },
+          {
+            "source_id": "SRC-022",
+            "supports": "direct"
+          },
+          {
+            "source_id": "SRC-023",
+            "supports": "direct"
+          }
+        ],
+        "uncertainty": {
+          "description": "Microbiome composition correlates with health measures in older adults, but diet, medication and residential setting are heavily confounded with age. Causal claims in humans are not established.",
+          "known_conflicts": [
+            "Diet and care setting confound microbiome-age associations severely.",
+            "Microbiome measurement is highly sensitive to methodology."
+          ],
+          "generalizability": "individual_variable"
+        },
+        "reviewed_by": null,
+        "reviewed_at": null,
+        "record_version": 1
+      }
+    }
+  ]
+}

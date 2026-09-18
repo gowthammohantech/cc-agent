@@ -1,0 +1,4 @@
+{
+  "_note": "Deliberately empty. A Trajectory requires numeric points, and every point requires its own citation with source_reported: true. The authoring rule for this corpus is that a figure is only written when the source reporting it can be checked; this build environment has no scholarly network access, so no numeric series could be verified. Rather than fill charts with plausible-looking curves, the trajectory corpus is empty and the UI renders its designed 'no curated data' state. Engine behaviour for supported, interpolated, gap and out-of-range samples is covered by fixtures in tests/domain/timeline/, not by production content. Adding a trajectory here is the single highest-value content contribution available.",
+  "trajectories": []
+}
