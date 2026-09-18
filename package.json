@@ -2,7 +2,7 @@
   "name": "agelens",
   "version": "0.1.0",
   "private": true,
-  "description": "AgeLens — a visual computational map of human aging and rejuvenation science.",
+  "description": "AgeLens \u2014 a visual computational map of human aging and rejuvenation science.",
   "engines": {
     "node": ">=22"
   },
@@ -17,7 +17,7 @@
     "test:watch": "vitest",
     "test:content": "vitest run tests/content",
     "test:e2e": "playwright test",
-    "bench": "vitest bench --run",
+    "bench": "vitest run tests/bench",
     "verify:content": "tsx scripts/verify-content.ts",
     "verify:claims": "tsx scripts/check-banned-claims.ts",
     "content:hash": "tsx scripts/write-manifest.ts",

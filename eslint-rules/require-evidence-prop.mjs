@@ -14,7 +14,22 @@ const GUARDED_COMPONENTS = new Set([
   'ObservationStatement',
 ]);
 
-const ACCEPTED_PROPS = new Set(['provenance', 'evidence', 'evidenceProfile', 'gate']);
+/**
+ * Any of these names denotes something carrying provenance. TypeScript already
+ * enforces required props, so this rule's real value is the case TypeScript
+ * cannot see: a provenance-bearing prop that is optional or nullable, and gets
+ * quietly dropped at a call site.
+ */
+const ACCEPTED_PROPS = new Set([
+  'provenance',
+  'evidence',
+  'evidenceProfile',
+  'gate',
+  'badge',
+  'state',
+  'observation',
+  'target',
+]);
 
 /** @type {import('eslint').Rule.RuleModule} */
 const rule = {
