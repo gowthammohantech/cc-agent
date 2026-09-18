@@ -1,7 +1,7 @@
 {
   "content_version": "0.1.0",
   "generated_at": "2026-09-18",
-  "records_hash": "sha256:78e9e23f56db005e1081b3826bd292c174ebcdce5a7438ab2cf3a9d0a148997c",
+  "records_hash": "sha256:6125a8af487cf2c616a447a846c598471c6d00182bbb39a5439e677ee1c8cd65",
   "framework_versions": {
     "hallmarks_of_aging": "2023"
   },
@@ -38,7 +38,7 @@
     },
     {
       "path": "content/geometry/body-layout.json",
-      "sha256": "5c43bd65c8a1e2277d452cd3f611fea369e7bf5f1502c14fb121111d5b1c3530",
+      "sha256": "0017aed5d28388b55ff2bb97a504186b692a2b896727572c3fbb60b420a3adc1",
       "record_count": 39
     },
     {

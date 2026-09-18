@@ -638,7 +638,7 @@
         "depth_scale": 0.63
       },
       "mirror_x": false,
-      "svg_depth": 1
+      "svg_depth": 0
     },
     {
       "geometry_key": "eye",

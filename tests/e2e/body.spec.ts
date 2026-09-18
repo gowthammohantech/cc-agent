@@ -71,6 +71,9 @@ test.describe('body view (P2)', () => {
   });
 
   test('filters the diagram when a system is chosen', async ({ page }) => {
+    // WebGL is available here, so 'Auto' resolves to 3D; this test is about the
+    // diagram, so choose it explicitly.
+    await page.getByRole('radio', { name: 'Diagram' }).check();
     await page.getByLabel('System:').selectOption('cardiovascular_system');
     await expect(page.getByRole('img', { name: /cardiovascular system/ })).toBeVisible();
   });

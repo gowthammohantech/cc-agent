@@ -8,8 +8,9 @@ import {
   RENDERER_LABEL,
   type HighlightSpec,
 } from '@/three/renderer/BodyRenderer';
-import { useResolvedRenderer } from '@/three/renderer/useRenderer';
+import { useResolvedRenderer, usePrefersReducedMotion } from '@/three/renderer/useRenderer';
 import { SvgBodyRenderer } from './SvgBodyRenderer';
+import { ThreeBodyRenderer } from './ThreeBodyRenderer';
 import { BodyTree, type TreeNode } from './BodyTree';
 import { StylizationNotice } from './StylizationNotice';
 import { SystemPicker } from './SystemPicker';
@@ -33,6 +34,7 @@ export function BodyView({
   const preference = useAppStore((s) => s.rendererPreference);
   const setPreference = useAppStore((s) => s.setRendererPreference);
   const selectedEntityId = useAppStore((s) => s.selectedEntityId);
+  const hoveredEntityId = useAppStore((s) => s.hoveredEntityId);
   const selectedSystemId = useAppStore((s) => s.selectedSystemId);
   const select = useAppStore((s) => s.select);
   const hover = useAppStore((s) => s.hover);
@@ -41,6 +43,7 @@ export function BodyView({
   // The server has no window, so this resolves to the SVG diagram and the view
   // is never an empty box while the client decides.
   const resolved = useResolvedRenderer(preference);
+  const reducedMotion = usePrefersReducedMotion();
 
   const selectedEntity = selectedEntityId ? entityById.get(selectedEntityId) : undefined;
   const announcement = useMemo(() => {
@@ -88,18 +91,27 @@ export function BodyView({
             </p>
           ) : (
             <>
-              {/*
-                three.js arrives in Phase 6 and mounts here; until then, and
-                whenever WebGL is unavailable, the SVG carries the same content.
-              */}
-              <SvgBodyRenderer
-                layout={layout}
-                selectedSystemId={selectedSystemId}
-                selectedEntityId={selectedEntityId}
-                highlights={highlights}
-                onSelect={select}
-                onHover={hover}
-              />
+              {resolved === 'three' ? (
+                <ThreeBodyRenderer
+                  layout={layout}
+                  selectedSystemId={selectedSystemId}
+                  selectedEntityId={selectedEntityId}
+                  hoveredEntityId={hoveredEntityId}
+                  highlights={highlights}
+                  reducedMotion={reducedMotion}
+                  onSelect={select}
+                  onHover={hover}
+                />
+              ) : (
+                <SvgBodyRenderer
+                  layout={layout}
+                  selectedSystemId={selectedSystemId}
+                  selectedEntityId={selectedEntityId}
+                  highlights={highlights}
+                  onSelect={select}
+                  onHover={hover}
+                />
+              )}
               {!RENDERER_CAPABILITIES[resolved].rotate && (
                 <p className="text-xs text-[var(--color-ink-muted)]">
                   Static diagram &mdash; this view does not rotate.

@@ -42,3 +42,18 @@ export function useResolvedRenderer(preference: RendererPreference): RendererId 
     () => 'svg' as const,
   );
 }
+
+/**
+ * Exposed separately because the 3D scene needs it even when the reader has
+ * explicitly chosen 3D despite preferring reduced motion: the scene stays, but
+ * camera damping and every easing is switched off.
+ */
+export function usePrefersReducedMotion(): boolean {
+  return useSyncExternalStore(
+    subscribe,
+    () =>
+      typeof window !== 'undefined' &&
+      window.matchMedia('(prefers-reduced-motion: reduce)').matches,
+    () => false,
+  );
+}
