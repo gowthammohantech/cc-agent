@@ -13,7 +13,11 @@ export function CitationList({ citations }: { citations: readonly CitationRef[] 
           const study = bundle.indexes.studyById.get(c.source_id);
           return (
             <li key={`${c.source_id}-${c.locator ?? ''}`}>
-              <Link href={`/library/${c.source_id}`} className="underline">
+              {/*
+                A search-param link rather than a navigation: the reader stays
+                where they were, and the URL stays shareable.
+              */}
+              <Link href={`?evidence=${c.source_id}`} scroll={false} className="underline">
                 {study
                   ? `${study.authors[0] ?? 'Unknown'}${study.authors.length > 1 ? ' et al.' : ''} (${study.year}), ${study.journal}`
                   : c.source_id}

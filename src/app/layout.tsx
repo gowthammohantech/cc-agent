@@ -6,6 +6,8 @@ import { PendingReviewBanner } from '@/components/safety/PendingReviewBanner';
 import { SkipLink } from '@/components/ui/SkipLink';
 import { SiteNav } from '@/components/ui/SiteNav';
 import { SiteFooter } from '@/components/ui/SiteFooter';
+import { EvidenceDrawerHost } from '@/components/evidence/EvidenceDrawerHost';
+import { getBundle } from '@/content/bundle';
 
 export const metadata: Metadata = {
   title: {
@@ -17,6 +19,10 @@ export const metadata: Metadata = {
 };
 
 export default function RootLayout({ children }: { children: ReactNode }) {
+  // The source records are small and every page can open a drawer, so they are
+  // passed once from the layout rather than refetched per page.
+  const studies = Object.fromEntries(getBundle().studies.map((s) => [s.source_id, s]));
+
   return (
     <html lang="en">
       <body className="min-h-dvh">
@@ -28,6 +34,7 @@ export default function RootLayout({ children }: { children: ReactNode }) {
           {children}
         </main>
         <SiteFooter />
+        <EvidenceDrawerHost studies={studies} />
       </body>
     </html>
   );
