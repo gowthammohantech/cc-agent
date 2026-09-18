@@ -189,3 +189,54 @@ describe('compare engine — quantitative path', () => {
     expect(result.rows[0]?.cell.kind).not.toBe('quantitative');
   });
 });
+
+describe('compare engine — system-level roll-up', () => {
+  /**
+   * Observations attach to the most specific entity they describe. Without
+   * rolling up through the subtree, every system-level comparison reported "no
+   * data" while the data sat two levels below it — the page was technically
+   * correct and completely useless.
+   */
+  it('finds data recorded on an organ when the dimension is its system', () => {
+    const result = compareAges(b, {
+      ageA: 30,
+      ageB: 70,
+      dimensions: ['musculoskeletal_system'],
+      populationId: 'general_adult',
+    });
+    expect(result.rows[0]?.cell.kind).not.toBe('no_comparable_data');
+  });
+
+  it('names the sub-structure a rolled-up statement came from', () => {
+    const result = compareAges(b, {
+      ageA: 30,
+      ageB: 70,
+      dimensions: ['musculoskeletal_system'],
+      populationId: 'general_adult',
+    });
+    const cell = result.rows[0]?.cell;
+    // Otherwise a muscle finding reads as a statement about the whole system.
+    if (cell?.kind === 'qualitative') expect(cell.statement).toMatch(/^[A-Z][^:]+: /);
+  });
+
+  it('gives most organ systems something to say at 30 versus 70', () => {
+    const result = compareAges(b, {
+      ageA: 30,
+      ageB: 70,
+      dimensions: [],
+      populationId: 'general_adult',
+    });
+    const withData = result.rows.filter((r) => r.cell.kind !== 'no_comparable_data');
+    expect(withData.length).toBeGreaterThanOrEqual(6);
+  });
+
+  it('still reports a gap for systems that genuinely have none', () => {
+    const result = compareAges(b, {
+      ageA: 30,
+      ageB: 70,
+      dimensions: [],
+      populationId: 'general_adult',
+    });
+    expect(result.rows.some((r) => r.cell.kind === 'no_comparable_data')).toBe(true);
+  });
+});

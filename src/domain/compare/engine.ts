@@ -66,17 +66,41 @@ export interface CompareResult {
   rows: readonly CompareRow[];
 }
 
+/**
+ * Observations hang off the most specific entity they describe — muscle mass is
+ * recorded against skeletal_muscle, not against the musculoskeletal system. So
+ * a dimension selected at system level has to gather from its whole subtree,
+ * or every system-level comparison reports "no data" while the data sits two
+ * levels below it.
+ */
+function subtreeIds(bundle: ContentBundle, rootId: string): Set<string> {
+  const ids = new Set<string>([rootId]);
+  const queue = [rootId];
+  while (queue.length > 0) {
+    const id = queue.shift();
+    if (id === undefined) break;
+    for (const child of bundle.indexes.childrenOf.get(id) ?? []) {
+      if (!ids.has(child)) {
+        ids.add(child);
+        queue.push(child);
+      }
+    }
+  }
+  return ids;
+}
+
 function observationsFor(
   bundle: ContentBundle,
   entityId: string,
   age: number,
   populationId: string,
 ): Observation[] {
+  const wanted = subtreeIds(bundle, entityId);
   return bundle.ageIndex
     .observationsAt(age)
     .map((id) => bundle.indexes.observationById.get(id))
     .filter((o): o is Observation => o !== undefined)
-    .filter((o) => o.entity_id === entityId && o.population_id === populationId)
+    .filter((o) => wanted.has(o.entity_id) && o.population_id === populationId)
     .sort((a, b) => a.observation_id.localeCompare(b.observation_id));
 }
 
@@ -92,6 +116,22 @@ function observationsFor(
  * that looks like a comparison but is not one is worse than a stated gap,
  * because it travels — into screenshots, into arguments, into someone's slide.
  */
+/** Names the sub-structure a roll-up came from, so the row is not misread. */
+function statementWithSource(
+  bundle: ContentBundle,
+  observation: Observation,
+  dimensionId: string,
+): string {
+  const statement =
+    observation.effect.kind === 'qualitative'
+      ? observation.effect.statement
+      : observation.observation;
+  if (observation.entity_id === dimensionId) return statement;
+
+  const source = bundle.indexes.entityById.get(observation.entity_id);
+  return source ? `${source.name}: ${statement}` : statement;
+}
+
 export function compareAges(bundle: ContentBundle, input: CompareInput): CompareResult {
   const population = bundle.populations.find((p) => p.id === input.populationId);
   if (!population) throw new Error(`Unknown population "${input.populationId}"`);
@@ -139,7 +179,7 @@ export function compareAges(bundle: ContentBundle, input: CompareInput): Compare
           cell: {
             kind: 'qualitative',
             direction: describing.effect.direction,
-            statement: describing.effect.statement,
+            statement: statementWithSource(bundle, describing, entityId),
             provenance: describing.provenance,
           },
         };
@@ -159,7 +199,7 @@ export function compareAges(bundle: ContentBundle, input: CompareInput): Compare
         cell: {
           kind: 'qualitative',
           direction: qualitative.effect.direction,
-          statement: qualitative.effect.statement,
+          statement: statementWithSource(bundle, qualitative, entityId),
           provenance: qualitative.provenance,
         },
       };
