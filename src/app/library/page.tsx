@@ -31,7 +31,10 @@ export default function LibraryPage() {
           return (
             <li key={s.source_id} className="rounded-lg border border-[var(--color-line)] p-4">
               <h2 className="font-medium">
-                <Link href={`/library/${s.source_id}`} className="hover:underline">
+                <Link
+                  href={`/library/${s.source_id}`}
+                  className="inline-block py-1 hover:underline"
+                >
                   {s.title}
                 </Link>
               </h2>

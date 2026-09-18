@@ -42,14 +42,15 @@ export function SimulateWorkspace({ choices }: { choices: readonly Choice[] }) {
       <fieldset className="rounded-lg border border-[var(--color-line)] bg-[var(--color-surface-raised)] p-4">
         <legend className="px-1 font-medium">Hypothetical changes</legend>
         <p className="mb-3 text-sm text-[var(--color-ink-muted)]">
-          Select one or more changes to trace through the curated relationship graph. This traces
-          direction only &mdash; it models no magnitude, no timing and no individual.
+          Each hallmark names a dysfunction, so a hypothetical improvement means reducing it. Select
+          one or more to trace through the curated relationship graph. This traces direction only
+          &mdash; it models no magnitude, no timing and no individual.
         </p>
 
         <ul className="grid gap-2 sm:grid-cols-2">
           {choices.map((choice) => (
             <li key={choice.id}>
-              <label className="flex cursor-pointer items-start gap-2 rounded border border-[var(--color-line)] p-2 text-sm">
+              <label className="flex cursor-pointer items-start gap-2 rounded border border-[var(--color-line)] p-2.5 text-sm">
                 <input
                   type="checkbox"
                   checked={selected.has(choice.id)}
@@ -63,10 +64,7 @@ export function SimulateWorkspace({ choices }: { choices: readonly Choice[] }) {
                   }
                   className="mt-0.5"
                 />
-                <span>
-                  {choice.direction === 'reduce' ? 'Reduce ' : 'Improve '}
-                  {choice.name.toLowerCase()}
-                </span>
+                <span>Reduce {choice.name.toLowerCase()}</span>
               </label>
             </li>
           ))}

@@ -69,7 +69,7 @@ export function BodyView({
           <legend className="sr-only">Body view style</legend>
           <span className="text-[var(--color-ink-muted)]">View:</span>
           {(['auto', 'three', 'svg', 'dom'] as const).map((option) => (
-            <label key={option} className="flex items-center gap-1">
+            <label key={option} className="flex items-center gap-1 py-1">
               <input
                 type="radio"
                 name="renderer"

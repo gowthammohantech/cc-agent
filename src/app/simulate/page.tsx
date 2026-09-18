@@ -12,18 +12,21 @@ export const metadata: Metadata = {
 export default function SimulatePage() {
   const bundle = getBundle();
 
-  // Only nodes that actually have outgoing causal links can seed anything, so
-  // offering the rest would promise a trace the corpus cannot deliver.
+  /*
+   * Every one of the twelve hallmarks names a DYSFUNCTION — instability,
+   * attrition, exhaustion, dysregulation. The edge signs in model-v1.json
+   * encode quantity semantics (DAMAGES is -1 because *more* of the damager
+   * means worse function downstream), so a hypothetical improvement is always
+   * a REDUCTION in the quantity of the named dysfunction.
+   *
+   * Seeding these as 'improve' inverts every chain: it reads as "more altered
+   * intercellular communication", and the trace then correctly reports things
+   * getting worse. The labels say "Reduce" because that is what the model is
+   * actually being asked.
+   */
   const choices = bundle.hallmarks
     .filter((h) => (bundle.indexes.outgoing.get(h.id) ?? []).length > 0)
-    .map((h) => ({
-      id: h.id,
-      name: h.name,
-      direction:
-        h.id === 'cellular_senescence' || h.id === 'chronic_inflammation'
-          ? ('reduce' as const)
-          : ('improve' as const),
-    }))
+    .map((h) => ({ id: h.id, name: h.name, direction: 'reduce' as const }))
     .sort((a, b) => a.name.localeCompare(b.name));
 
   return (

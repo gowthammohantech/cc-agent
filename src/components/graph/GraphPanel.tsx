@@ -34,7 +34,7 @@ export function GraphPanel({
         <fieldset className="flex items-center gap-2 text-sm">
           <legend className="sr-only">View style for {heading}</legend>
           {(['diagram', 'list'] as const).map((option) => (
-            <label key={option} className="flex items-center gap-1">
+            <label key={option} className="flex items-center gap-1 py-1">
               <input
                 type="radio"
                 name={`view-${headingId}`}

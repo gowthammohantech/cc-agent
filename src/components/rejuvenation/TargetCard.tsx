@@ -10,7 +10,10 @@ export function TargetCard({ target }: { target: RejuvenationTarget }) {
     >
       <header>
         <h3 id={`target-${target.target_id}`} className="font-semibold">
-          <Link href={`/rejuvenation/targets/${target.target_id}`} className="hover:underline">
+          <Link
+            href={`/rejuvenation/targets/${target.target_id}`}
+            className="inline-block py-1 hover:underline"
+          >
             {target.name}
           </Link>
         </h3>

@@ -24,9 +24,15 @@ export function SiteNav() {
         <ul className="flex flex-wrap gap-x-4 gap-y-1 text-sm">
           {LINKS.map((l) => (
             <li key={l.href}>
+              {/*
+                py-1 brings these to the 24px minimum target size of WCAG 2.5.8.
+                The "inline within a sentence" exemption does not cover a
+                navigation list, and a manual keyboard pass measured them at
+                16px — automated scanning did not flag it.
+              */}
               <Link
                 href={l.href}
-                className="text-[var(--color-ink-muted)] hover:text-[var(--color-ink)] hover:underline"
+                className="inline-block py-1 text-[var(--color-ink-muted)] hover:text-[var(--color-ink)] hover:underline"
               >
                 {l.label}
               </Link>

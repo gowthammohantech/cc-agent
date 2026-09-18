@@ -35,7 +35,7 @@
     {
       "node_id": "loss_of_proteostasis",
       "node_name": "Loss of Proteostasis",
-      "direction": "toward_younger_reference",
+      "direction": "toward_older_state",
       "path": {
         "edges": [
           "rel_015"
@@ -96,6 +96,6 @@
   ],
   "whole_organism_claim": "not_supported",
   "disclaimer": "SIMULATION — NOT A CLINICAL PREDICTION. This traces directions through a curated map of relationships. It does not predict what would happen to any person.",
-  "bounds_description": "This model propagates direction only, across curated edges whose causal standing is at least mechanistically supported, to a maximum of four steps. It does not model magnitude, timing, dose, individual variation, interaction effects, or compensation. Correlational edges do not propagate at all, so a correlation can never appear here as a consequence. Where the model stops, it says so rather than extrapolating.",
+  "bounds_description": "Edge signs encode quantity, not desirability: CONTRIBUTES_TO carries +1 because more of the source means more of the target, and DAMAGES carries -1 because more of the damager means worse function downstream. A modification therefore states how the quantity of a named process changes. Beyond that, this model propagates direction only, across curated edges whose causal standing is at least mechanistically supported, to a maximum of four steps. It does not model magnitude, timing, dose, individual variation, interaction effects, or compensation. Correlational edges do not propagate at all, so a correlation can never appear here as a consequence. Where the model stops, it says so rather than extrapolating.",
   "not_a_clinical_prediction": true
 }

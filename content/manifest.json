@@ -1,7 +1,7 @@
 {
   "content_version": "0.1.0",
   "generated_at": "2026-09-18",
-  "records_hash": "sha256:6125a8af487cf2c616a447a846c598471c6d00182bbb39a5439e677ee1c8cd65",
+  "records_hash": "sha256:e550d9bd2330feb0c7f959fb21efdce5588d7a90feec45c476a5fbc073632c90",
   "framework_versions": {
     "hallmarks_of_aging": "2023"
   },
@@ -73,7 +73,7 @@
     },
     {
       "path": "content/simulation/model-v1.json",
-      "sha256": "6daf5f229f3e85568c49f72aff8dd305763607a552084af966160fa00bb2cb17",
+      "sha256": "3dd199d06f5a62f07aa8fddef2e8f940804abc5cd4b0268f0d7b32cda12c939f",
       "record_count": 4
     },
     {

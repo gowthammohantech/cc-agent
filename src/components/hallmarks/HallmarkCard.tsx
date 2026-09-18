@@ -38,7 +38,7 @@ export function HallmarkCard({
     >
       <header>
         <h3 id={`hallmark-${hallmark.id}`} className="font-semibold">
-          <Link href={`/hallmarks/${hallmark.id}`} className="hover:underline">
+          <Link href={`/hallmarks/${hallmark.id}`} className="inline-block py-1 hover:underline">
             {hallmark.name}
           </Link>
         </h3>
@@ -79,7 +79,7 @@ export function HallmarkCard({
       <footer className="border-t border-[var(--color-line)] pt-3">
         <UncertaintyNote provenance={hallmark.provenance} />
         <p className="mt-2 text-xs">
-          <Link href={`/why/${hallmark.id}`} className="underline">
+          <Link href={`/why/${hallmark.id}`} className="inline-block py-1 underline">
             Why is this happening?
           </Link>
         </p>

@@ -35,7 +35,7 @@ export default function HallmarksPage() {
               className="space-y-3 rounded-lg border border-[var(--color-line)] bg-[var(--color-surface-raised)] p-4"
             >
               <h2 className="font-semibold">
-                <Link href={`/hallmarks/${h.id}`} className="hover:underline">
+                <Link href={`/hallmarks/${h.id}`} className="inline-block py-1 hover:underline">
                   {h.name}
                 </Link>
               </h2>

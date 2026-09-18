@@ -17,10 +17,21 @@ function canonicalJson(value: unknown): string {
   return JSON.stringify(value) ?? 'null';
 }
 
-function directionOf(sign: 1 | -1 | 0): NodeDirection {
-  if (sign === 1) return 'toward_younger_reference';
-  if (sign === -1) return 'toward_older_state';
-  return 'indeterminate';
+/**
+ * Signs are quantities, but a reader wants a verdict — and the two only agree
+ * for some nodes.
+ *
+ * A hallmark NAMES a dysfunction ("stem-cell exhaustion", "genomic
+ * instability"), so less of it is an improvement. An entity names a structure
+ * whose function is what degrades, so more of it is an improvement. Reporting
+ * both with one rule produced a genuinely misleading line: reducing a driver of
+ * stem-cell exhaustion was shown as stem-cell exhaustion moving "away from the
+ * reference state".
+ */
+function directionOf(sign: 1 | -1 | 0, namesADysfunction: boolean): NodeDirection {
+  if (sign === 0) return 'indeterminate';
+  const improved = namesADysfunction ? sign === -1 : sign === 1;
+  return improved ? 'toward_younger_reference' : 'toward_older_state';
 }
 
 function confidenceBand(value: number): 'high' | 'moderate' | 'low' {
@@ -64,7 +75,7 @@ export function runSimulation(bundle: ContentBundle, input: SimulationInput): Si
     .map(([nodeId, state]) => ({
       node_id: nodeId,
       node_name: nodeFor(bundle, nodeId).name,
-      direction: directionOf(state.sign),
+      direction: directionOf(state.sign, bundle.indexes.hallmarkById.has(nodeId)),
       path: state.path,
       path_confidence: confidenceBand(state.confidence),
       weakest_link: state.weakestLink,

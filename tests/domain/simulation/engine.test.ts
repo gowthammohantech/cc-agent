@@ -172,3 +172,64 @@ describe('simulation safety serialization', () => {
     ).toThrow(/SAFETY/);
   });
 });
+
+describe('sign convention', () => {
+  /**
+   * Caught by looking at a screenshot, not by a test: the simulate page seeded
+   * hallmark modifications as 'improve' (+1), which inverted every chain. The
+   * edge signs encode QUANTITY — DAMAGES is -1 because more of the damager
+   * means worse function downstream — so an improvement to a named dysfunction
+   * is always a reduction in its quantity.
+   */
+  it('traces reducing a dysfunction to a better downstream state', () => {
+    const out = runSimulation(
+      b,
+      SimulationInputSchema.parse({
+        chronological_age: 70,
+        reference_age: 30,
+        modifications: [{ target: 'altered_intercellular_communication', direction: 'reduce' }],
+      }),
+    );
+
+    // reduce communication alteration (-1)
+    //   --CONTRIBUTES_TO(+1)--> less stem-cell exhaustion (-1)
+    //   --DAMAGES(-1)--------> better bone marrow (+1)
+    const marrow = out.affected_nodes.find((n) => n.node_id === 'bone_marrow');
+    expect(marrow?.direction).toBe('toward_younger_reference');
+  });
+
+  it('reports less of a dysfunction as an improvement, not a regression', () => {
+    // A hallmark names a dysfunction, so reducing it is progress — reporting it
+    // with the same rule as a structure's function was actively misleading.
+    const out = runSimulation(
+      b,
+      SimulationInputSchema.parse({
+        chronological_age: 70,
+        reference_age: 30,
+        modifications: [{ target: 'altered_intercellular_communication', direction: 'reduce' }],
+      }),
+    );
+    const exhaustion = out.affected_nodes.find((n) => n.node_id === 'stem_cell_exhaustion');
+    expect(exhaustion?.direction).toBe('toward_younger_reference');
+  });
+
+  it('traces increasing a dysfunction to a worse downstream state', () => {
+    const out = runSimulation(
+      b,
+      SimulationInputSchema.parse({
+        chronological_age: 70,
+        reference_age: 30,
+        modifications: [{ target: 'altered_intercellular_communication', direction: 'improve' }],
+      }),
+    );
+    // 'improve' seeds +1, i.e. MORE of the named alteration — the opposite.
+    const marrow = out.affected_nodes.find((n) => n.node_id === 'bone_marrow');
+    expect(marrow?.direction).toBe('toward_older_state');
+  });
+
+  it('gives reducing senescence a coherent downstream story', () => {
+    const out = runSimulation(b, input);
+    const muscle = out.affected_nodes.find((n) => n.node_id === 'skeletal_muscle');
+    if (muscle) expect(muscle.direction).toBe('toward_younger_reference');
+  });
+});
