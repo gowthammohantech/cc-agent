@@ -5,3 +5,7 @@ playwright-report/
 test-results/
 package-lock.json
 content/manifest.json
+
+# Generated fixtures: byte-exact output from the simulation engine. Formatting
+# them would break the determinism check they exist to enforce.
+tests/domain/simulation/golden/

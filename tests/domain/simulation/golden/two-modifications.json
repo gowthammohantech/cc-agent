@@ -1,0 +1,205 @@
+{
+  "run_id": "c2230af1075a56b1",
+  "model_version": "v1",
+  "content_version": "0.1.0",
+  "input_echo": {
+    "chronological_age": 70,
+    "reference_age": 30,
+    "population_id": "general_adult",
+    "modifications": [
+      {
+        "target": "cellular_senescence",
+        "direction": "reduce"
+      },
+      {
+        "target": "stem_cell_exhaustion",
+        "direction": "improve"
+      }
+    ]
+  },
+  "affected_nodes": [
+    {
+      "node_id": "bone_marrow",
+      "node_name": "Bone marrow",
+      "direction": "toward_older_state",
+      "path": {
+        "edges": [
+          "rel_010"
+        ],
+        "depth": 1
+      },
+      "path_confidence": "high",
+      "weakest_link": {
+        "relationship_id": "rel_010",
+        "reason": "damages — moderate confidence"
+      },
+      "conflicting_paths": []
+    },
+    {
+      "node_id": "chronic_inflammation",
+      "node_name": "Chronic Inflammation",
+      "direction": "toward_older_state",
+      "path": {
+        "edges": [
+          "rel_004",
+          "rel_005"
+        ],
+        "depth": 2
+      },
+      "path_confidence": "moderate",
+      "weakest_link": {
+        "relationship_id": "rel_005",
+        "reason": "contributes to — moderate confidence"
+      },
+      "conflicting_paths": []
+    },
+    {
+      "node_id": "organism",
+      "node_name": "Human organism",
+      "direction": "toward_older_state",
+      "path": {
+        "edges": [
+          "rel_007"
+        ],
+        "depth": 1
+      },
+      "path_confidence": "high",
+      "weakest_link": {
+        "relationship_id": "rel_007",
+        "reason": "contributes to — moderate confidence"
+      },
+      "conflicting_paths": []
+    },
+    {
+      "node_id": "sasp_signaling",
+      "node_name": "Senescence-associated secretory phenotype",
+      "direction": "toward_older_state",
+      "path": {
+        "edges": [
+          "rel_004"
+        ],
+        "depth": 1
+      },
+      "path_confidence": "high",
+      "weakest_link": {
+        "relationship_id": "rel_004",
+        "reason": "activates — high confidence"
+      },
+      "conflicting_paths": []
+    },
+    {
+      "node_id": "skeletal_muscle",
+      "node_name": "Skeletal muscle",
+      "direction": "toward_older_state",
+      "path": {
+        "edges": [
+          "rel_008"
+        ],
+        "depth": 1
+      },
+      "path_confidence": "high",
+      "weakest_link": {
+        "relationship_id": "rel_008",
+        "reason": "damages — moderate confidence"
+      },
+      "conflicting_paths": []
+    },
+    {
+      "node_id": "skin",
+      "node_name": "Skin tissue",
+      "direction": "toward_younger_reference",
+      "path": {
+        "edges": [
+          "rel_032"
+        ],
+        "depth": 1
+      },
+      "path_confidence": "high",
+      "weakest_link": {
+        "relationship_id": "rel_032",
+        "reason": "damages — moderate confidence"
+      },
+      "conflicting_paths": []
+    }
+  ],
+  "unsupported_relationships": [
+    {
+      "relationship_id": "rel_006",
+      "from_node": "chronic_inflammation",
+      "to_node": "skeletal_muscle",
+      "reason": "causal_status_correlational_only",
+      "explanation": "This link is correlational only. Two things moving together does not mean changing one changes the other."
+    },
+    {
+      "relationship_id": "rel_023",
+      "from_node": "chronic_inflammation",
+      "to_node": "immune_system",
+      "reason": "causal_status_correlational_only",
+      "explanation": "This link is correlational only. Two things moving together does not mean changing one changes the other."
+    },
+    {
+      "relationship_id": "rel_025",
+      "from_node": "chronic_inflammation",
+      "to_node": "arteries",
+      "reason": "causal_status_proposed",
+      "explanation": "This link is a proposed explanation rather than a supported mechanism, so the model stops here."
+    },
+    {
+      "relationship_id": "rel_033",
+      "from_node": "cellular_senescence",
+      "to_node": "kidneys",
+      "reason": "causal_status_proposed",
+      "explanation": "This link is a proposed explanation rather than a supported mechanism, so the model stops here."
+    },
+    {
+      "relationship_id": "rel_034",
+      "from_node": "cellular_senescence",
+      "to_node": "lungs",
+      "reason": "causal_status_proposed",
+      "explanation": "This link is a proposed explanation rather than a supported mechanism, so the model stops here."
+    }
+  ],
+  "truncations": [],
+  "confidence": {
+    "bone_marrow": "high",
+    "chronic_inflammation": "moderate",
+    "organism": "high",
+    "sasp_signaling": "high",
+    "skeletal_muscle": "high",
+    "skin": "high"
+  },
+  "scope_summary": [
+    {
+      "scope": "functional",
+      "statement": "This model traces direction only at this level; it does not establish functional rejuvenation."
+    },
+    {
+      "scope": "cellular",
+      "statement": "This model traces direction only at this level; it does not establish cellular rejuvenation."
+    },
+    {
+      "scope": "molecular_epigenetic",
+      "statement": "This model traces direction only at this level; it does not establish molecular / epigenetic rejuvenation."
+    },
+    {
+      "scope": "tissue",
+      "statement": "This model traces direction only at this level; it does not establish tissue rejuvenation."
+    },
+    {
+      "scope": "organ",
+      "statement": "This model traces direction only at this level; it does not establish organ rejuvenation."
+    },
+    {
+      "scope": "systemic",
+      "statement": "This model traces direction only at this level; it does not establish systemic rejuvenation."
+    },
+    {
+      "scope": "whole_organism",
+      "statement": "Not supported. Nothing in this model bears on whole-organism age reversal, which requires durable multi-system human evidence."
+    }
+  ],
+  "whole_organism_claim": "not_supported",
+  "disclaimer": "SIMULATION — NOT A CLINICAL PREDICTION. This traces directions through a curated map of relationships. It does not predict what would happen to any person.",
+  "bounds_description": "This model propagates direction only, across curated edges whose causal standing is at least mechanistically supported, to a maximum of four steps. It does not model magnitude, timing, dose, individual variation, interaction effects, or compensation. Correlational edges do not propagate at all, so a correlation can never appear here as a consequence. Where the model stops, it says so rather than extrapolating.",
+  "not_a_clinical_prediction": true
+}

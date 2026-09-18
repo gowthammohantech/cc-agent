@@ -1,0 +1,69 @@
+{
+  "run_id": "a2be70eea84cadbc",
+  "model_version": "v1",
+  "content_version": "0.1.0",
+  "input_echo": {
+    "chronological_age": 70,
+    "reference_age": 30,
+    "population_id": "general_adult",
+    "modifications": [
+      {
+        "target": "dysbiosis",
+        "direction": "improve"
+      }
+    ]
+  },
+  "affected_nodes": [],
+  "unsupported_relationships": [
+    {
+      "relationship_id": "rel_026",
+      "from_node": "dysbiosis",
+      "to_node": "chronic_inflammation",
+      "reason": "relationship_type_not_causal",
+      "explanation": "This link records an association, not a mechanism, so nothing is carried across it."
+    },
+    {
+      "relationship_id": "rel_027",
+      "from_node": "dysbiosis",
+      "to_node": "gut_epithelium",
+      "reason": "relationship_type_not_causal",
+      "explanation": "This link records an association, not a mechanism, so nothing is carried across it."
+    }
+  ],
+  "truncations": [],
+  "confidence": {},
+  "scope_summary": [
+    {
+      "scope": "functional",
+      "statement": "No curated causal path reaches this level from the selected modifications."
+    },
+    {
+      "scope": "cellular",
+      "statement": "No curated causal path reaches this level from the selected modifications."
+    },
+    {
+      "scope": "molecular_epigenetic",
+      "statement": "No curated causal path reaches this level from the selected modifications."
+    },
+    {
+      "scope": "tissue",
+      "statement": "No curated causal path reaches this level from the selected modifications."
+    },
+    {
+      "scope": "organ",
+      "statement": "No curated causal path reaches this level from the selected modifications."
+    },
+    {
+      "scope": "systemic",
+      "statement": "No curated causal path reaches this level from the selected modifications."
+    },
+    {
+      "scope": "whole_organism",
+      "statement": "Not supported. Nothing in this model bears on whole-organism age reversal, which requires durable multi-system human evidence."
+    }
+  ],
+  "whole_organism_claim": "not_supported",
+  "disclaimer": "SIMULATION — NOT A CLINICAL PREDICTION. This traces directions through a curated map of relationships. It does not predict what would happen to any person.",
+  "bounds_description": "This model propagates direction only, across curated edges whose causal standing is at least mechanistically supported, to a maximum of four steps. It does not model magnitude, timing, dose, individual variation, interaction effects, or compensation. Correlational edges do not propagate at all, so a correlation can never appear here as a consequence. Where the model stops, it says so rather than extrapolating.",
+  "not_a_clinical_prediction": true
+}
