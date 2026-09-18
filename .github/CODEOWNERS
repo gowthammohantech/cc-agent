@@ -1,0 +1,5 @@
+# Scientific content requires a domain reviewer. This is the git-native stand-in
+# for the spec's FR-11 review workflow — see /about/methodology, which states
+# plainly that this is a git-based process and not a full CMS.
+/content/   @gowthammohantech
+/schemas/   @gowthammohantech

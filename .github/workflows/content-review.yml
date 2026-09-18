@@ -1,0 +1,42 @@
+name: Content review
+
+# Scientific content changes get a stricter gate than code changes: the review
+# metadata has to be coherent and the manifest has to be regenerated, so the
+# version bump shows up in the diff a reviewer is looking at.
+on:
+  pull_request:
+    paths:
+      - 'content/**'
+      - 'schemas/**'
+
+jobs:
+  content:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 22
+          cache: npm
+      - run: npm ci
+      - run: npm run verify:content
+      - run: npm run verify:claims
+      - run: npm run test:content
+
+      - name: Manifest must be regenerated
+        run: |
+          npm run content:hash
+          if ! git diff --quiet -- content/manifest.json; then
+            echo "::error::content/manifest.json is stale. Run 'npm run content:hash' and commit the result."
+            git --no-pager diff -- content/manifest.json
+            exit 1
+          fi
+
+      - name: CHANGELOG must be updated when content_version changes
+        run: |
+          if git diff --quiet origin/${{ github.base_ref }} -- content/CHANGELOG.md; then
+            if ! git diff --quiet origin/${{ github.base_ref }} -- content/manifest.json; then
+              echo "::error::Content changed but content/CHANGELOG.md was not updated."
+              exit 1
+            fi
+          fi
